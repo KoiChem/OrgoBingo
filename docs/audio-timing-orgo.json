@@ -1,0 +1,186 @@
+{
+  "frames": [
+    {
+      "wall": 19776.200000047684,
+      "progress": ""
+    },
+    {
+      "wall": 19853.599999904633,
+      "progress": ""
+    },
+    {
+      "wall": 19941,
+      "progress": ""
+    },
+    {
+      "wall": 20039.900000095367,
+      "progress": ""
+    },
+    {
+      "wall": 20149.200000047684,
+      "progress": ""
+    },
+    {
+      "wall": 20271.400000095367,
+      "progress": ""
+    },
+    {
+      "wall": 20406.400000095367,
+      "progress": ""
+    },
+    {
+      "wall": 20552.700000047684,
+      "progress": ""
+    },
+    {
+      "wall": 20710,
+      "progress": ""
+    },
+    {
+      "wall": 20881,
+      "progress": ""
+    },
+    {
+      "wall": 21064.299999952316,
+      "progress": ""
+    },
+    {
+      "wall": 21259.900000095367,
+      "progress": "1 / 31"
+    }
+  ],
+  "tones": [
+    {
+      "wall": 19853.599999904633,
+      "audio": 0.037333333333333336,
+      "at": 0.037333333333333336,
+      "freq": 440,
+      "output": {
+        "contextTime": 0,
+        "performanceTime": 19852.599999904633
+      },
+      "outputLatency": 0.032
+    },
+    {
+      "wall": 19941,
+      "audio": 0.12266666666666666,
+      "at": 0.12266666666666666,
+      "freq": 440,
+      "output": {
+        "contextTime": 0.08386933333333332,
+        "performanceTime": 19937.900000095367
+      },
+      "outputLatency": 0.032
+    },
+    {
+      "wall": 20039.799999952316,
+      "audio": 0.224,
+      "at": 0.224,
+      "freq": 440,
+      "output": {
+        "contextTime": 0.18522866666666668,
+        "performanceTime": 20039.299999952316
+      },
+      "outputLatency": 0.032
+    },
+    {
+      "wall": 20149.099999904633,
+      "audio": 0.33066666666666666,
+      "at": 0.33066666666666666,
+      "freq": 440,
+      "output": {
+        "contextTime": 0.29188533333333333,
+        "performanceTime": 20145.900000095367
+      },
+      "outputLatency": 0.032
+    },
+    {
+      "wall": 20271.299999952316,
+      "audio": 0.4533333333333333,
+      "at": 0.4533333333333333,
+      "freq": 440,
+      "output": {
+        "contextTime": 0.414555,
+        "performanceTime": 20268.599999904633
+      },
+      "outputLatency": 0.032
+    },
+    {
+      "wall": 20406.299999952316,
+      "audio": 0.5866666666666667,
+      "at": 0.5866666666666667,
+      "freq": 440,
+      "output": {
+        "contextTime": 0.5478933333333333,
+        "performanceTime": 20402
+      },
+      "outputLatency": 0.032
+    },
+    {
+      "wall": 20552.599999904633,
+      "audio": 0.736,
+      "at": 0.736,
+      "freq": 440,
+      "output": {
+        "contextTime": 0.6972236666666667,
+        "performanceTime": 20551.400000095367
+      },
+      "outputLatency": 0.032
+    },
+    {
+      "wall": 20710,
+      "audio": 0.8906666666666667,
+      "at": 0.8906666666666667,
+      "freq": 440,
+      "output": {
+        "contextTime": 0.8518923333333333,
+        "performanceTime": 20706
+      },
+      "outputLatency": 0.032
+    },
+    {
+      "wall": 20880.900000095367,
+      "audio": 1.0613333333333332,
+      "at": 1.0613333333333332,
+      "freq": 440,
+      "output": {
+        "contextTime": 1.022556,
+        "performanceTime": 20876.700000047684
+      },
+      "outputLatency": 0.032
+    },
+    {
+      "wall": 21064.299999952316,
+      "audio": 1.248,
+      "at": 1.248,
+      "freq": 440,
+      "output": {
+        "contextTime": 1.2092226666666666,
+        "performanceTime": 21063.400000095367
+      },
+      "outputLatency": 0.032
+    },
+    {
+      "wall": 21259.400000095367,
+      "audio": 1.44,
+      "at": 1.44,
+      "freq": 440,
+      "output": {
+        "contextTime": 1.4012246666666668,
+        "performanceTime": 21255.400000095367
+      },
+      "outputLatency": 0.032
+    },
+    {
+      "wall": 21259.900000095367,
+      "audio": 1.44,
+      "at": 1.44,
+      "freq": 440,
+      "output": {
+        "contextTime": 1.4012246666666668,
+        "performanceTime": 21255.400000095367
+      },
+      "outputLatency": 0.032
+    }
+  ]
+}
