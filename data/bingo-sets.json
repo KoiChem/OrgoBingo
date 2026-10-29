@@ -1,0 +1,39 @@
+[
+  {
+    "id": "oxygenated-aliphatic",
+    "name": "酸素を含む脂肪族化合物（関連含む）",
+    "compoundIds": [
+      "methanol",
+      "ethanol",
+      "1-propanol",
+      "2-propanol",
+      "2-butanol",
+      "ethylene-glycol",
+      "glycerol",
+      "dimethyl-ether",
+      "diethyl-ether",
+      "acetone",
+      "methyl-ethyl-ketone",
+      "formaldehyde",
+      "acetaldehyde",
+      "propionaldehyde",
+      "formic-acid",
+      "acetic-acid",
+      "propionic-acid",
+      "lactic-acid",
+      "fumaric-acid",
+      "maleic-acid",
+      "methyl-formate",
+      "methyl-acetate",
+      "ethyl-acetate",
+      "acetic-anhydride",
+      "iodoform",
+      "palmitic-acid",
+      "stearic-acid",
+      "oxalic-acid",
+      "2-methyl-2-propanol",
+      "1-butanol",
+      "butyric-acid"
+    ]
+  }
+]

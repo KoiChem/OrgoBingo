@@ -1,0 +1,454 @@
+[
+  {
+    "id": "methanol",
+    "nameJa": "メタノール",
+    "nameEn": "Methanol",
+    "formula": "CH4O",
+    "functionalGroups": [
+      "アルコール"
+    ],
+    "skeletonCategory": "脂肪族",
+    "tags": [
+      "1価アルコール"
+    ],
+    "structureSvg": "structures/methanol.svg",
+    "note": ""
+  },
+  {
+    "id": "ethanol",
+    "nameJa": "エタノール",
+    "nameEn": "Ethanol",
+    "formula": "C2H6O",
+    "functionalGroups": [
+      "アルコール"
+    ],
+    "skeletonCategory": "脂肪族",
+    "tags": [
+      "1価アルコール",
+      "第一級アルコール"
+    ],
+    "structureSvg": "structures/ethanol.svg",
+    "note": ""
+  },
+  {
+    "id": "1-propanol",
+    "nameJa": "1-プロパノール",
+    "nameEn": "1-Propanol",
+    "formula": "C3H8O",
+    "functionalGroups": [
+      "アルコール"
+    ],
+    "skeletonCategory": "脂肪族",
+    "tags": [
+      "1価アルコール",
+      "第一級アルコール"
+    ],
+    "structureSvg": "structures/1-propanol.svg",
+    "note": ""
+  },
+  {
+    "id": "2-propanol",
+    "nameJa": "2-プロパノール",
+    "nameEn": "2-Propanol",
+    "formula": "C3H8O",
+    "functionalGroups": [
+      "アルコール"
+    ],
+    "skeletonCategory": "脂肪族",
+    "tags": [
+      "1価アルコール",
+      "第二級アルコール"
+    ],
+    "structureSvg": "structures/2-propanol.svg",
+    "note": ""
+  },
+  {
+    "id": "2-butanol",
+    "nameJa": "2-ブタノール",
+    "nameEn": "2-Butanol",
+    "formula": "C4H10O",
+    "functionalGroups": [
+      "アルコール"
+    ],
+    "skeletonCategory": "脂肪族",
+    "tags": [
+      "1価アルコール",
+      "第二級アルコール"
+    ],
+    "structureSvg": "structures/2-butanol.svg",
+    "note": ""
+  },
+  {
+    "id": "ethylene-glycol",
+    "nameJa": "エチレングリコール",
+    "nameEn": "Ethylene glycol",
+    "formula": "C2H6O2",
+    "functionalGroups": [
+      "アルコール"
+    ],
+    "skeletonCategory": "脂肪族",
+    "tags": [
+      "2価アルコール",
+      "多価アルコール"
+    ],
+    "structureSvg": "structures/ethylene-glycol.svg",
+    "note": ""
+  },
+  {
+    "id": "glycerol",
+    "nameJa": "グリセリン",
+    "nameEn": "Glycerol",
+    "formula": "C3H8O3",
+    "functionalGroups": [
+      "アルコール"
+    ],
+    "skeletonCategory": "脂肪族",
+    "tags": [
+      "3価アルコール",
+      "多価アルコール"
+    ],
+    "structureSvg": "structures/glycerol.svg",
+    "note": ""
+  },
+  {
+    "id": "dimethyl-ether",
+    "nameJa": "ジメチルエーテル",
+    "nameEn": "Dimethyl ether",
+    "formula": "C2H6O",
+    "functionalGroups": [
+      "エーテル"
+    ],
+    "skeletonCategory": "脂肪族",
+    "tags": [],
+    "structureSvg": "structures/dimethyl-ether.svg",
+    "note": ""
+  },
+  {
+    "id": "diethyl-ether",
+    "nameJa": "ジエチルエーテル",
+    "nameEn": "Diethyl ether",
+    "formula": "C4H10O",
+    "functionalGroups": [
+      "エーテル"
+    ],
+    "skeletonCategory": "脂肪族",
+    "tags": [],
+    "structureSvg": "structures/diethyl-ether.svg",
+    "note": ""
+  },
+  {
+    "id": "acetone",
+    "nameJa": "アセトン",
+    "nameEn": "Acetone",
+    "formula": "C3H6O",
+    "functionalGroups": [
+      "ケトン"
+    ],
+    "skeletonCategory": "脂肪族",
+    "tags": [],
+    "structureSvg": "structures/acetone.svg",
+    "note": ""
+  },
+  {
+    "id": "methyl-ethyl-ketone",
+    "nameJa": "エチルメチルケトン",
+    "nameEn": "Methyl ethyl ketone",
+    "formula": "C4H8O",
+    "functionalGroups": [
+      "ケトン"
+    ],
+    "skeletonCategory": "脂肪族",
+    "tags": [],
+    "structureSvg": "structures/methyl-ethyl-ketone.svg",
+    "note": ""
+  },
+  {
+    "id": "formaldehyde",
+    "nameJa": "ホルムアルデヒド",
+    "nameEn": "Formaldehyde",
+    "formula": "CH2O",
+    "functionalGroups": [
+      "アルデヒド"
+    ],
+    "skeletonCategory": "脂肪族",
+    "tags": [],
+    "structureSvg": "structures/formaldehyde.svg",
+    "note": ""
+  },
+  {
+    "id": "acetaldehyde",
+    "nameJa": "アセトアルデヒド",
+    "nameEn": "Acetaldehyde",
+    "formula": "C2H4O",
+    "functionalGroups": [
+      "アルデヒド"
+    ],
+    "skeletonCategory": "脂肪族",
+    "tags": [],
+    "structureSvg": "structures/acetaldehyde.svg",
+    "note": ""
+  },
+  {
+    "id": "propionaldehyde",
+    "nameJa": "プロピオンアルデヒド",
+    "nameEn": "Propionaldehyde",
+    "formula": "C3H6O",
+    "functionalGroups": [
+      "アルデヒド"
+    ],
+    "skeletonCategory": "脂肪族",
+    "tags": [],
+    "structureSvg": "structures/propionaldehyde.svg",
+    "note": ""
+  },
+  {
+    "id": "formic-acid",
+    "nameJa": "ギ酸",
+    "nameEn": "Formic acid",
+    "formula": "CH2O2",
+    "functionalGroups": [
+      "カルボン酸"
+    ],
+    "skeletonCategory": "脂肪族",
+    "tags": [],
+    "structureSvg": "structures/formic-acid.svg",
+    "note": ""
+  },
+  {
+    "id": "acetic-acid",
+    "nameJa": "酢酸",
+    "nameEn": "Acetic acid",
+    "formula": "C2H4O2",
+    "functionalGroups": [
+      "カルボン酸"
+    ],
+    "skeletonCategory": "脂肪族",
+    "tags": [],
+    "structureSvg": "structures/acetic-acid.svg",
+    "note": ""
+  },
+  {
+    "id": "propionic-acid",
+    "nameJa": "プロピオン酸",
+    "nameEn": "Propionic acid",
+    "formula": "C3H6O2",
+    "functionalGroups": [
+      "カルボン酸"
+    ],
+    "skeletonCategory": "脂肪族",
+    "tags": [],
+    "structureSvg": "structures/propionic-acid.svg",
+    "note": ""
+  },
+  {
+    "id": "lactic-acid",
+    "nameJa": "乳酸",
+    "nameEn": "Lactic acid",
+    "formula": "C3H6O3",
+    "functionalGroups": [
+      "アルコール",
+      "カルボン酸"
+    ],
+    "skeletonCategory": "脂肪族",
+    "tags": [
+      "ヒドロキシ酸",
+      "1価アルコール",
+      "第二級アルコール"
+    ],
+    "structureSvg": "structures/lactic-acid.svg",
+    "note": ""
+  },
+  {
+    "id": "fumaric-acid",
+    "nameJa": "フマル酸",
+    "nameEn": "Fumaric acid",
+    "formula": "C4H4O4",
+    "functionalGroups": [
+      "カルボン酸",
+      "炭素間不飽和結合"
+    ],
+    "skeletonCategory": "脂肪族",
+    "tags": [
+      "ジカルボン酸",
+      "trans"
+    ],
+    "structureSvg": "structures/fumaric-acid.svg",
+    "note": ""
+  },
+  {
+    "id": "maleic-acid",
+    "nameJa": "マレイン酸",
+    "nameEn": "Maleic acid",
+    "formula": "C4H4O4",
+    "functionalGroups": [
+      "カルボン酸",
+      "炭素間不飽和結合"
+    ],
+    "skeletonCategory": "脂肪族",
+    "tags": [
+      "ジカルボン酸",
+      "cis"
+    ],
+    "structureSvg": "structures/maleic-acid.svg",
+    "note": ""
+  },
+  {
+    "id": "methyl-formate",
+    "nameJa": "ギ酸メチル",
+    "nameEn": "Methyl formate",
+    "formula": "C2H4O2",
+    "functionalGroups": [
+      "エステル"
+    ],
+    "skeletonCategory": "脂肪族",
+    "tags": [],
+    "structureSvg": "structures/methyl-formate.svg",
+    "note": ""
+  },
+  {
+    "id": "methyl-acetate",
+    "nameJa": "酢酸メチル",
+    "nameEn": "Methyl acetate",
+    "formula": "C3H6O2",
+    "functionalGroups": [
+      "エステル"
+    ],
+    "skeletonCategory": "脂肪族",
+    "tags": [],
+    "structureSvg": "structures/methyl-acetate.svg",
+    "note": ""
+  },
+  {
+    "id": "ethyl-acetate",
+    "nameJa": "酢酸エチル",
+    "nameEn": "Ethyl acetate",
+    "formula": "C4H8O2",
+    "functionalGroups": [
+      "エステル"
+    ],
+    "skeletonCategory": "脂肪族",
+    "tags": [],
+    "structureSvg": "structures/ethyl-acetate.svg",
+    "note": ""
+  },
+  {
+    "id": "acetic-anhydride",
+    "nameJa": "無水酢酸",
+    "nameEn": "Acetic anhydride",
+    "formula": "C4H6O3",
+    "functionalGroups": [
+      "酸無水物"
+    ],
+    "skeletonCategory": "脂肪族",
+    "tags": [],
+    "structureSvg": "structures/acetic-anhydride.svg",
+    "note": ""
+  },
+  {
+    "id": "iodoform",
+    "nameJa": "ヨードホルム",
+    "nameEn": "Iodoform",
+    "formula": "CHI3",
+    "functionalGroups": [
+      "ハロゲン化合物"
+    ],
+    "skeletonCategory": "脂肪族",
+    "tags": [
+      "ハロホルム"
+    ],
+    "structureSvg": "structures/iodoform.svg",
+    "note": ""
+  },
+  {
+    "id": "palmitic-acid",
+    "nameJa": "パルミチン酸",
+    "nameEn": "Palmitic acid",
+    "formula": "C16H32O2",
+    "functionalGroups": [
+      "カルボン酸"
+    ],
+    "skeletonCategory": "脂肪族",
+    "tags": [
+      "高級脂肪酸",
+      "飽和脂肪酸"
+    ],
+    "structureSvg": "structures/palmitic-acid.svg",
+    "note": ""
+  },
+  {
+    "id": "stearic-acid",
+    "nameJa": "ステアリン酸",
+    "nameEn": "Stearic acid",
+    "formula": "C18H36O2",
+    "functionalGroups": [
+      "カルボン酸"
+    ],
+    "skeletonCategory": "脂肪族",
+    "tags": [
+      "高級脂肪酸",
+      "飽和脂肪酸"
+    ],
+    "structureSvg": "structures/stearic-acid.svg",
+    "note": ""
+  },
+  {
+    "id": "oxalic-acid",
+    "nameJa": "シュウ酸",
+    "nameEn": "Oxalic acid",
+    "formula": "C2H2O4",
+    "functionalGroups": [
+      "カルボン酸"
+    ],
+    "skeletonCategory": "脂肪族",
+    "tags": [
+      "ジカルボン酸"
+    ],
+    "structureSvg": "structures/oxalic-acid.svg",
+    "note": ""
+  },
+  {
+    "id": "2-methyl-2-propanol",
+    "nameJa": "2-メチル-2-プロパノール",
+    "nameEn": "2-Methyl-2-propanol",
+    "formula": "C4H10O",
+    "functionalGroups": [
+      "アルコール"
+    ],
+    "skeletonCategory": "脂肪族",
+    "tags": [
+      "1価アルコール",
+      "第三級アルコール"
+    ],
+    "structureSvg": "structures/2-methyl-2-propanol.svg",
+    "note": ""
+  },
+  {
+    "id": "1-butanol",
+    "nameJa": "1-ブタノール",
+    "nameEn": "1-Butanol",
+    "formula": "C4H10O",
+    "functionalGroups": [
+      "アルコール"
+    ],
+    "skeletonCategory": "脂肪族",
+    "tags": [
+      "1価アルコール",
+      "第一級アルコール"
+    ],
+    "structureSvg": "structures/1-butanol.svg",
+    "note": ""
+  },
+  {
+    "id": "butyric-acid",
+    "nameJa": "酪酸",
+    "nameEn": "Butyric acid",
+    "formula": "C4H8O2",
+    "functionalGroups": [
+      "カルボン酸"
+    ],
+    "skeletonCategory": "脂肪族",
+    "tags": [],
+    "structureSvg": "structures/butyric-acid.svg",
+    "note": ""
+  }
+]
