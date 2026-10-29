@@ -1,0 +1,433 @@
+{
+  "style": {
+    "fontSize": 48,
+    "subscriptScale": 0.64,
+    "subscriptDrop": 9,
+    "bondLength": 36,
+    "bondWidth": 1.8,
+    "doubleGap": 7,
+    "labelGap": 7,
+    "branchStep": 88,
+    "padding": 10
+  },
+  "font": {
+    "font": "Liberation Sans",
+    "version": "Version 2.1.5",
+    "size": 48
+  },
+  "fontSHA256": "76d04c18ea243f426b7de1f3ad208e927008f961dc5945e5aad352d0dfde8ee8",
+  "checks": [
+    "31 master IDs and formulas",
+    "group valence",
+    "distinct label bounds",
+    "bond/glyph clearance including subscripts",
+    "positive bond length",
+    "cis/trans acid positions"
+  ],
+  "structures": [
+    {
+      "id": "methanol",
+      "formula": "CH4O",
+      "labels": [
+        "CH3",
+        "OH"
+      ],
+      "bonds": 1,
+      "bondLines": 1
+    },
+    {
+      "id": "ethanol",
+      "formula": "C2H6O",
+      "labels": [
+        "CH3",
+        "CH2",
+        "OH"
+      ],
+      "bonds": 2,
+      "bondLines": 2
+    },
+    {
+      "id": "1-propanol",
+      "formula": "C3H8O",
+      "labels": [
+        "CH3",
+        "CH2",
+        "CH2",
+        "OH"
+      ],
+      "bonds": 3,
+      "bondLines": 3
+    },
+    {
+      "id": "2-propanol",
+      "formula": "C3H8O",
+      "labels": [
+        "CH3",
+        "CH",
+        "CH3",
+        "OH"
+      ],
+      "bonds": 3,
+      "bondLines": 3
+    },
+    {
+      "id": "2-butanol",
+      "formula": "C4H10O",
+      "labels": [
+        "CH3",
+        "CH",
+        "CH2",
+        "CH3",
+        "OH"
+      ],
+      "bonds": 4,
+      "bondLines": 4
+    },
+    {
+      "id": "ethylene-glycol",
+      "formula": "C2H6O2",
+      "labels": [
+        "CH2",
+        "CH2",
+        "OH",
+        "OH"
+      ],
+      "bonds": 3,
+      "bondLines": 3
+    },
+    {
+      "id": "glycerol",
+      "formula": "C3H8O3",
+      "labels": [
+        "CH2",
+        "CH",
+        "CH2",
+        "OH",
+        "OH",
+        "OH"
+      ],
+      "bonds": 5,
+      "bondLines": 5
+    },
+    {
+      "id": "dimethyl-ether",
+      "formula": "C2H6O",
+      "labels": [
+        "CH3",
+        "O",
+        "CH3"
+      ],
+      "bonds": 2,
+      "bondLines": 2
+    },
+    {
+      "id": "diethyl-ether",
+      "formula": "C4H10O",
+      "labels": [
+        "CH3",
+        "CH2",
+        "O",
+        "CH2",
+        "CH3"
+      ],
+      "bonds": 4,
+      "bondLines": 4
+    },
+    {
+      "id": "acetone",
+      "formula": "C3H6O",
+      "labels": [
+        "CH3",
+        "C",
+        "CH3",
+        "O"
+      ],
+      "bonds": 3,
+      "bondLines": 4
+    },
+    {
+      "id": "methyl-ethyl-ketone",
+      "formula": "C4H8O",
+      "labels": [
+        "CH3",
+        "C",
+        "CH2",
+        "CH3",
+        "O"
+      ],
+      "bonds": 4,
+      "bondLines": 5
+    },
+    {
+      "id": "formaldehyde",
+      "formula": "CH2O",
+      "labels": [
+        "H",
+        "C",
+        "H",
+        "O"
+      ],
+      "bonds": 3,
+      "bondLines": 4
+    },
+    {
+      "id": "acetaldehyde",
+      "formula": "C2H4O",
+      "labels": [
+        "CH3",
+        "C",
+        "H",
+        "O"
+      ],
+      "bonds": 3,
+      "bondLines": 4
+    },
+    {
+      "id": "propionaldehyde",
+      "formula": "C3H6O",
+      "labels": [
+        "CH3",
+        "CH2",
+        "C",
+        "H",
+        "O"
+      ],
+      "bonds": 4,
+      "bondLines": 5
+    },
+    {
+      "id": "formic-acid",
+      "formula": "CH2O2",
+      "labels": [
+        "H",
+        "C",
+        "OH",
+        "O"
+      ],
+      "bonds": 3,
+      "bondLines": 4
+    },
+    {
+      "id": "acetic-acid",
+      "formula": "C2H4O2",
+      "labels": [
+        "CH3",
+        "C",
+        "OH",
+        "O"
+      ],
+      "bonds": 3,
+      "bondLines": 4
+    },
+    {
+      "id": "propionic-acid",
+      "formula": "C3H6O2",
+      "labels": [
+        "CH3",
+        "CH2",
+        "C",
+        "OH",
+        "O"
+      ],
+      "bonds": 4,
+      "bondLines": 5
+    },
+    {
+      "id": "lactic-acid",
+      "formula": "C3H6O3",
+      "labels": [
+        "CH3",
+        "CH",
+        "C",
+        "OH",
+        "OH",
+        "O"
+      ],
+      "bonds": 5,
+      "bondLines": 6
+    },
+    {
+      "id": "fumaric-acid",
+      "formula": "C4H4O4",
+      "labels": [
+        "C",
+        "C",
+        "C",
+        "H",
+        "O",
+        "HO",
+        "C",
+        "H",
+        "O",
+        "OH"
+      ],
+      "bonds": 9,
+      "bondLines": 12
+    },
+    {
+      "id": "maleic-acid",
+      "formula": "C4H4O4",
+      "labels": [
+        "C",
+        "C",
+        "C",
+        "H",
+        "O",
+        "HO",
+        "C",
+        "H",
+        "O",
+        "OH"
+      ],
+      "bonds": 9,
+      "bondLines": 12
+    },
+    {
+      "id": "methyl-formate",
+      "formula": "C2H4O2",
+      "labels": [
+        "H",
+        "C",
+        "O",
+        "CH3",
+        "O"
+      ],
+      "bonds": 4,
+      "bondLines": 5
+    },
+    {
+      "id": "methyl-acetate",
+      "formula": "C3H6O2",
+      "labels": [
+        "CH3",
+        "C",
+        "O",
+        "CH3",
+        "O"
+      ],
+      "bonds": 4,
+      "bondLines": 5
+    },
+    {
+      "id": "ethyl-acetate",
+      "formula": "C4H8O2",
+      "labels": [
+        "CH3",
+        "C",
+        "O",
+        "CH2",
+        "CH3",
+        "O"
+      ],
+      "bonds": 5,
+      "bondLines": 6
+    },
+    {
+      "id": "acetic-anhydride",
+      "formula": "C4H6O3",
+      "labels": [
+        "CH3",
+        "C",
+        "O",
+        "C",
+        "CH3",
+        "O",
+        "O"
+      ],
+      "bonds": 6,
+      "bondLines": 8
+    },
+    {
+      "id": "iodoform",
+      "formula": "CHI3",
+      "labels": [
+        "I",
+        "CH",
+        "I",
+        "I"
+      ],
+      "bonds": 3,
+      "bondLines": 3
+    },
+    {
+      "id": "palmitic-acid",
+      "formula": "C16H32O2",
+      "labels": [
+        "CH3",
+        "(CH2)14",
+        "C",
+        "OH",
+        "O"
+      ],
+      "bonds": 4,
+      "bondLines": 5
+    },
+    {
+      "id": "stearic-acid",
+      "formula": "C18H36O2",
+      "labels": [
+        "CH3",
+        "(CH2)16",
+        "C",
+        "OH",
+        "O"
+      ],
+      "bonds": 4,
+      "bondLines": 5
+    },
+    {
+      "id": "oxalic-acid",
+      "formula": "C2H2O4",
+      "labels": [
+        "HO",
+        "C",
+        "C",
+        "OH",
+        "O",
+        "O"
+      ],
+      "bonds": 5,
+      "bondLines": 7
+    },
+    {
+      "id": "2-methyl-2-propanol",
+      "formula": "C4H10O",
+      "labels": [
+        "CH3",
+        "C",
+        "CH3",
+        "OH",
+        "CH3"
+      ],
+      "bonds": 4,
+      "bondLines": 4
+    },
+    {
+      "id": "1-butanol",
+      "formula": "C4H10O",
+      "labels": [
+        "CH3",
+        "CH2",
+        "CH2",
+        "CH2",
+        "OH"
+      ],
+      "bonds": 4,
+      "bondLines": 4
+    },
+    {
+      "id": "butyric-acid",
+      "formula": "C4H8O2",
+      "labels": [
+        "CH3",
+        "CH2",
+        "CH2",
+        "C",
+        "OH",
+        "O"
+      ],
+      "bonds": 5,
+      "bondLines": 6
+    }
+  ]
+}
