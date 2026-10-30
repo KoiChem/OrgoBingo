@@ -36,5 +36,26 @@
       "butyric-acid",
       "maleic-anhydride"
     ]
+  },
+  {
+    "id": "1d12f18d-849c-40c6-abe9-2d5f04cdf9ca",
+    "name": "カルボン酸～",
+    "compoundIds": [
+      "formic-acid",
+      "acetic-acid",
+      "propionic-acid",
+      "lactic-acid",
+      "fumaric-acid",
+      "maleic-acid",
+      "methyl-formate",
+      "methyl-acetate",
+      "ethyl-acetate",
+      "acetic-anhydride",
+      "palmitic-acid",
+      "stearic-acid",
+      "oxalic-acid",
+      "butyric-acid",
+      "maleic-anhydride"
+    ]
   }
 ]
