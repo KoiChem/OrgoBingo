@@ -25,3 +25,15 @@ test('initial master, structures, vocabularies and sets are consistent', () => {
   assert.deepEqual(anhydride.functionalGroups,['酸無水物','炭素間不飽和結合']);
   assert.equal(sets.find(s=>s.id==='oxygenated-aliphatic').compoundIds.at(-1),'maleic-anhydride');
 });
+test('C1 and C2 structures show every hydrogen as a bonded atom', () => {
+  const layouts = require('../tools/structures/layouts.json');
+  const targets = compounds.filter(c => /^C(?:H|2H)/.test(c.formula));
+  assert.equal(targets.length, 11);
+  for (const c of targets) {
+    const d = layouts[c.id];
+    assert(d.labels.every(n => ['C','H','O','I'].includes(n.text)), c.id);
+    const expected = Number(c.formula.match(/H(\d*)/)[1] || 1);
+    assert.equal(d.labels.filter(n=>n.text==='H').length, expected, c.id);
+    d.labels.forEach((n,i)=>{if(n.text==='H')assert.equal(d.bonds.filter(b=>b[0]===i||b[1]===i).length,1,c.id);});
+  }
+});

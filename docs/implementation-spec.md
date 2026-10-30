@@ -1504,3 +1504,8 @@ YAGNIを徹底する。
 - [GitHub：Git references](https://docs.github.com/en/rest/git/refs#update-a-reference)。ref更新はfast-forward限定とする。
 - [IUPAC：alkenes](https://goldbook.iupac.org/terms/view/A00224.html)。炭素間不飽和結合を持つことと、化合物自体がアルケンであることを区別する。
 - [PubChem：乳酸](https://pubchem.ncbi.nlm.nih.gov/compound/612)、[フマル酸](https://pubchem.ncbi.nlm.nih.gov/compound/444972)、[マレイン酸](https://pubchem.ncbi.nlm.nih.gov/compound/444266)。化学データ・構造式の確認に用いる。SVG作成時には全32種の構造と表記を確認し、必要な出典URLを残す。
+
+## 2026-10-30 表示の追加確定事項
+
+- シャッフル候補は通常表示の95%サイズ、黒を不透明度20%で白地に重ねた淡いグレー（#ccc相当）。確定後は黒・通常サイズに戻す。名称／構造式の両モードに適用し、履歴・設定・印刷には適用しない。
+- 炭素数1・2の11化合物では、すべてのHを独立した原子と価標で表示する。OHのHもO–Hに展開する。3炭素以上は既存の半構造式を維持する。上表の縮合表記は結合内容の参考であり、実際のSVGはこの規則を優先する。

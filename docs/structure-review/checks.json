@@ -29,22 +29,32 @@
       "id": "methanol",
       "formula": "CH4O",
       "labels": [
-        "CH3",
-        "OH"
+        "H",
+        "C",
+        "O",
+        "H",
+        "H",
+        "H"
       ],
-      "bonds": 1,
-      "bondLines": 1
+      "bonds": 5,
+      "bondLines": 5
     },
     {
       "id": "ethanol",
       "formula": "C2H6O",
       "labels": [
-        "CH3",
-        "CH2",
-        "OH"
+        "H",
+        "C",
+        "C",
+        "O",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H"
       ],
-      "bonds": 2,
-      "bondLines": 2
+      "bonds": 8,
+      "bondLines": 8
     },
     {
       "id": "1-propanol",
@@ -87,13 +97,19 @@
       "id": "ethylene-glycol",
       "formula": "C2H6O2",
       "labels": [
-        "CH2",
-        "CH2",
-        "OH",
-        "OH"
+        "H",
+        "O",
+        "C",
+        "C",
+        "O",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H"
       ],
-      "bonds": 3,
-      "bondLines": 3
+      "bonds": 9,
+      "bondLines": 9
     },
     {
       "id": "glycerol",
@@ -113,12 +129,18 @@
       "id": "dimethyl-ether",
       "formula": "C2H6O",
       "labels": [
-        "CH3",
+        "H",
+        "C",
         "O",
-        "CH3"
+        "C",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H"
       ],
-      "bonds": 2,
-      "bondLines": 2
+      "bonds": 8,
+      "bondLines": 8
     },
     {
       "id": "diethyl-ether",
@@ -174,13 +196,16 @@
       "id": "acetaldehyde",
       "formula": "C2H4O",
       "labels": [
-        "CH3",
+        "H",
         "C",
+        "C",
+        "H",
+        "H",
         "H",
         "O"
       ],
-      "bonds": 3,
-      "bondLines": 4
+      "bonds": 6,
+      "bondLines": 7
     },
     {
       "id": "propionaldehyde",
@@ -201,23 +226,28 @@
       "labels": [
         "H",
         "C",
-        "OH",
+        "O",
+        "H",
         "O"
       ],
-      "bonds": 3,
-      "bondLines": 4
+      "bonds": 4,
+      "bondLines": 5
     },
     {
       "id": "acetic-acid",
       "formula": "C2H4O2",
       "labels": [
-        "CH3",
+        "H",
         "C",
-        "OH",
+        "C",
+        "O",
+        "H",
+        "H",
+        "H",
         "O"
       ],
-      "bonds": 3,
-      "bondLines": 4
+      "bonds": 7,
+      "bondLines": 8
     },
     {
       "id": "propionic-acid",
@@ -289,11 +319,14 @@
         "H",
         "C",
         "O",
-        "CH3",
-        "O"
+        "C",
+        "H",
+        "O",
+        "H",
+        "H"
       ],
-      "bonds": 4,
-      "bondLines": 5
+      "bonds": 7,
+      "bondLines": 8
     },
     {
       "id": "methyl-acetate",
@@ -342,12 +375,13 @@
       "formula": "CHI3",
       "labels": [
         "I",
-        "CH",
+        "C",
         "I",
-        "I"
+        "I",
+        "H"
       ],
-      "bonds": 3,
-      "bondLines": 3
+      "bonds": 4,
+      "bondLines": 4
     },
     {
       "id": "palmitic-acid",
@@ -379,15 +413,17 @@
       "id": "oxalic-acid",
       "formula": "C2H2O4",
       "labels": [
-        "HO",
+        "H",
+        "O",
         "C",
         "C",
-        "OH",
+        "O",
+        "H",
         "O",
         "O"
       ],
-      "bonds": 5,
-      "bondLines": 7
+      "bonds": 7,
+      "bondLines": 9
     },
     {
       "id": "2-methyl-2-propanol",
