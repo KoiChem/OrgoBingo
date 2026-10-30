@@ -2,7 +2,7 @@
 
 ## 再生成
 
-`python3 tools/structures/generate.py` を実行する。Python標準ライブラリのみで全31種を再生成し、化合物ID・分子式・原子団の価数・文字の重なり・添字を含む価標との衝突・cis/transを検査する。SVGのパスは直接編集しない。
+`python3 tools/structures/generate.py` を実行する。Python標準ライブラリのみでマスターに登録された全種を再生成し、化合物ID・分子式・原子団の価数・文字の重なり・添字を含む価標との衝突・cis/transを検査する。SVGのパスは直接編集しない。
 
 生成元は `tools/structures/generate.py` の各化合物の定義。`layouts.json` は出力される座標記録。新規登録時は化合物マスターと生成定義を併せて更新し、全件検査する。
 

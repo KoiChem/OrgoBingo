@@ -1,5 +1,13 @@
 # 初期化合物の出典
 
+2026-10-30追記：無水マレイン酸（`maleic-anhydride`）を追加。PubChem PUG RESTのCID 7923から分子式 `C4H2O3` とConnectivitySMILES `C1=CC(=O)OC1=O` を取得し、五員環、2個のC=O、1個のC=C、架橋酸素を確認した。
+
+- [PubChem CID 7923](https://pubchem.ncbi.nlm.nih.gov/compound/7923)
+- [PubChem PUG REST](https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/7923/property/MolecularFormula,CanonicalSMILES/JSON)
+- [NIOSH：Maleic anhydride](https://www.cdc.gov/niosh/npg/npgd0376.html)
+
+マスターと初期セットの末尾へ追加し、任意セットへの自動追加はしない。分類は酸無水物・炭素間不飽和結合、骨格は脂肪族（非芳香族）、タグなし。
+
 2026-10-29にPubChem PUG RESTで31件の分子式とSMILESを取得し、初期データと構造表記を照合。フマル酸・マレイン酸は幾何異性も確認。
 
 | ID | PubChem |

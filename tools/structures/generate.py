@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate the 31 teaching semi-structural SVGs; no third-party dependencies."""
+"""Generate teaching semi-structural SVGs; no third-party dependencies."""
 import json, math, re, html, hashlib
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[2]
@@ -74,6 +74,18 @@ def build():
     for id,ls in [('methyl-formate',['H','C','O','CH3']),('methyl-acetate',['CH3','C','O','CH3']),('ethyl-acetate',['CH3','C','O','CH2','CH3'])]:chain(id,ls,[(1,'O',True,2)])
     chain('acetic-anhydride',['CH3','C','O','C','CH3'],[(1,'O',True,2),(3,'O',True,2)])
     chain('iodoform',['I','CH','I'],[(1,'I',True,1)])
+    # Five-membered cyclic anhydride: O-C(=O)-C(H)=C(H)-C(=O).
+    d=Drawing()
+    oxygen=d.add('O',0,-95)
+    left=d.add('C',-100,-25);right=d.add('C',100,-25)
+    alkene_left=d.add('C',-65,90);alkene_right=d.add('C',65,90)
+    d.bond(oxygen,left);d.bond(oxygen,right)
+    d.bond(left,alkene_left);d.bond(right,alkene_right);d.bond(alkene_left,alkene_right,2)
+    for carbon,side in [(left,-1),(right,1)]:
+        out=d.add('O',side*190,-80);d.bond(carbon,out,2)
+    for carbon,side in [(alkene_left,-1),(alkene_right,1)]:
+        hydrogen=d.add('H',side*125,165);d.bond(carbon,hydrogen)
+    drawings['maleic-anhydride']=d
     for id,cis in [('maleic-acid',True),('fumaric-acid',False)]:
         d=Drawing();left=d.add('C',0);right=d.add('C',95);d.bond(left,right,2)
         for center,side,up in [(left,-1,True),(right,1,cis)]:
@@ -153,5 +165,5 @@ if __name__=='__main__':
     master=json.loads((ROOT/'data/compounds.json').read_text());drawings=build();report=validate(drawings,master)
     for m in master:(ROOT/m['structureSvg']).write_text(render(m['id'],drawings[m['id']],m['nameJa']))
     (HERE/'layouts.json').write_text(json.dumps({id:{'labels':[{k:n[k] for k in ['text','x','y','anchor']} for n in d.nodes],'bonds':d.bonds} for id,d in drawings.items()},ensure_ascii=False,indent=2)+'\n')
-    (ROOT/'docs/structure-review/checks.json').write_text(json.dumps({'style':STYLE,'font':{k:FONT[k] for k in ['font','version','size']},'fontSHA256':hashlib.sha256((HERE/'fonts/LiberationSans-Regular.ttf').read_bytes()).hexdigest(),'checks':['31 master IDs and formulas','group valence','distinct label bounds','bond/glyph clearance including subscripts','positive bond length','cis/trans acid positions'],'structures':report},ensure_ascii=False,indent=2)+'\n')
+    (ROOT/'docs/structure-review/checks.json').write_text(json.dumps({'style':STYLE,'font':{k:FONT[k] for k in ['font','version','size']},'fontSHA256':hashlib.sha256((HERE/'fonts/LiberationSans-Regular.ttf').read_bytes()).hexdigest(),'checks':[f'{len(master)} master IDs and formulas','group valence','distinct label bounds','bond/glyph clearance including subscripts','positive bond length','cis/trans acid positions'],'structures':report},ensure_ascii=False,indent=2)+'\n')
     print(f'Generated and checked {len(drawings)} SVGs.')

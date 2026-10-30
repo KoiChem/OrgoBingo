@@ -17,7 +17,7 @@
   },
   "fontSHA256": "76d04c18ea243f426b7de1f3ad208e927008f961dc5945e5aad352d0dfde8ee8",
   "checks": [
-    "31 master IDs and formulas",
+    "32 master IDs and formulas",
     "group valence",
     "distinct label bounds",
     "bond/glyph clearance including subscripts",
@@ -428,6 +428,23 @@
       ],
       "bonds": 5,
       "bondLines": 6
+    },
+    {
+      "id": "maleic-anhydride",
+      "formula": "C4H2O3",
+      "labels": [
+        "O",
+        "C",
+        "C",
+        "C",
+        "C",
+        "O",
+        "O",
+        "H",
+        "H"
+      ],
+      "bonds": 9,
+      "bondLines": 12
     }
   ]
 }

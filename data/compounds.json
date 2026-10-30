@@ -450,5 +450,19 @@
     "tags": [],
     "structureSvg": "structures/butyric-acid.svg",
     "note": ""
+  },
+  {
+    "id": "maleic-anhydride",
+    "nameJa": "無水マレイン酸",
+    "nameEn": "Maleic anhydride",
+    "formula": "C4H2O3",
+    "functionalGroups": [
+      "酸無水物",
+      "炭素間不飽和結合"
+    ],
+    "skeletonCategory": "脂肪族",
+    "tags": [],
+    "structureSvg": "structures/maleic-anhydride.svg",
+    "note": ""
   }
 ]

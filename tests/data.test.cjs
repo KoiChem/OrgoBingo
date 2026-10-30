@@ -5,7 +5,7 @@ const compounds = require('../data/compounds.json');
 const sets = require('../data/bingo-sets.json');
 const categories = require('../data/categories.json');
 test('initial master, structures, vocabularies and sets are consistent', () => {
-  assert.equal(compounds.length, 31);
+  assert.equal(compounds.length, 32);
   const ids = new Set(compounds.map(c => c.id));
   assert.equal(ids.size, compounds.length);
   for (const c of compounds) {
@@ -20,4 +20,8 @@ test('initial master, structures, vocabularies and sets are consistent', () => {
   }
   for (const id of ['fumaric-acid','maleic-acid']) assert(compounds.find(c => c.id === id).functionalGroups.includes('炭素間不飽和結合'));
   assert(compounds.find(c => c.id === 'lactic-acid').tags.includes('第二級アルコール'));
+  const anhydride=compounds.find(c=>c.id==='maleic-anhydride');
+  assert.equal(anhydride.formula,'C4H2O3');
+  assert.deepEqual(anhydride.functionalGroups,['酸無水物','炭素間不飽和結合']);
+  assert.equal(sets.find(s=>s.id==='oxygenated-aliphatic').compoundIds.at(-1),'maleic-anhydride');
 });
