@@ -1,6 +1,6 @@
 (function(root){
 'use strict';
-const VERSION='20261030-7';
+const VERSION='20261030-8';
 function pages(items,capacity){
  if(capacity!==20&&capacity!==30)throw new Error('印刷件数が不正です。');
  const result=[];for(let i=0;i<items.length;i+=capacity)result.push(items.slice(i,i+capacity));return result;
