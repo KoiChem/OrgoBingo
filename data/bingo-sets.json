@@ -1,7 +1,7 @@
 [
   {
     "id": "oxygenated-aliphatic",
-    "name": "酸素を含む脂肪族化合物（関連含む）",
+    "name": "アルコール～エステル",
     "compoundIds": [
       "methanol",
       "ethanol",
