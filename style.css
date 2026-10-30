@@ -12,7 +12,7 @@ dialog.settings{width:98vw;height:96dvh;max-height:96dvh;padding:18px}#settings-
 /* Let settings lists use the available dialog height. */
 #settings-dialog[open],#add-dialog[open]{display:flex;flex-direction:column;overflow:auto}
 #settings-dialog>*,#add-dialog>*{flex-shrink:0}
-#settings-dialog>#set-panel,#settings-dialog>#master-panel{display:flex;flex-direction:column;flex:1;min-height:180px}
+#settings-dialog>#set-panel:not([hidden]),#settings-dialog>#master-panel:not([hidden]){display:flex;flex-direction:column;flex:1;min-height:180px}
 #set-panel>.table-wrap{flex:1;min-height:180px;max-height:none;margin-top:8px}
 #master-panel>.master-workspace{flex:1;min-height:180px;align-items:stretch}
 .master-workspace>.master-list,.master-workspace>#compound-editor{min-height:0;max-height:none;overflow:auto;position:static}
