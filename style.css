@@ -20,3 +20,4 @@ dialog.settings{width:98vw;height:96dvh;max-height:96dvh;padding:18px}#settings-
 #add-dialog>#add-list{flex:1;min-height:100px;max-height:none}
 #add-summary{margin-right:8px}.registered{color:#52606d;background:#edf1f5;border-radius:4px;padding:3px 8px;flex:none}
 @media(max-height:650px){#master-panel>.master-workspace{flex:none;height:300px}}
+.csv-dialog{width:min(94vw,800px)}.csv-dialog>.toolbar,.csv-dialog>.choice-buttons{margin:14px 0;gap:10px}.csv-dialog select{min-height:44px;max-width:100%}
