@@ -7,7 +7,7 @@ const expected={
  'メタン':'CH4','エタン':'C2H6','プロパン':'C3H8','ブタン':'C4H10','ペンタン':'C5H12','ヘキサン':'C6H14',
  '2-メチルプロパン':'C4H10','2-メチルブタン':'C5H12','2,3-ジメチルブタン':'C6H14',
  'シクロプロパン':'C3H6','シクロブタン':'C4H8','シクロペンタン':'C5H10','シクロヘキサン':'C6H12',
- 'エチレン':'C2H4','プロペン':'C3H6','1-ブテン':'C4H8','シス-2-ブテン':'C4H8','トランス-2-ブテン':'C4H8','2-メチルプロペン':'C4H8','2-ペンテン':'C5H10','1,3-ブタジエン':'C4H6','シクロペンテン':'C5H8','シクロヘキセン':'C6H10',
+ 'エチレン':'C2H4','プロペン':'C3H6','1-ブテン':'C4H8','シス-2-ブテン':'C4H8','トランス-2-ブテン':'C4H8','2-メチルプロペン':'C4H8','シス-2-ペンテン':'C5H10','1,3-ブタジエン':'C4H6','シクロペンテン':'C5H8','シクロヘキセン':'C6H10',
  'アセチレン':'C2H2','プロピン':'C3H4','1-ブチン':'C4H6','2-ブチン':'C4H6','3-メチル-1-ブチン':'C5H8',
  'クロロメタン':'CH3Cl','ジクロロメタン':'CH2Cl2','トリクロロメタン':'CHCl3','テトラクロロメタン':'CCl4','クロロエタン':'C2H5Cl','1,2-ジクロロエタン':'C2H4Cl2','1,2-ジブロモエタン':'C2H4Br2','1,1,2,2-テトラブロモエタン':'C2H2Br4','塩化ビニル':'C2H3Cl',
  'エタノール':'C2H6O','アセトアルデヒド':'C2H4O','酢酸ビニル':'C4H6O2','ポリエチレン':'(C2H4)n','ポリアセチレン':'(C2H2)n','ベンゼン':'C6H6','アクリロニトリル':'C3H3N'
@@ -34,7 +34,11 @@ test('cis and trans 2-butene show opposite stereochemical arrangements',()=>{
  const layouts=require('../tools/structures/layouts.json');
  const side=id=>{const d=layouts[id],bond=d.bonds.find(b=>b[2]===2),[a,b]=bond, p=d.labels[a],q=d.labels[b];const methyls=d.bonds.filter(([i,j])=>(i===a||i===b)&&['H3C','CH3'].includes(d.labels[j].text)).map(([,j])=>d.labels[j]);assert.equal(methyls.length,2,id);return methyls.map(m=>(q.x-p.x)*(m.y-p.y)-(q.y-p.y)*(m.x-p.x));};
  const cis=side('cis-2-butene'),trans=side('trans-2-butene');assert(cis[0]*cis[1]>0);assert(trans[0]*trans[1]<0);
- assert.match(byName.get('2-ペンテン').note,/指定/);
+ const pentene=byName.get('シス-2-ペンテン');assert(pentene);assert(pentene.tags.includes('cis'));
+ const d=layouts[pentene.id], [a,b]=d.bonds.find(e=>e[2]===2),p=d.labels[a],q=d.labels[b];
+ const subs=d.bonds.filter(([i,j])=>(i===a||i===b)&&['H3C','CH2'].includes(d.labels[j].text)).map(([,j])=>d.labels[j]);
+ assert.equal(subs.length,2);const sides=subs.map(m=>(q.x-p.x)*(m.y-p.y)-(q.y-p.y)*(m.x-p.x));assert(sides[0]*sides[1]>0);
+ assert(d.bonds.some(([i,j])=>d.labels[i].text==='CH2'&&d.labels[j].text==='CH3'));
 });
 test('polymer structures identify connected repeat units',()=>{
  const layouts=require('../tools/structures/layouts.json');

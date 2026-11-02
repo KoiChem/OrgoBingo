@@ -50,7 +50,7 @@
 
 ## 脂肪族化合物の追加（2026-11-02）
 
-PubChemの分子式と重原子の結合・結合次数を図の結合グラフと照合した。シス・トランスは別途幾何配置を検査した。2-ペンテンは立体配置を指定しない。
+PubChemの分子式と重原子の結合・結合次数を図の結合グラフと照合した。シス・トランスは別途幾何配置を検査した。2-ペンテンはシス体を登録する。
 
 | ID | PubChem |
 | --- | --- |
@@ -73,7 +73,7 @@ PubChemの分子式と重原子の結合・結合次数を図の結合グラフ�
 | cis-2-butene | [CID 5287573](https://pubchem.ncbi.nlm.nih.gov/compound/5287573) |
 | trans-2-butene | [CID 62695](https://pubchem.ncbi.nlm.nih.gov/compound/62695) |
 | 2-methylpropene | [CID 8255](https://pubchem.ncbi.nlm.nih.gov/compound/8255) |
-| 2-pentene | [CID 12585](https://pubchem.ncbi.nlm.nih.gov/compound/12585) |
+| 2-pentene（シス体） | [CID 5326160](https://pubchem.ncbi.nlm.nih.gov/compound/5326160) |
 | 13-butadiene | [CID 7845](https://pubchem.ncbi.nlm.nih.gov/compound/7845) |
 | cyclopentene | [CID 8882](https://pubchem.ncbi.nlm.nih.gov/compound/8882) |
 | cyclohexene | [CID 8079](https://pubchem.ncbi.nlm.nih.gov/compound/8079) |

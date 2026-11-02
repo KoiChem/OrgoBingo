@@ -1316,16 +1316,18 @@
   },
   {
     "id": "2-pentene",
-    "nameJa": "2-ペンテン",
-    "nameEn": "2-Pentene",
+    "nameJa": "シス-2-ペンテン",
+    "nameEn": "cis-2-Pentene",
     "formula": "C5H10",
     "functionalGroups": [
       "炭素間不飽和結合"
     ],
     "skeletonCategory": "脂肪族",
-    "tags": [],
+    "tags": [
+      "cis"
+    ],
     "structureSvg": "structures/2-pentene.svg",
-    "note": "シス・トランスを指定しない"
+    "note": ""
   },
   {
     "id": "13-butadiene",

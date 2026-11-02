@@ -1546,14 +1546,16 @@
       "id": "2-pentene",
       "formula": "C5H10",
       "labels": [
+        "C",
+        "C",
         "H3C",
-        "CH",
-        "CH",
         "CH2",
-        "CH3"
+        "CH3",
+        "H",
+        "H"
       ],
-      "bonds": 4,
-      "bondLines": 5
+      "bonds": 6,
+      "bondLines": 7
     },
     {
       "id": "13-butadiene",

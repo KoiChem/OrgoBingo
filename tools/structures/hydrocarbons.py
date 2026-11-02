@@ -22,7 +22,7 @@ COMPOUNDS=[
  ('cis-2-butene','シス-2-ブテン','cis-2-Butene','C4H8',['炭素間不飽和結合'],['cis'],''),
  ('trans-2-butene','トランス-2-ブテン','trans-2-Butene','C4H8',['炭素間不飽和結合'],['trans'],''),
  ('2-methylpropene','2-メチルプロペン','2-Methylpropene','C4H8',['炭素間不飽和結合'],[],''),
- ('2-pentene','2-ペンテン','2-Pentene','C5H10',['炭素間不飽和結合'],[],'シス・トランスを指定しない'),
+ ('2-pentene','シス-2-ペンテン','cis-2-Pentene','C5H10',['炭素間不飽和結合'],['cis'],''),
  ('13-butadiene','1,3-ブタジエン','1,3-Butadiene','C4H6',['炭素間不飽和結合'],[],''),
  ('cyclopentene','シクロペンテン','Cyclopentene','C5H8',['炭素間不飽和結合'],[],''),
  ('cyclohexene','シクロヘキセン','Cyclohexene','C6H10',['炭素間不飽和結合'],[],''),
@@ -83,7 +83,13 @@ def add_hydrocarbons(drawings,Drawing):
             hydrogen=d.add('H',p['x']+side*65,-y);d.bond(center,hydrogen)
         drawings[id]=d
     chain('2-methylpropene',['H2C','C','CH3'],orders={0:2},branches=[(1,'CH3',True)])
-    chain('2-pentene',['H3C','CH','CH','CH2','CH3'],orders={1:2})
+    # cis-2-pentene: the methyl and ethyl groups lie on the same side.
+    d=Drawing();left=d.add('C',0);right=d.add('C',110);d.bond(left,right,2)
+    methyl=d.add('H3C',-90,-84,2);ethyl=d.add('CH2',200,-84);terminal=d.add('CH3',320,-84)
+    d.bond(left,methyl);d.bond(right,ethyl);d.bond(ethyl,terminal)
+    for carbon,x in [(left,-65),(right,175)]:
+        hydrogen=d.add('H',x,84);d.bond(carbon,hydrogen)
+    drawings['2-pentene']=d
     chain('13-butadiene',['H2C','CH','CH','CH2'],orders={0:2,2:2})
     chain('acetylene',['H','C','C','H'],orders={1:3})
     chain('propyne',['H','C','C','CH3'],orders={1:3})
