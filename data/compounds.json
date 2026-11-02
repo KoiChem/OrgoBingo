@@ -1075,5 +1075,18 @@
     "tags": [],
     "structureSvg": "structures/sodium-ethoxide.svg",
     "note": ""
+  },
+  {
+    "id": "246-trinitrotoluene",
+    "nameJa": "2,4,6-トリニトロトルエン",
+    "nameEn": "2,4,6-Trinitrotoluene",
+    "formula": "C7H5N3O6",
+    "functionalGroups": [
+      "ニトロ化合物"
+    ],
+    "skeletonCategory": "芳香族",
+    "tags": [],
+    "structureSvg": "structures/246-trinitrotoluene.svg",
+    "note": "TNT"
   }
 ]

@@ -17,7 +17,7 @@
   },
   "fontSHA256": "76d04c18ea243f426b7de1f3ad208e927008f961dc5945e5aad352d0dfde8ee8",
   "checks": [
-    "79 master IDs and formulas",
+    "80 master IDs and formulas",
     "group valence",
     "distinct label bounds",
     "bond/glyph clearance including subscripts",
@@ -586,7 +586,7 @@
         "",
         "",
         "CH3",
-        "CH3"
+        "H3C"
       ],
       "bonds": 8,
       "bondLines": 11
@@ -843,7 +843,7 @@
         "",
         "",
         "OH",
-        "CH3"
+        "H3C"
       ],
       "bonds": 8,
       "bondLines": 11
@@ -931,8 +931,8 @@
         "",
         "OH",
         "NO2",
-        "O2N",
-        "NO2"
+        "NO2",
+        "O2N"
       ],
       "bonds": 10,
       "bondLines": 13
@@ -1057,7 +1057,7 @@
         "OH",
         "C",
         "O",
-        "HO"
+        "OH"
       ],
       "bonds": 12,
       "bondLines": 17
@@ -1278,6 +1278,24 @@
       ],
       "bonds": 7,
       "bondLines": 7
+    },
+    {
+      "id": "246-trinitrotoluene",
+      "formula": "C7H5N3O6",
+      "labels": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "CH3",
+        "NO2",
+        "NO2",
+        "O2N"
+      ],
+      "bonds": 10,
+      "bondLines": 13
     }
   ]
 }

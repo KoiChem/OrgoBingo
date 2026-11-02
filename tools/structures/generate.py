@@ -33,7 +33,7 @@ def molecular_formula(counts):
     return ''.join(e+(str(counts[e]) if counts[e]!=1 else '') for e in ['C','H']+sorted(set(counts)-{'C','H'}) if counts.get(e))
 
 class Drawing:
-    def __init__(self):self.nodes=[];self.bonds=[];self.ringBonds={}
+    def __init__(self):self.nodes=[];self.bonds=[];self.ringBonds={};self.ringCenters={}
     def add(self,s,x,y=0,a=0):self.nodes.append(label(s,x,y,a));return len(self.nodes)-1
     def carbon(self,x,y):
         self.nodes.append({'text':'','x':x,'y':y,'anchor':0,'chars':[],'box':[x,y,x,y],'atomBox':[x,y,x,y]});return len(self.nodes)-1
@@ -116,7 +116,7 @@ def bond_segments(d):
         p,q=d.nodes[a],d.nodes[b];dx=q['x']-p['x'];dy=q['y']-p['y'];length=math.hypot(dx,dy);ux,uy=dx/length,dy/length
         def endpoint(n,vx,vy):
             if not n['text']:return n['x'],n['y']
-            box=n['box'] if abs(vy)<.01 else n['atomBox'];cx,cy=n['x'],n['y']
+            box=n['box'] if abs(vy)<.01 or d.ringBonds else n['atomBox'];cx,cy=n['x'],n['y']
             ts=[]
             if vx>0:ts.append((box[2]-cx)/vx)
             elif vx<0:ts.append((box[0]-cx)/vx)
@@ -127,7 +127,7 @@ def bond_segments(d):
         assert (x2-x1)*ux+(y2-y1)*uy>12,(p['text'],q['text'])
         if (a,b) in d.ringBonds and order==2:
             cx,cy=d.ringBonds[(a,b)];side=1 if (-uy*(cx-(x1+x2)/2)+ux*(cy-(y1+y2)/2))>0 else -1
-            result.append((x1,y1,x2,y2));off=side*STYLE['doubleGap'];trim=9
+            result.append((x1,y1,x2,y2));off=side*length*.12;trim=length*.12
             result.append((x1+ux*trim-uy*off,y1+uy*trim+ux*off,x2-ux*trim-uy*off,y2-uy*trim+ux*off))
         else:
             for offset in ([0] if order==1 else ([-STYLE['doubleGap']/2,STYLE['doubleGap']/2] if order==2 else [-STYLE['doubleGap'],0,STYLE['doubleGap']])):result.append((x1-uy*offset,y1+ux*offset,x2-uy*offset,y2+ux*offset))
@@ -164,6 +164,17 @@ def validate(drawings,master):
             expected={'ONa':1,'SO3H':1,'SO3Na':1,'NO2':1,'O2N':1,'NH2':1,'NH3Cl':1,'N2Cl':1,'NH':2,'N':3,'Cl':1,'Br':1}.get(n['text'],expected)
             assert v==expected,(id,n['text'],v,expected)
         assert molecular_formula(counts)==m['formula'],(id,counts,m['formula'])
+        # User drawing convention: radial ring attachments and orthogonal side chains.
+        for a,b,order in d.bonds:
+            p,q=d.nodes[a],d.nodes[b]
+            if not p['text'] and q['text'] and a in d.ringCenters:
+                cx,cy=d.ringCenters[a];rx,ry=p['x']-cx,p['y']-cy
+                dx,dy=q['x']-p['x'],q['y']-p['y']
+                assert abs(rx*dy-ry*dx)<1e-5 and rx*dx+ry*dy>0,(id,'radial attachment')
+            elif p['text'] and q['text'] and d.ringBonds and id!='phthalic-anhydride':
+                if order==2 and p['text'].startswith(('C','N')) and q['text'].startswith(('C','N')):continue
+                assert abs(p['x']-q['x'])<1e-5 or abs(p['y']-q['y'])<1e-5,(id,'orthogonal side chain')
+
         # Distinct label glyph bounding boxes must not overlap.
         for i,a in enumerate(d.nodes):
             for b in d.nodes[i+1:]:

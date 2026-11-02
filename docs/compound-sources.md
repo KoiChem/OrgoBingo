@@ -43,3 +43,7 @@
 | 2-methyl-2-propanol | [CID 6386](https://pubchem.ncbi.nlm.nih.gov/compound/6386) |
 | 1-butanol | [CID 263](https://pubchem.ncbi.nlm.nih.gov/compound/263) |
 | butyric-acid | [CID 264](https://pubchem.ncbi.nlm.nih.gov/compound/264) |
+
+## 追加資料（2026-11-02）
+
+- 2,4,6-トリニトロトルエン（TNT）：[NIST Chemistry WebBook, CAS 118-96-7](https://webbook.nist.gov/cgi/cbook.cgi?ID=C118967)。分子式C7H5N3O6、メチル基に対して2,4,6位のニトロ基を照合。

@@ -26,6 +26,7 @@ COMPOUNDS=[
 *[(f'{p}-naphthol',f'{p}-ナフトール',f'{p}-Naphthol','C10H8O',['フェノール類'],[]) for p in [1,2]],
 ('sodium-phenoxide','ナトリウムフェノキシド','Sodium phenoxide','C6H5NaO',['フェノキシド'],[]),
 ('246-tribromophenol','2,4,6-トリブロモフェノール','2,4,6-Tribromophenol','C6H3Br3O',['フェノール類','ハロゲン化合物'],[]),
+('246-trinitrotoluene','2,4,6-トリニトロトルエン','2,4,6-Trinitrotoluene','C7H5N3O6',['ニトロ化合物'],[]),
 ('picric-acid','ピクリン酸','Picric acid','C6H3N3O7',['フェノール類','ニトロ化合物'],[]),
 ('phenyl-acetate','酢酸フェニル','Phenyl acetate','C8H8O2',['エステル'],[]),
 ('benzyl-alcohol','ベンジルアルコール','Benzyl alcohol','C7H8O',['アルコール'],['1価アルコール','第一級アルコール']),
@@ -49,20 +50,22 @@ COMPOUNDS=[
 ]
 
 def add_aromatics(drawings, Drawing):
-    def ring(d,cx=0,cy=0):
-        ids=[d.carbon(cx+90*math.cos(-i*math.pi/3),cy+90*math.sin(-i*math.pi/3)) for i in range(6)]
+    def ring(d,cx=0,cy=0,angle=0):
+        ids=[d.carbon(cx+90*math.cos(angle+i*math.pi/3),cy+90*math.sin(angle+i*math.pi/3)) for i in range(6)]
+        for n in ids:d.ringCenters[n]=(cx,cy)
         for i in range(6):
             a,b=ids[i],ids[(i+1)%6];d.bond(a,b,2 if i%2==0 else 1);d.ringBonds[(a,b)]=(cx,cy)
         return ids
     def attach(d,ns,pos,text):
-        p=d.nodes[ns[pos]];x,y=p['x'],p['y'];dx,dy=x/90,y/90
-        # Vertical branches at the upper/lower vertices leave room for expanded groups.
-        if pos in [1,2,4,5]:dx=0;dy=-1 if pos in [1,2] else 1
-        n=d.add(text,x+dx*100,y+dy*100,2 if text=='O2N' else 0);d.bond(ns[pos],n);return n
+        p=d.nodes[ns[pos]];x,y=p['x'],p['y']
+        if x < -1e-6:
+            text={'CH3':'H3C','NH2':'H2N','OH':'HO','NO2':'O2N'}.get(text,text)
+        anchor={'H3C':2,'H2N':2,'HO':1,'O2N':2}.get(text,0)
+        n=d.add(text,x*2.3,y*2.3,anchor);d.bond(ns[pos],n);return n
     def acid(d,ns,pos,end='OH'):
-        c=attach(d,ns,pos,'C');p=d.nodes[c];x,y=p['x'],p['y'];up=pos in [1,2]
+        c=attach(d,ns,pos,'C');p=d.nodes[c];x,y=p['x'],p['y'];up=y<0
         o=d.add('O',x,y+(-88 if up else 88));d.bond(c,o,2)
-        direction=-1 if pos in [2,3,4] else 1
+        direction=-1 if x<0 else 1
         e=d.add('HO' if end=='OH' and direction<0 else end,x+direction*110,y,1 if end=='OH' and direction<0 else 0);d.bond(c,e)
         return c,e
     def acetoxy(d,ns,pos):
@@ -76,6 +79,7 @@ def add_aromatics(drawings, Drawing):
         for i in range(10):
             a,b=ns[i],ns[(i+1)%10];d.bond(a,b,2 if i%2==0 else 1)
             d.ringBonds[(a,b)]=(90,-26) if i<5 else (-90,-26)
+        for i,n in enumerate(ns):d.ringCenters[n]=(90,-26) if i<6 else (-90,-26)
         d.bond(ns[0],ns[5]);return ns
     for id,ja,en,formula,groups,tags in COMPOUNDS:
         d=Drawing()
@@ -87,23 +91,29 @@ def add_aromatics(drawings, Drawing):
             if id!='naphthalene':
                 # alpha (1) is adjacent to a fused carbon; beta (2) is next along perimeter.
                 p=ns[1 if id=='1-naphthol' else 2];n=d.nodes[p]
-                o=d.add('OH',n['x']+(100 if id=='2-naphthol' else 0),n['y']+(-100 if id=='1-naphthol' else 0));d.bond(p,o)
+                dx,dy=n['x']-90,n['y']+26;length=math.hypot(dx,dy)
+                o=d.add('OH',n['x']+130*dx/length,n['y']+130*dy/length);d.bond(p,o)
         else:
-            ns=ring(d)
+            ortho=id.startswith('o-') or id in ['phthalic-acid','phthalic-anhydride','salicylic-acid','sodium-salicylate','methyl-salicylate','aspirin']
+            meta=id.startswith('m-') or id=='isophthalic-acid'
+            multi=id in ['picric-acid','246-tribromophenol','246-trinitrotoluene']
+            mono=not (ortho or meta or multi or id.startswith('p-') or id in ['benzene','terephthalic-acid']) or id=='p-phenylazophenol'
+            ns=ring(d,angle=-math.pi/6 if ortho or meta or mono else (-math.pi/2 if multi else 0))
             if id=='benzene':pass
             elif id=='toluene':attach(d,ns,0,'CH3')
             elif id=='ethylbenzene':
-                a=attach(d,ns,0,'CH2');b=d.add('CH3',310,0);d.bond(a,b)
+                a=attach(d,ns,0,'CH2');p=d.nodes[a];b=d.add('CH3',p['x']+123,p['y']);d.bond(a,b)
             elif id=='styrene':
-                a=attach(d,ns,0,'CH');b=d.add('CH2',310,0);d.bond(a,b,2)
+                a=attach(d,ns,0,'CH');p=d.nodes[a];b=d.add('CH2',p['x']+123,p['y']);d.bond(a,b,2)
             elif id.endswith('-xylene'):
                 attach(d,ns,0,'CH3');attach(d,ns,{'o':1,'m':2,'p':3}[id[0]],'CH3')
             elif id in ['cumene','cumene-hydroperoxide']:
                 c=attach(d,ns,0,'CH' if id=='cumene' else 'C')
-                a=d.add('CH3',300,0);d.bond(c,a)
-                a=d.add('CH3',190,-100);d.bond(c,a)
+                p=d.nodes[c];x,y=p['x'],p['y']
+                a=d.add('CH3',x+133,y);d.bond(c,a)
+                a=d.add('CH3',x,y-100);d.bond(c,a)
                 if id!='cumene':
-                    o=d.add('O',190,100);h=d.add('OH',300,100);d.bond(c,o);d.bond(o,h)
+                    o=d.add('O',x,y+100);h=d.add('OH',x+133,y+100);d.bond(c,o);d.bond(o,h)
             elif id=='chlorobenzene':attach(d,ns,0,'Cl')
             elif id.endswith('-dichlorobenzene'):
                 attach(d,ns,0,'Cl');attach(d,ns,{'o':1,'m':2,'p':3}[id[0]],'Cl')
@@ -115,31 +125,32 @@ def add_aromatics(drawings, Drawing):
                 attach(d,ns,0,{'phenol':'OH','sodium-phenoxide':'ONa','aniline':'NH2','anilinium-chloride':'NH3Cl'}[id])
             elif id.endswith('-cresol'):
                 attach(d,ns,0,'OH');attach(d,ns,{'o':1,'m':2,'p':3}[id[0]],'CH3')
-            elif id in ['246-tribromophenol','picric-acid']:
-                attach(d,ns,0,'OH')
-                for pos in [1,3,5]:attach(d,ns,pos,'Br' if id.startswith('246') else ('O2N' if pos==3 else 'NO2'))
+            elif id in ['246-tribromophenol','picric-acid','246-trinitrotoluene']:
+                attach(d,ns,0,'CH3' if id=='246-trinitrotoluene' else 'OH')
+                for pos in [1,3,5]:attach(d,ns,pos,'Br' if id=='246-tribromophenol' else 'NO2')
             elif id=='phenyl-acetate':acetoxy(d,ns,0)
             elif id=='benzyl-alcohol':
-                a=attach(d,ns,0,'CH2');b=d.add('OH',310,0);d.bond(a,b)
+                a=attach(d,ns,0,'CH2');p=d.nodes[a];b=d.add('OH',p['x']+123,p['y']);d.bond(a,b)
             elif id=='benzaldehyde':acid(d,ns,0,'H')
             elif id in ['benzoic-acid','sodium-benzoate']:acid(d,ns,0,'ONa' if id.startswith('sodium') else 'OH')
             elif id in ['phthalic-acid','isophthalic-acid','terephthalic-acid']:
                 acid(d,ns,0);acid(d,ns,{'phthalic-acid':1,'isophthalic-acid':2,'terephthalic-acid':3}[id])
             elif id=='phthalic-anhydride':
                 # Adjacent ring carbons fused to a five-membered cyclic anhydride.
-                a=d.add('C',185,22);b=d.add('C',110,-168);o=d.add('O',235,-125)
-                d.bond(ns[0],a);d.bond(ns[1],b);d.bond(a,o);d.bond(b,o)
-                oa=d.add('O',185,110);ob=d.add('O',110,-256);d.bond(a,oa,2);d.bond(b,ob,2)
+                a=attach(d,ns,0,'C');b=attach(d,ns,1,'C');o=d.add('O',310,0)
+                d.bond(a,o);d.bond(b,o)
+                for carbon,sign in [(a,-1),(b,1)]:
+                    p=d.nodes[carbon];ox=d.add('O',p['x'],p['y']+sign*88);d.bond(carbon,ox,2)
             elif id in ['salicylic-acid','sodium-salicylate','methyl-salicylate','aspirin']:
-                c,e=acid(d,ns,0,'ONa' if id=='sodium-salicylate' else ('O' if id=='methyl-salicylate' else 'OH'))
+                c,e=acid(d,ns,1 if id=='aspirin' else 0,'ONa' if id=='sodium-salicylate' else ('O' if id=='methyl-salicylate' else 'OH'))
                 if id=='methyl-salicylate':
-                    m=d.add('CH3',410,0);d.bond(e,m)
-                if id=='aspirin':acetoxy(d,ns,1)
+                    p=d.nodes[e];m=d.add('CH3',p['x']+110,p['y']);d.bond(e,m)
+                if id=='aspirin':acetoxy(d,ns,0)
                 else:attach(d,ns,1,'OH')
             elif id=='acetanilide':
-                n=attach(d,ns,0,'NH');c=d.add('C',310,0);d.bond(n,c);m=d.add('CH3',410,0);d.bond(c,m);o=d.add('O',310,88);d.bond(c,o,2)
+                n=attach(d,ns,0,'NH');p=d.nodes[n];x,y=p['x'],p['y'];c=d.add('C',x+123,y);d.bond(n,c);m=d.add('CH3',x+233,y);d.bond(c,m);o=d.add('O',x+123,y+88);d.bond(c,o,2)
             elif id=='benzenediazonium-chloride':attach(d,ns,0,'N2Cl')
             elif id=='p-phenylazophenol':
-                n=attach(d,ns,0,'N');n2=d.add('N',280,70);d.bond(n,n2,2);rs=ring(d,470,70);d.bond(n2,rs[3]);oh=d.add('OH',660,70);d.bond(rs[0],oh)
+                n=attach(d,ns,0,'N');p=d.nodes[n];x,y=p['x'],p['y'];n2=d.add('N',x+90,y+70);d.bond(n,n2,2);rs=ring(d,x+280,y+70);d.bond(n2,rs[3]);oh=d.add('OH',x+487,y+70);d.bond(rs[0],oh)
             else:raise ValueError(id)
         drawings[id]=d
