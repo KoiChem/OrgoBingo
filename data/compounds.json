@@ -464,5 +464,616 @@
     "tags": [],
     "structureSvg": "structures/maleic-anhydride.svg",
     "note": ""
+  },
+  {
+    "id": "benzene",
+    "nameJa": "ベンゼン",
+    "nameEn": "Benzene",
+    "formula": "C6H6",
+    "functionalGroups": [],
+    "skeletonCategory": "芳香族",
+    "tags": [],
+    "structureSvg": "structures/benzene.svg",
+    "note": ""
+  },
+  {
+    "id": "toluene",
+    "nameJa": "トルエン",
+    "nameEn": "Toluene",
+    "formula": "C7H8",
+    "functionalGroups": [],
+    "skeletonCategory": "芳香族",
+    "tags": [],
+    "structureSvg": "structures/toluene.svg",
+    "note": ""
+  },
+  {
+    "id": "ethylbenzene",
+    "nameJa": "エチルベンゼン",
+    "nameEn": "Ethylbenzene",
+    "formula": "C8H10",
+    "functionalGroups": [],
+    "skeletonCategory": "芳香族",
+    "tags": [],
+    "structureSvg": "structures/ethylbenzene.svg",
+    "note": ""
+  },
+  {
+    "id": "styrene",
+    "nameJa": "スチレン",
+    "nameEn": "Styrene",
+    "formula": "C8H8",
+    "functionalGroups": [
+      "炭素間不飽和結合"
+    ],
+    "skeletonCategory": "芳香族",
+    "tags": [],
+    "structureSvg": "structures/styrene.svg",
+    "note": ""
+  },
+  {
+    "id": "o-xylene",
+    "nameJa": "o-キシレン",
+    "nameEn": "o-Xylene",
+    "formula": "C8H10",
+    "functionalGroups": [],
+    "skeletonCategory": "芳香族",
+    "tags": [],
+    "structureSvg": "structures/o-xylene.svg",
+    "note": ""
+  },
+  {
+    "id": "m-xylene",
+    "nameJa": "m-キシレン",
+    "nameEn": "m-Xylene",
+    "formula": "C8H10",
+    "functionalGroups": [],
+    "skeletonCategory": "芳香族",
+    "tags": [],
+    "structureSvg": "structures/m-xylene.svg",
+    "note": ""
+  },
+  {
+    "id": "p-xylene",
+    "nameJa": "p-キシレン",
+    "nameEn": "p-Xylene",
+    "formula": "C8H10",
+    "functionalGroups": [],
+    "skeletonCategory": "芳香族",
+    "tags": [],
+    "structureSvg": "structures/p-xylene.svg",
+    "note": ""
+  },
+  {
+    "id": "naphthalene",
+    "nameJa": "ナフタレン",
+    "nameEn": "Naphthalene",
+    "formula": "C10H8",
+    "functionalGroups": [],
+    "skeletonCategory": "芳香族",
+    "tags": [],
+    "structureSvg": "structures/naphthalene.svg",
+    "note": ""
+  },
+  {
+    "id": "cumene",
+    "nameJa": "クメン",
+    "nameEn": "Cumene",
+    "formula": "C9H12",
+    "functionalGroups": [],
+    "skeletonCategory": "芳香族",
+    "tags": [],
+    "structureSvg": "structures/cumene.svg",
+    "note": ""
+  },
+  {
+    "id": "cumene-hydroperoxide",
+    "nameJa": "クメンヒドロペルオキシド",
+    "nameEn": "Cumene hydroperoxide",
+    "formula": "C9H12O2",
+    "functionalGroups": [
+      "ヒドロペルオキシド"
+    ],
+    "skeletonCategory": "芳香族",
+    "tags": [],
+    "structureSvg": "structures/cumene-hydroperoxide.svg",
+    "note": ""
+  },
+  {
+    "id": "chlorobenzene",
+    "nameJa": "クロロベンゼン",
+    "nameEn": "Chlorobenzene",
+    "formula": "C6H5Cl",
+    "functionalGroups": [
+      "ハロゲン化合物"
+    ],
+    "skeletonCategory": "芳香族",
+    "tags": [],
+    "structureSvg": "structures/chlorobenzene.svg",
+    "note": ""
+  },
+  {
+    "id": "o-dichlorobenzene",
+    "nameJa": "o-ジクロロベンゼン",
+    "nameEn": "o-Dichlorobenzene",
+    "formula": "C6H4Cl2",
+    "functionalGroups": [
+      "ハロゲン化合物"
+    ],
+    "skeletonCategory": "芳香族",
+    "tags": [],
+    "structureSvg": "structures/o-dichlorobenzene.svg",
+    "note": ""
+  },
+  {
+    "id": "m-dichlorobenzene",
+    "nameJa": "m-ジクロロベンゼン",
+    "nameEn": "m-Dichlorobenzene",
+    "formula": "C6H4Cl2",
+    "functionalGroups": [
+      "ハロゲン化合物"
+    ],
+    "skeletonCategory": "芳香族",
+    "tags": [],
+    "structureSvg": "structures/m-dichlorobenzene.svg",
+    "note": ""
+  },
+  {
+    "id": "p-dichlorobenzene",
+    "nameJa": "p-ジクロロベンゼン",
+    "nameEn": "p-Dichlorobenzene",
+    "formula": "C6H4Cl2",
+    "functionalGroups": [
+      "ハロゲン化合物"
+    ],
+    "skeletonCategory": "芳香族",
+    "tags": [],
+    "structureSvg": "structures/p-dichlorobenzene.svg",
+    "note": ""
+  },
+  {
+    "id": "benzenesulfonic-acid",
+    "nameJa": "ベンゼンスルホン酸",
+    "nameEn": "Benzenesulfonic acid",
+    "formula": "C6H6O3S",
+    "functionalGroups": [
+      "スルホン酸"
+    ],
+    "skeletonCategory": "芳香族",
+    "tags": [],
+    "structureSvg": "structures/benzenesulfonic-acid.svg",
+    "note": ""
+  },
+  {
+    "id": "sodium-benzenesulfonate",
+    "nameJa": "ベンゼンスルホン酸ナトリウム",
+    "nameEn": "Sodium benzenesulfonate",
+    "formula": "C6H5NaO3S",
+    "functionalGroups": [
+      "スルホン酸塩"
+    ],
+    "skeletonCategory": "芳香族",
+    "tags": [],
+    "structureSvg": "structures/sodium-benzenesulfonate.svg",
+    "note": ""
+  },
+  {
+    "id": "nitrobenzene",
+    "nameJa": "ニトロベンゼン",
+    "nameEn": "Nitrobenzene",
+    "formula": "C6H5NO2",
+    "functionalGroups": [
+      "ニトロ化合物"
+    ],
+    "skeletonCategory": "芳香族",
+    "tags": [],
+    "structureSvg": "structures/nitrobenzene.svg",
+    "note": ""
+  },
+  {
+    "id": "o-nitrotoluene",
+    "nameJa": "o-ニトロトルエン",
+    "nameEn": "o-Nitrotoluene",
+    "formula": "C7H7NO2",
+    "functionalGroups": [
+      "ニトロ化合物"
+    ],
+    "skeletonCategory": "芳香族",
+    "tags": [],
+    "structureSvg": "structures/o-nitrotoluene.svg",
+    "note": ""
+  },
+  {
+    "id": "p-nitrotoluene",
+    "nameJa": "p-ニトロトルエン",
+    "nameEn": "p-Nitrotoluene",
+    "formula": "C7H7NO2",
+    "functionalGroups": [
+      "ニトロ化合物"
+    ],
+    "skeletonCategory": "芳香族",
+    "tags": [],
+    "structureSvg": "structures/p-nitrotoluene.svg",
+    "note": ""
+  },
+  {
+    "id": "phenol",
+    "nameJa": "フェノール",
+    "nameEn": "Phenol",
+    "formula": "C6H6O",
+    "functionalGroups": [
+      "フェノール類"
+    ],
+    "skeletonCategory": "芳香族",
+    "tags": [],
+    "structureSvg": "structures/phenol.svg",
+    "note": ""
+  },
+  {
+    "id": "o-cresol",
+    "nameJa": "o-クレゾール",
+    "nameEn": "o-Cresol",
+    "formula": "C7H8O",
+    "functionalGroups": [
+      "フェノール類"
+    ],
+    "skeletonCategory": "芳香族",
+    "tags": [],
+    "structureSvg": "structures/o-cresol.svg",
+    "note": ""
+  },
+  {
+    "id": "m-cresol",
+    "nameJa": "m-クレゾール",
+    "nameEn": "m-Cresol",
+    "formula": "C7H8O",
+    "functionalGroups": [
+      "フェノール類"
+    ],
+    "skeletonCategory": "芳香族",
+    "tags": [],
+    "structureSvg": "structures/m-cresol.svg",
+    "note": ""
+  },
+  {
+    "id": "p-cresol",
+    "nameJa": "p-クレゾール",
+    "nameEn": "p-Cresol",
+    "formula": "C7H8O",
+    "functionalGroups": [
+      "フェノール類"
+    ],
+    "skeletonCategory": "芳香族",
+    "tags": [],
+    "structureSvg": "structures/p-cresol.svg",
+    "note": ""
+  },
+  {
+    "id": "1-naphthol",
+    "nameJa": "1-ナフトール",
+    "nameEn": "1-Naphthol",
+    "formula": "C10H8O",
+    "functionalGroups": [
+      "フェノール類"
+    ],
+    "skeletonCategory": "芳香族",
+    "tags": [],
+    "structureSvg": "structures/1-naphthol.svg",
+    "note": ""
+  },
+  {
+    "id": "2-naphthol",
+    "nameJa": "2-ナフトール",
+    "nameEn": "2-Naphthol",
+    "formula": "C10H8O",
+    "functionalGroups": [
+      "フェノール類"
+    ],
+    "skeletonCategory": "芳香族",
+    "tags": [],
+    "structureSvg": "structures/2-naphthol.svg",
+    "note": ""
+  },
+  {
+    "id": "sodium-phenoxide",
+    "nameJa": "ナトリウムフェノキシド",
+    "nameEn": "Sodium phenoxide",
+    "formula": "C6H5NaO",
+    "functionalGroups": [
+      "フェノキシド"
+    ],
+    "skeletonCategory": "芳香族",
+    "tags": [],
+    "structureSvg": "structures/sodium-phenoxide.svg",
+    "note": ""
+  },
+  {
+    "id": "246-tribromophenol",
+    "nameJa": "2,4,6-トリブロモフェノール",
+    "nameEn": "2,4,6-Tribromophenol",
+    "formula": "C6H3Br3O",
+    "functionalGroups": [
+      "フェノール類",
+      "ハロゲン化合物"
+    ],
+    "skeletonCategory": "芳香族",
+    "tags": [],
+    "structureSvg": "structures/246-tribromophenol.svg",
+    "note": ""
+  },
+  {
+    "id": "picric-acid",
+    "nameJa": "ピクリン酸",
+    "nameEn": "Picric acid",
+    "formula": "C6H3N3O7",
+    "functionalGroups": [
+      "フェノール類",
+      "ニトロ化合物"
+    ],
+    "skeletonCategory": "芳香族",
+    "tags": [],
+    "structureSvg": "structures/picric-acid.svg",
+    "note": ""
+  },
+  {
+    "id": "phenyl-acetate",
+    "nameJa": "酢酸フェニル",
+    "nameEn": "Phenyl acetate",
+    "formula": "C8H8O2",
+    "functionalGroups": [
+      "エステル"
+    ],
+    "skeletonCategory": "芳香族",
+    "tags": [],
+    "structureSvg": "structures/phenyl-acetate.svg",
+    "note": ""
+  },
+  {
+    "id": "benzyl-alcohol",
+    "nameJa": "ベンジルアルコール",
+    "nameEn": "Benzyl alcohol",
+    "formula": "C7H8O",
+    "functionalGroups": [
+      "アルコール"
+    ],
+    "skeletonCategory": "芳香族",
+    "tags": [
+      "1価アルコール",
+      "第一級アルコール"
+    ],
+    "structureSvg": "structures/benzyl-alcohol.svg",
+    "note": ""
+  },
+  {
+    "id": "benzaldehyde",
+    "nameJa": "ベンズアルデヒド",
+    "nameEn": "Benzaldehyde",
+    "formula": "C7H6O",
+    "functionalGroups": [
+      "アルデヒド"
+    ],
+    "skeletonCategory": "芳香族",
+    "tags": [],
+    "structureSvg": "structures/benzaldehyde.svg",
+    "note": ""
+  },
+  {
+    "id": "benzoic-acid",
+    "nameJa": "安息香酸",
+    "nameEn": "Benzoic acid",
+    "formula": "C7H6O2",
+    "functionalGroups": [
+      "カルボン酸"
+    ],
+    "skeletonCategory": "芳香族",
+    "tags": [],
+    "structureSvg": "structures/benzoic-acid.svg",
+    "note": ""
+  },
+  {
+    "id": "sodium-benzoate",
+    "nameJa": "安息香酸ナトリウム",
+    "nameEn": "Sodium benzoate",
+    "formula": "C7H5NaO2",
+    "functionalGroups": [
+      "カルボン酸塩"
+    ],
+    "skeletonCategory": "芳香族",
+    "tags": [],
+    "structureSvg": "structures/sodium-benzoate.svg",
+    "note": ""
+  },
+  {
+    "id": "phthalic-acid",
+    "nameJa": "フタル酸",
+    "nameEn": "Phthalic acid",
+    "formula": "C8H6O4",
+    "functionalGroups": [
+      "カルボン酸"
+    ],
+    "skeletonCategory": "芳香族",
+    "tags": [
+      "ジカルボン酸"
+    ],
+    "structureSvg": "structures/phthalic-acid.svg",
+    "note": ""
+  },
+  {
+    "id": "isophthalic-acid",
+    "nameJa": "イソフタル酸",
+    "nameEn": "Isophthalic acid",
+    "formula": "C8H6O4",
+    "functionalGroups": [
+      "カルボン酸"
+    ],
+    "skeletonCategory": "芳香族",
+    "tags": [
+      "ジカルボン酸"
+    ],
+    "structureSvg": "structures/isophthalic-acid.svg",
+    "note": ""
+  },
+  {
+    "id": "terephthalic-acid",
+    "nameJa": "テレフタル酸",
+    "nameEn": "Terephthalic acid",
+    "formula": "C8H6O4",
+    "functionalGroups": [
+      "カルボン酸"
+    ],
+    "skeletonCategory": "芳香族",
+    "tags": [
+      "ジカルボン酸"
+    ],
+    "structureSvg": "structures/terephthalic-acid.svg",
+    "note": ""
+  },
+  {
+    "id": "phthalic-anhydride",
+    "nameJa": "無水フタル酸",
+    "nameEn": "Phthalic anhydride",
+    "formula": "C8H4O3",
+    "functionalGroups": [
+      "酸無水物"
+    ],
+    "skeletonCategory": "芳香族",
+    "tags": [],
+    "structureSvg": "structures/phthalic-anhydride.svg",
+    "note": ""
+  },
+  {
+    "id": "salicylic-acid",
+    "nameJa": "サリチル酸",
+    "nameEn": "Salicylic acid",
+    "formula": "C7H6O3",
+    "functionalGroups": [
+      "カルボン酸",
+      "フェノール類"
+    ],
+    "skeletonCategory": "芳香族",
+    "tags": [],
+    "structureSvg": "structures/salicylic-acid.svg",
+    "note": ""
+  },
+  {
+    "id": "sodium-salicylate",
+    "nameJa": "サリチル酸ナトリウム",
+    "nameEn": "Sodium salicylate",
+    "formula": "C7H5NaO3",
+    "functionalGroups": [
+      "カルボン酸塩",
+      "フェノール類"
+    ],
+    "skeletonCategory": "芳香族",
+    "tags": [],
+    "structureSvg": "structures/sodium-salicylate.svg",
+    "note": ""
+  },
+  {
+    "id": "methyl-salicylate",
+    "nameJa": "サリチル酸メチル",
+    "nameEn": "Methyl salicylate",
+    "formula": "C8H8O3",
+    "functionalGroups": [
+      "エステル",
+      "フェノール類"
+    ],
+    "skeletonCategory": "芳香族",
+    "tags": [],
+    "structureSvg": "structures/methyl-salicylate.svg",
+    "note": ""
+  },
+  {
+    "id": "aspirin",
+    "nameJa": "アセチルサリチル酸",
+    "nameEn": "Acetylsalicylic acid",
+    "formula": "C9H8O4",
+    "functionalGroups": [
+      "カルボン酸",
+      "エステル"
+    ],
+    "skeletonCategory": "芳香族",
+    "tags": [],
+    "structureSvg": "structures/aspirin.svg",
+    "note": ""
+  },
+  {
+    "id": "aniline",
+    "nameJa": "アニリン",
+    "nameEn": "Aniline",
+    "formula": "C6H7N",
+    "functionalGroups": [
+      "アミン"
+    ],
+    "skeletonCategory": "芳香族",
+    "tags": [],
+    "structureSvg": "structures/aniline.svg",
+    "note": ""
+  },
+  {
+    "id": "anilinium-chloride",
+    "nameJa": "アニリン塩酸塩",
+    "nameEn": "Anilinium chloride",
+    "formula": "C6H8ClN",
+    "functionalGroups": [
+      "アミン塩"
+    ],
+    "skeletonCategory": "芳香族",
+    "tags": [],
+    "structureSvg": "structures/anilinium-chloride.svg",
+    "note": ""
+  },
+  {
+    "id": "acetanilide",
+    "nameJa": "アセトアニリド",
+    "nameEn": "Acetanilide",
+    "formula": "C8H9NO",
+    "functionalGroups": [
+      "アミド"
+    ],
+    "skeletonCategory": "芳香族",
+    "tags": [],
+    "structureSvg": "structures/acetanilide.svg",
+    "note": ""
+  },
+  {
+    "id": "benzenediazonium-chloride",
+    "nameJa": "塩化ベンゼンジアゾニウム",
+    "nameEn": "Benzenediazonium chloride",
+    "formula": "C6H5ClN2",
+    "functionalGroups": [
+      "ジアゾニウム塩"
+    ],
+    "skeletonCategory": "芳香族",
+    "tags": [],
+    "structureSvg": "structures/benzenediazonium-chloride.svg",
+    "note": ""
+  },
+  {
+    "id": "p-phenylazophenol",
+    "nameJa": "p-フェニルアゾフェノール",
+    "nameEn": "4-(Phenylazo)phenol",
+    "formula": "C12H10N2O",
+    "functionalGroups": [
+      "フェノール類",
+      "アゾ化合物"
+    ],
+    "skeletonCategory": "芳香族",
+    "tags": [],
+    "structureSvg": "structures/p-phenylazophenol.svg",
+    "note": ""
+  },
+  {
+    "id": "sodium-ethoxide",
+    "nameJa": "ナトリウムエトキシド",
+    "nameEn": "Sodium ethoxide",
+    "formula": "C2H5NaO",
+    "functionalGroups": [
+      "アルコキシド"
+    ],
+    "skeletonCategory": "脂肪族",
+    "tags": [],
+    "structureSvg": "structures/sodium-ethoxide.svg",
+    "note": ""
   }
 ]

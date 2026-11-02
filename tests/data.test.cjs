@@ -5,7 +5,7 @@ const compounds = require('../data/compounds.json');
 const sets = require('../data/bingo-sets.json');
 const categories = require('../data/categories.json');
 test('initial master, structures, vocabularies and sets are consistent', () => {
-  assert.equal(compounds.length, 32);
+  assert.equal(compounds.length, 79);
   const ids = new Set(compounds.map(c => c.id));
   assert.equal(ids.size, compounds.length);
   for (const c of compounds) {
@@ -27,7 +27,7 @@ test('initial master, structures, vocabularies and sets are consistent', () => {
 });
 test('C1 and C2 structures show every hydrogen as a bonded atom', () => {
   const layouts = require('../tools/structures/layouts.json');
-  const targets = compounds.filter(c => /^C(?:H|2H)/.test(c.formula));
+  const targets = compounds.filter(c => /^C(?:H|2H)/.test(c.formula) && !c.formula.includes('Na'));
   assert.equal(targets.length, 11);
   for (const c of targets) {
     const d = layouts[c.id];
@@ -35,5 +35,18 @@ test('C1 and C2 structures show every hydrogen as a bonded atom', () => {
     const expected = Number(c.formula.match(/H(\d*)/)[1] || 1);
     assert.equal(d.labels.filter(n=>n.text==='H').length, expected, c.id);
     d.labels.forEach((n,i)=>{if(n.text==='H')assert.equal(d.bonds.filter(b=>b[0]===i||b[1]===i).length,1,c.id);});
+  }
+});
+
+test('requested aromatic master and sodium salts are included', () => {
+  assert.equal(compounds.length,79);
+  assert.equal(compounds.filter(c=>c.skeletonCategory==='芳香族').length,46);
+  const layouts=require('../tools/structures/layouts.json');
+  for(const [id,label] of [['sodium-ethoxide','ONa'],['sodium-phenoxide','ONa'],['sodium-benzenesulfonate','SO3Na'],['sodium-benzoate','ONa'],['sodium-salicylate','ONa']]) {
+    assert(compounds.some(c=>c.id===id),id);
+    assert(layouts[id].labels.some(n=>n.text===label),id);
+  }
+  for(const family of ['xylene','dichlorobenzene','cresol']) {
+    for(const prefix of ['o','m','p']) assert(compounds.some(c=>c.id===`${prefix}-${family}`));
   }
 });

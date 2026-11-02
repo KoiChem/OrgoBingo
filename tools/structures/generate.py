@@ -30,11 +30,13 @@ def atom_counts(s):
     return out
 
 def molecular_formula(counts):
-    return ''.join(e+(str(counts[e]) if counts[e]!=1 else '') for e in ['C','H','I','O'] if counts.get(e))
+    return ''.join(e+(str(counts[e]) if counts[e]!=1 else '') for e in ['C','H']+sorted(set(counts)-{'C','H'}) if counts.get(e))
 
 class Drawing:
-    def __init__(self):self.nodes=[];self.bonds=[]
+    def __init__(self):self.nodes=[];self.bonds=[];self.ringBonds={}
     def add(self,s,x,y=0,a=0):self.nodes.append(label(s,x,y,a));return len(self.nodes)-1
+    def carbon(self,x,y):
+        self.nodes.append({'text':'','x':x,'y':y,'anchor':0,'chars':[],'box':[x,y,x,y],'atomBox':[x,y,x,y]});return len(self.nodes)-1
     def bond(self,a,b,order=1):self.bonds.append((a,b,order))
     def chain(self,labels):
         ids=[]
@@ -103,6 +105,8 @@ def build():
             # OH points outwards; HO bonds via its rightmost oxygen.
             acid=d.add('HO' if side<0 else 'OH',d.nodes[car]['x']+side*90,cy,1 if side<0 else 0);d.bond(car,acid)
         drawings[id]=d
+    from aromatics import add_aromatics
+    add_aromatics(drawings, Drawing)
     return drawings
 
 
@@ -111,6 +115,7 @@ def bond_segments(d):
     for a,b,order in d.bonds:
         p,q=d.nodes[a],d.nodes[b];dx=q['x']-p['x'];dy=q['y']-p['y'];length=math.hypot(dx,dy);ux,uy=dx/length,dy/length
         def endpoint(n,vx,vy):
+            if not n['text']:return n['x'],n['y']
             box=n['box'] if abs(vy)<.01 else n['atomBox'];cx,cy=n['x'],n['y']
             ts=[]
             if vx>0:ts.append((box[2]-cx)/vx)
@@ -120,7 +125,12 @@ def bond_segments(d):
             t=min(ts)+STYLE['labelGap'];return cx+vx*t,cy+vy*t
         x1,y1=endpoint(p,ux,uy);x2,y2=endpoint(q,-ux,-uy)
         assert (x2-x1)*ux+(y2-y1)*uy>12,(p['text'],q['text'])
-        for offset in ([0] if order==1 else [-STYLE['doubleGap']/2,STYLE['doubleGap']/2]):result.append((x1-uy*offset,y1+ux*offset,x2-uy*offset,y2+ux*offset))
+        if (a,b) in d.ringBonds and order==2:
+            cx,cy=d.ringBonds[(a,b)];side=1 if (-uy*(cx-(x1+x2)/2)+ux*(cy-(y1+y2)/2))>0 else -1
+            result.append((x1,y1,x2,y2));off=side*STYLE['doubleGap'];trim=9
+            result.append((x1+ux*trim-uy*off,y1+uy*trim+ux*off,x2-ux*trim-uy*off,y2-uy*trim+ux*off))
+        else:
+            for offset in ([0] if order==1 else ([-STYLE['doubleGap']/2,STYLE['doubleGap']/2] if order==2 else [-STYLE['doubleGap'],0,STYLE['doubleGap']])):result.append((x1-uy*offset,y1+ux*offset,x2-uy*offset,y2+ux*offset))
     return result
 
 
@@ -145,10 +155,13 @@ def validate(drawings,master):
         id=m['id'];d=drawings[id];counts={};degree=[0]*len(d.nodes)
         for a,b,o in d.bonds:degree[a]+=o;degree[b]+=o
         for n,v in zip(d.nodes,degree):
-            atoms=atom_counts(n['text'])
+            atoms=atom_counts(n['text']) if n['text'] else {'C':1,'H':4-v}
+            assert n['text'] or 0<=4-v<=1,(id,'aromatic carbon valence',v)
             for e,num in atoms.items():counts[e]=counts.get(e,0)+num
             expected=(4-atoms.get('H',0)) if atoms.get('C')==1 else (2 if n['text'].startswith('(') else (2-atoms.get('H',0) if 'O' in atoms else 1))
             # HO / OH contain one terminal oxygen; H and I are monovalent.
+            if not n['text']:expected=v
+            expected={'ONa':1,'SO3H':1,'SO3Na':1,'NO2':1,'O2N':1,'NH2':1,'NH3Cl':1,'N2Cl':1,'NH':2,'N':3,'Cl':1,'Br':1}.get(n['text'],expected)
             assert v==expected,(id,n['text'],v,expected)
         assert molecular_formula(counts)==m['formula'],(id,counts,m['formula'])
         # Distinct label glyph bounding boxes must not overlap.

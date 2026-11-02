@@ -17,7 +17,7 @@
   },
   "fontSHA256": "76d04c18ea243f426b7de1f3ad208e927008f961dc5945e5aad352d0dfde8ee8",
   "checks": [
-    "32 master IDs and formulas",
+    "79 master IDs and formulas",
     "group valence",
     "distinct label bounds",
     "bond/glyph clearance including subscripts",
@@ -481,6 +481,803 @@
       ],
       "bonds": 9,
       "bondLines": 12
+    },
+    {
+      "id": "benzene",
+      "formula": "C6H6",
+      "labels": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "bonds": 6,
+      "bondLines": 9
+    },
+    {
+      "id": "toluene",
+      "formula": "C7H8",
+      "labels": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "CH3"
+      ],
+      "bonds": 7,
+      "bondLines": 10
+    },
+    {
+      "id": "ethylbenzene",
+      "formula": "C8H10",
+      "labels": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "CH2",
+        "CH3"
+      ],
+      "bonds": 8,
+      "bondLines": 11
+    },
+    {
+      "id": "styrene",
+      "formula": "C8H8",
+      "labels": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "CH",
+        "CH2"
+      ],
+      "bonds": 8,
+      "bondLines": 12
+    },
+    {
+      "id": "o-xylene",
+      "formula": "C8H10",
+      "labels": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "CH3",
+        "CH3"
+      ],
+      "bonds": 8,
+      "bondLines": 11
+    },
+    {
+      "id": "m-xylene",
+      "formula": "C8H10",
+      "labels": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "CH3",
+        "CH3"
+      ],
+      "bonds": 8,
+      "bondLines": 11
+    },
+    {
+      "id": "p-xylene",
+      "formula": "C8H10",
+      "labels": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "CH3",
+        "CH3"
+      ],
+      "bonds": 8,
+      "bondLines": 11
+    },
+    {
+      "id": "naphthalene",
+      "formula": "C10H8",
+      "labels": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "bonds": 11,
+      "bondLines": 16
+    },
+    {
+      "id": "cumene",
+      "formula": "C9H12",
+      "labels": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "CH",
+        "CH3",
+        "CH3"
+      ],
+      "bonds": 9,
+      "bondLines": 12
+    },
+    {
+      "id": "cumene-hydroperoxide",
+      "formula": "C9H12O2",
+      "labels": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "C",
+        "CH3",
+        "CH3",
+        "O",
+        "OH"
+      ],
+      "bonds": 11,
+      "bondLines": 14
+    },
+    {
+      "id": "chlorobenzene",
+      "formula": "C6H5Cl",
+      "labels": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "Cl"
+      ],
+      "bonds": 7,
+      "bondLines": 10
+    },
+    {
+      "id": "o-dichlorobenzene",
+      "formula": "C6H4Cl2",
+      "labels": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "Cl",
+        "Cl"
+      ],
+      "bonds": 8,
+      "bondLines": 11
+    },
+    {
+      "id": "m-dichlorobenzene",
+      "formula": "C6H4Cl2",
+      "labels": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "Cl",
+        "Cl"
+      ],
+      "bonds": 8,
+      "bondLines": 11
+    },
+    {
+      "id": "p-dichlorobenzene",
+      "formula": "C6H4Cl2",
+      "labels": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "Cl",
+        "Cl"
+      ],
+      "bonds": 8,
+      "bondLines": 11
+    },
+    {
+      "id": "benzenesulfonic-acid",
+      "formula": "C6H6O3S",
+      "labels": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "SO3H"
+      ],
+      "bonds": 7,
+      "bondLines": 10
+    },
+    {
+      "id": "sodium-benzenesulfonate",
+      "formula": "C6H5NaO3S",
+      "labels": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "SO3Na"
+      ],
+      "bonds": 7,
+      "bondLines": 10
+    },
+    {
+      "id": "nitrobenzene",
+      "formula": "C6H5NO2",
+      "labels": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "NO2"
+      ],
+      "bonds": 7,
+      "bondLines": 10
+    },
+    {
+      "id": "o-nitrotoluene",
+      "formula": "C7H7NO2",
+      "labels": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "CH3",
+        "NO2"
+      ],
+      "bonds": 8,
+      "bondLines": 11
+    },
+    {
+      "id": "p-nitrotoluene",
+      "formula": "C7H7NO2",
+      "labels": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "CH3",
+        "O2N"
+      ],
+      "bonds": 8,
+      "bondLines": 11
+    },
+    {
+      "id": "phenol",
+      "formula": "C6H6O",
+      "labels": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "OH"
+      ],
+      "bonds": 7,
+      "bondLines": 10
+    },
+    {
+      "id": "o-cresol",
+      "formula": "C7H8O",
+      "labels": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "OH",
+        "CH3"
+      ],
+      "bonds": 8,
+      "bondLines": 11
+    },
+    {
+      "id": "m-cresol",
+      "formula": "C7H8O",
+      "labels": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "OH",
+        "CH3"
+      ],
+      "bonds": 8,
+      "bondLines": 11
+    },
+    {
+      "id": "p-cresol",
+      "formula": "C7H8O",
+      "labels": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "OH",
+        "CH3"
+      ],
+      "bonds": 8,
+      "bondLines": 11
+    },
+    {
+      "id": "1-naphthol",
+      "formula": "C10H8O",
+      "labels": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "OH"
+      ],
+      "bonds": 12,
+      "bondLines": 17
+    },
+    {
+      "id": "2-naphthol",
+      "formula": "C10H8O",
+      "labels": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "OH"
+      ],
+      "bonds": 12,
+      "bondLines": 17
+    },
+    {
+      "id": "sodium-phenoxide",
+      "formula": "C6H5NaO",
+      "labels": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "ONa"
+      ],
+      "bonds": 7,
+      "bondLines": 10
+    },
+    {
+      "id": "246-tribromophenol",
+      "formula": "C6H3Br3O",
+      "labels": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "OH",
+        "Br",
+        "Br",
+        "Br"
+      ],
+      "bonds": 10,
+      "bondLines": 13
+    },
+    {
+      "id": "picric-acid",
+      "formula": "C6H3N3O7",
+      "labels": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "OH",
+        "NO2",
+        "O2N",
+        "NO2"
+      ],
+      "bonds": 10,
+      "bondLines": 13
+    },
+    {
+      "id": "phenyl-acetate",
+      "formula": "C8H8O2",
+      "labels": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "O",
+        "C",
+        "O",
+        "CH3"
+      ],
+      "bonds": 10,
+      "bondLines": 14
+    },
+    {
+      "id": "benzyl-alcohol",
+      "formula": "C7H8O",
+      "labels": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "CH2",
+        "OH"
+      ],
+      "bonds": 8,
+      "bondLines": 11
+    },
+    {
+      "id": "benzaldehyde",
+      "formula": "C7H6O",
+      "labels": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "C",
+        "O",
+        "H"
+      ],
+      "bonds": 9,
+      "bondLines": 13
+    },
+    {
+      "id": "benzoic-acid",
+      "formula": "C7H6O2",
+      "labels": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "C",
+        "O",
+        "OH"
+      ],
+      "bonds": 9,
+      "bondLines": 13
+    },
+    {
+      "id": "sodium-benzoate",
+      "formula": "C7H5NaO2",
+      "labels": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "C",
+        "O",
+        "ONa"
+      ],
+      "bonds": 9,
+      "bondLines": 13
+    },
+    {
+      "id": "phthalic-acid",
+      "formula": "C8H6O4",
+      "labels": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "C",
+        "O",
+        "OH",
+        "C",
+        "O",
+        "OH"
+      ],
+      "bonds": 12,
+      "bondLines": 17
+    },
+    {
+      "id": "isophthalic-acid",
+      "formula": "C8H6O4",
+      "labels": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "C",
+        "O",
+        "OH",
+        "C",
+        "O",
+        "HO"
+      ],
+      "bonds": 12,
+      "bondLines": 17
+    },
+    {
+      "id": "terephthalic-acid",
+      "formula": "C8H6O4",
+      "labels": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "C",
+        "O",
+        "OH",
+        "C",
+        "O",
+        "HO"
+      ],
+      "bonds": 12,
+      "bondLines": 17
+    },
+    {
+      "id": "phthalic-anhydride",
+      "formula": "C8H4O3",
+      "labels": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "C",
+        "C",
+        "O",
+        "O",
+        "O"
+      ],
+      "bonds": 12,
+      "bondLines": 17
+    },
+    {
+      "id": "salicylic-acid",
+      "formula": "C7H6O3",
+      "labels": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "C",
+        "O",
+        "OH",
+        "OH"
+      ],
+      "bonds": 10,
+      "bondLines": 14
+    },
+    {
+      "id": "sodium-salicylate",
+      "formula": "C7H5NaO3",
+      "labels": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "C",
+        "O",
+        "ONa",
+        "OH"
+      ],
+      "bonds": 10,
+      "bondLines": 14
+    },
+    {
+      "id": "methyl-salicylate",
+      "formula": "C8H8O3",
+      "labels": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "C",
+        "O",
+        "O",
+        "CH3",
+        "OH"
+      ],
+      "bonds": 11,
+      "bondLines": 15
+    },
+    {
+      "id": "aspirin",
+      "formula": "C9H8O4",
+      "labels": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "C",
+        "O",
+        "OH",
+        "O",
+        "C",
+        "O",
+        "CH3"
+      ],
+      "bonds": 13,
+      "bondLines": 18
+    },
+    {
+      "id": "aniline",
+      "formula": "C6H7N",
+      "labels": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "NH2"
+      ],
+      "bonds": 7,
+      "bondLines": 10
+    },
+    {
+      "id": "anilinium-chloride",
+      "formula": "C6H8ClN",
+      "labels": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "NH3Cl"
+      ],
+      "bonds": 7,
+      "bondLines": 10
+    },
+    {
+      "id": "acetanilide",
+      "formula": "C8H9NO",
+      "labels": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "NH",
+        "C",
+        "CH3",
+        "O"
+      ],
+      "bonds": 10,
+      "bondLines": 14
+    },
+    {
+      "id": "benzenediazonium-chloride",
+      "formula": "C6H5ClN2",
+      "labels": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "N2Cl"
+      ],
+      "bonds": 7,
+      "bondLines": 10
+    },
+    {
+      "id": "p-phenylazophenol",
+      "formula": "C12H10N2O",
+      "labels": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "N",
+        "N",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "OH"
+      ],
+      "bonds": 16,
+      "bondLines": 23
+    },
+    {
+      "id": "sodium-ethoxide",
+      "formula": "C2H5NaO",
+      "labels": [
+        "H",
+        "C",
+        "C",
+        "ONa",
+        "H",
+        "H",
+        "H",
+        "H"
+      ],
+      "bonds": 7,
+      "bondLines": 7
     }
   ]
 }

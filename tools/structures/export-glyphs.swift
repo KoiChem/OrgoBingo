@@ -9,7 +9,7 @@ let cgFont = CGFont(provider)!
 let font = CTFontCreateWithGraphicsFont(cgFont, 48, nil, nil)
 var result: [String: Any] = [:]
 func n(_ v: CGFloat) -> String { String(format: "%.4f", Double(v)) }
-for char in "CHOI1234567890()" {
+for char in "CHOINSalBr1234567890()" {
     var u = String(char).utf16.first!
     var glyph: CGGlyph = 0
     precondition(CTFontGetGlyphsForCharacters(font, &u, &glyph, 1))
