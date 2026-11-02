@@ -47,3 +47,51 @@
 ## 追加資料（2026-11-02）
 
 - 2,4,6-トリニトロトルエン（TNT）：[NIST Chemistry WebBook, CAS 118-96-7](https://webbook.nist.gov/cgi/cbook.cgi?ID=C118967)。分子式C7H5N3O6、メチル基に対して2,4,6位のニトロ基を照合。
+
+## 脂肪族化合物の追加（2026-11-02）
+
+PubChemの分子式と重原子の結合・結合次数を図の結合グラフと照合した。シス・トランスは別途幾何配置を検査した。2-ペンテンは立体配置を指定しない。
+
+| ID | PubChem |
+| --- | --- |
+| methane | [CID 297](https://pubchem.ncbi.nlm.nih.gov/compound/297) |
+| ethane | [CID 6324](https://pubchem.ncbi.nlm.nih.gov/compound/6324) |
+| propane | [CID 6334](https://pubchem.ncbi.nlm.nih.gov/compound/6334) |
+| butane | [CID 7843](https://pubchem.ncbi.nlm.nih.gov/compound/7843) |
+| pentane | [CID 8003](https://pubchem.ncbi.nlm.nih.gov/compound/8003) |
+| hexane | [CID 8058](https://pubchem.ncbi.nlm.nih.gov/compound/8058) |
+| 2-methylpropane | [CID 6360](https://pubchem.ncbi.nlm.nih.gov/compound/6360) |
+| 2-methylbutane | [CID 6556](https://pubchem.ncbi.nlm.nih.gov/compound/6556) |
+| 23-dimethylbutane | [CID 6589](https://pubchem.ncbi.nlm.nih.gov/compound/6589) |
+| cyclopropane | [CID 6351](https://pubchem.ncbi.nlm.nih.gov/compound/6351) |
+| cyclobutane | [CID 9250](https://pubchem.ncbi.nlm.nih.gov/compound/9250) |
+| cyclopentane | [CID 9253](https://pubchem.ncbi.nlm.nih.gov/compound/9253) |
+| cyclohexane | [CID 8078](https://pubchem.ncbi.nlm.nih.gov/compound/8078) |
+| ethylene | [CID 6325](https://pubchem.ncbi.nlm.nih.gov/compound/6325) |
+| propene | [CID 8252](https://pubchem.ncbi.nlm.nih.gov/compound/8252) |
+| 1-butene | [CID 7844](https://pubchem.ncbi.nlm.nih.gov/compound/7844) |
+| cis-2-butene | [CID 5287573](https://pubchem.ncbi.nlm.nih.gov/compound/5287573) |
+| trans-2-butene | [CID 62695](https://pubchem.ncbi.nlm.nih.gov/compound/62695) |
+| 2-methylpropene | [CID 8255](https://pubchem.ncbi.nlm.nih.gov/compound/8255) |
+| 2-pentene | [CID 12585](https://pubchem.ncbi.nlm.nih.gov/compound/12585) |
+| 13-butadiene | [CID 7845](https://pubchem.ncbi.nlm.nih.gov/compound/7845) |
+| cyclopentene | [CID 8882](https://pubchem.ncbi.nlm.nih.gov/compound/8882) |
+| cyclohexene | [CID 8079](https://pubchem.ncbi.nlm.nih.gov/compound/8079) |
+| acetylene | [CID 6326](https://pubchem.ncbi.nlm.nih.gov/compound/6326) |
+| propyne | [CID 6335](https://pubchem.ncbi.nlm.nih.gov/compound/6335) |
+| 1-butyne | [CID 7846](https://pubchem.ncbi.nlm.nih.gov/compound/7846) |
+| 2-butyne | [CID 10419](https://pubchem.ncbi.nlm.nih.gov/compound/10419) |
+| 3-methyl-1-butyne | [CID 69019](https://pubchem.ncbi.nlm.nih.gov/compound/69019) |
+| chloromethane | [CID 6327](https://pubchem.ncbi.nlm.nih.gov/compound/6327) |
+| dichloromethane | [CID 6344](https://pubchem.ncbi.nlm.nih.gov/compound/6344) |
+| trichloromethane | [CID 6212](https://pubchem.ncbi.nlm.nih.gov/compound/6212) |
+| tetrachloromethane | [CID 5943](https://pubchem.ncbi.nlm.nih.gov/compound/5943) |
+| chloroethane | [CID 6337](https://pubchem.ncbi.nlm.nih.gov/compound/6337) |
+| 12-dichloroethane | [CID 11](https://pubchem.ncbi.nlm.nih.gov/compound/11) |
+| 12-dibromoethane | [CID 7839](https://pubchem.ncbi.nlm.nih.gov/compound/7839) |
+| 1122-tetrabromoethane | [CID 6588](https://pubchem.ncbi.nlm.nih.gov/compound/6588) |
+| vinyl-chloride | [CID 6338](https://pubchem.ncbi.nlm.nih.gov/compound/6338) |
+| vinyl-acetate | [CID 7904](https://pubchem.ncbi.nlm.nih.gov/compound/7904) |
+| acrylonitrile | [CID 7855](https://pubchem.ncbi.nlm.nih.gov/compound/7855) |
+
+繰り返し単位は [PubChem: Polyethylene](https://pubchem.ncbi.nlm.nih.gov/compound/polyethylene) と [ACS: Polyacetylene](https://pubs.acs.org/doi/10.1021/jp011611w) を参照した。

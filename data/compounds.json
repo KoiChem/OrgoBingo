@@ -1088,5 +1088,523 @@
     "tags": [],
     "structureSvg": "structures/246-trinitrotoluene.svg",
     "note": "TNT"
+  },
+  {
+    "id": "methane",
+    "nameJa": "メタン",
+    "nameEn": "Methane",
+    "formula": "CH4",
+    "functionalGroups": [],
+    "skeletonCategory": "脂肪族",
+    "tags": [],
+    "structureSvg": "structures/methane.svg",
+    "note": ""
+  },
+  {
+    "id": "ethane",
+    "nameJa": "エタン",
+    "nameEn": "Ethane",
+    "formula": "C2H6",
+    "functionalGroups": [],
+    "skeletonCategory": "脂肪族",
+    "tags": [],
+    "structureSvg": "structures/ethane.svg",
+    "note": ""
+  },
+  {
+    "id": "propane",
+    "nameJa": "プロパン",
+    "nameEn": "Propane",
+    "formula": "C3H8",
+    "functionalGroups": [],
+    "skeletonCategory": "脂肪族",
+    "tags": [],
+    "structureSvg": "structures/propane.svg",
+    "note": ""
+  },
+  {
+    "id": "butane",
+    "nameJa": "ブタン",
+    "nameEn": "Butane",
+    "formula": "C4H10",
+    "functionalGroups": [],
+    "skeletonCategory": "脂肪族",
+    "tags": [],
+    "structureSvg": "structures/butane.svg",
+    "note": ""
+  },
+  {
+    "id": "pentane",
+    "nameJa": "ペンタン",
+    "nameEn": "Pentane",
+    "formula": "C5H12",
+    "functionalGroups": [],
+    "skeletonCategory": "脂肪族",
+    "tags": [],
+    "structureSvg": "structures/pentane.svg",
+    "note": ""
+  },
+  {
+    "id": "hexane",
+    "nameJa": "ヘキサン",
+    "nameEn": "Hexane",
+    "formula": "C6H14",
+    "functionalGroups": [],
+    "skeletonCategory": "脂肪族",
+    "tags": [],
+    "structureSvg": "structures/hexane.svg",
+    "note": ""
+  },
+  {
+    "id": "2-methylpropane",
+    "nameJa": "2-メチルプロパン",
+    "nameEn": "2-Methylpropane",
+    "formula": "C4H10",
+    "functionalGroups": [],
+    "skeletonCategory": "脂肪族",
+    "tags": [],
+    "structureSvg": "structures/2-methylpropane.svg",
+    "note": ""
+  },
+  {
+    "id": "2-methylbutane",
+    "nameJa": "2-メチルブタン",
+    "nameEn": "2-Methylbutane",
+    "formula": "C5H12",
+    "functionalGroups": [],
+    "skeletonCategory": "脂肪族",
+    "tags": [],
+    "structureSvg": "structures/2-methylbutane.svg",
+    "note": ""
+  },
+  {
+    "id": "23-dimethylbutane",
+    "nameJa": "2,3-ジメチルブタン",
+    "nameEn": "2,3-Dimethylbutane",
+    "formula": "C6H14",
+    "functionalGroups": [],
+    "skeletonCategory": "脂肪族",
+    "tags": [],
+    "structureSvg": "structures/23-dimethylbutane.svg",
+    "note": ""
+  },
+  {
+    "id": "cyclopropane",
+    "nameJa": "シクロプロパン",
+    "nameEn": "Cyclopropane",
+    "formula": "C3H6",
+    "functionalGroups": [],
+    "skeletonCategory": "脂肪族",
+    "tags": [],
+    "structureSvg": "structures/cyclopropane.svg",
+    "note": ""
+  },
+  {
+    "id": "cyclobutane",
+    "nameJa": "シクロブタン",
+    "nameEn": "Cyclobutane",
+    "formula": "C4H8",
+    "functionalGroups": [],
+    "skeletonCategory": "脂肪族",
+    "tags": [],
+    "structureSvg": "structures/cyclobutane.svg",
+    "note": ""
+  },
+  {
+    "id": "cyclopentane",
+    "nameJa": "シクロペンタン",
+    "nameEn": "Cyclopentane",
+    "formula": "C5H10",
+    "functionalGroups": [],
+    "skeletonCategory": "脂肪族",
+    "tags": [],
+    "structureSvg": "structures/cyclopentane.svg",
+    "note": ""
+  },
+  {
+    "id": "cyclohexane",
+    "nameJa": "シクロヘキサン",
+    "nameEn": "Cyclohexane",
+    "formula": "C6H12",
+    "functionalGroups": [],
+    "skeletonCategory": "脂肪族",
+    "tags": [],
+    "structureSvg": "structures/cyclohexane.svg",
+    "note": ""
+  },
+  {
+    "id": "ethylene",
+    "nameJa": "エチレン",
+    "nameEn": "Ethylene",
+    "formula": "C2H4",
+    "functionalGroups": [
+      "炭素間不飽和結合"
+    ],
+    "skeletonCategory": "脂肪族",
+    "tags": [],
+    "structureSvg": "structures/ethylene.svg",
+    "note": ""
+  },
+  {
+    "id": "propene",
+    "nameJa": "プロペン",
+    "nameEn": "Propene",
+    "formula": "C3H6",
+    "functionalGroups": [
+      "炭素間不飽和結合"
+    ],
+    "skeletonCategory": "脂肪族",
+    "tags": [],
+    "structureSvg": "structures/propene.svg",
+    "note": ""
+  },
+  {
+    "id": "1-butene",
+    "nameJa": "1-ブテン",
+    "nameEn": "1-Butene",
+    "formula": "C4H8",
+    "functionalGroups": [
+      "炭素間不飽和結合"
+    ],
+    "skeletonCategory": "脂肪族",
+    "tags": [],
+    "structureSvg": "structures/1-butene.svg",
+    "note": ""
+  },
+  {
+    "id": "cis-2-butene",
+    "nameJa": "シス-2-ブテン",
+    "nameEn": "cis-2-Butene",
+    "formula": "C4H8",
+    "functionalGroups": [
+      "炭素間不飽和結合"
+    ],
+    "skeletonCategory": "脂肪族",
+    "tags": [
+      "cis"
+    ],
+    "structureSvg": "structures/cis-2-butene.svg",
+    "note": ""
+  },
+  {
+    "id": "trans-2-butene",
+    "nameJa": "トランス-2-ブテン",
+    "nameEn": "trans-2-Butene",
+    "formula": "C4H8",
+    "functionalGroups": [
+      "炭素間不飽和結合"
+    ],
+    "skeletonCategory": "脂肪族",
+    "tags": [
+      "trans"
+    ],
+    "structureSvg": "structures/trans-2-butene.svg",
+    "note": ""
+  },
+  {
+    "id": "2-methylpropene",
+    "nameJa": "2-メチルプロペン",
+    "nameEn": "2-Methylpropene",
+    "formula": "C4H8",
+    "functionalGroups": [
+      "炭素間不飽和結合"
+    ],
+    "skeletonCategory": "脂肪族",
+    "tags": [],
+    "structureSvg": "structures/2-methylpropene.svg",
+    "note": ""
+  },
+  {
+    "id": "2-pentene",
+    "nameJa": "2-ペンテン",
+    "nameEn": "2-Pentene",
+    "formula": "C5H10",
+    "functionalGroups": [
+      "炭素間不飽和結合"
+    ],
+    "skeletonCategory": "脂肪族",
+    "tags": [],
+    "structureSvg": "structures/2-pentene.svg",
+    "note": "シス・トランスを指定しない"
+  },
+  {
+    "id": "13-butadiene",
+    "nameJa": "1,3-ブタジエン",
+    "nameEn": "1,3-Butadiene",
+    "formula": "C4H6",
+    "functionalGroups": [
+      "炭素間不飽和結合"
+    ],
+    "skeletonCategory": "脂肪族",
+    "tags": [],
+    "structureSvg": "structures/13-butadiene.svg",
+    "note": ""
+  },
+  {
+    "id": "cyclopentene",
+    "nameJa": "シクロペンテン",
+    "nameEn": "Cyclopentene",
+    "formula": "C5H8",
+    "functionalGroups": [
+      "炭素間不飽和結合"
+    ],
+    "skeletonCategory": "脂肪族",
+    "tags": [],
+    "structureSvg": "structures/cyclopentene.svg",
+    "note": ""
+  },
+  {
+    "id": "cyclohexene",
+    "nameJa": "シクロヘキセン",
+    "nameEn": "Cyclohexene",
+    "formula": "C6H10",
+    "functionalGroups": [
+      "炭素間不飽和結合"
+    ],
+    "skeletonCategory": "脂肪族",
+    "tags": [],
+    "structureSvg": "structures/cyclohexene.svg",
+    "note": ""
+  },
+  {
+    "id": "acetylene",
+    "nameJa": "アセチレン",
+    "nameEn": "Acetylene",
+    "formula": "C2H2",
+    "functionalGroups": [
+      "炭素間不飽和結合"
+    ],
+    "skeletonCategory": "脂肪族",
+    "tags": [],
+    "structureSvg": "structures/acetylene.svg",
+    "note": ""
+  },
+  {
+    "id": "propyne",
+    "nameJa": "プロピン",
+    "nameEn": "Propyne",
+    "formula": "C3H4",
+    "functionalGroups": [
+      "炭素間不飽和結合"
+    ],
+    "skeletonCategory": "脂肪族",
+    "tags": [],
+    "structureSvg": "structures/propyne.svg",
+    "note": ""
+  },
+  {
+    "id": "1-butyne",
+    "nameJa": "1-ブチン",
+    "nameEn": "1-Butyne",
+    "formula": "C4H6",
+    "functionalGroups": [
+      "炭素間不飽和結合"
+    ],
+    "skeletonCategory": "脂肪族",
+    "tags": [],
+    "structureSvg": "structures/1-butyne.svg",
+    "note": ""
+  },
+  {
+    "id": "2-butyne",
+    "nameJa": "2-ブチン",
+    "nameEn": "2-Butyne",
+    "formula": "C4H6",
+    "functionalGroups": [
+      "炭素間不飽和結合"
+    ],
+    "skeletonCategory": "脂肪族",
+    "tags": [],
+    "structureSvg": "structures/2-butyne.svg",
+    "note": ""
+  },
+  {
+    "id": "3-methyl-1-butyne",
+    "nameJa": "3-メチル-1-ブチン",
+    "nameEn": "3-Methyl-1-butyne",
+    "formula": "C5H8",
+    "functionalGroups": [
+      "炭素間不飽和結合"
+    ],
+    "skeletonCategory": "脂肪族",
+    "tags": [],
+    "structureSvg": "structures/3-methyl-1-butyne.svg",
+    "note": ""
+  },
+  {
+    "id": "chloromethane",
+    "nameJa": "クロロメタン",
+    "nameEn": "Chloromethane",
+    "formula": "CH3Cl",
+    "functionalGroups": [
+      "ハロゲン化合物"
+    ],
+    "skeletonCategory": "脂肪族",
+    "tags": [],
+    "structureSvg": "structures/chloromethane.svg",
+    "note": ""
+  },
+  {
+    "id": "dichloromethane",
+    "nameJa": "ジクロロメタン",
+    "nameEn": "Dichloromethane",
+    "formula": "CH2Cl2",
+    "functionalGroups": [
+      "ハロゲン化合物"
+    ],
+    "skeletonCategory": "脂肪族",
+    "tags": [],
+    "structureSvg": "structures/dichloromethane.svg",
+    "note": ""
+  },
+  {
+    "id": "trichloromethane",
+    "nameJa": "トリクロロメタン",
+    "nameEn": "Trichloromethane",
+    "formula": "CHCl3",
+    "functionalGroups": [
+      "ハロゲン化合物"
+    ],
+    "skeletonCategory": "脂肪族",
+    "tags": [
+      "ハロホルム"
+    ],
+    "structureSvg": "structures/trichloromethane.svg",
+    "note": ""
+  },
+  {
+    "id": "tetrachloromethane",
+    "nameJa": "テトラクロロメタン",
+    "nameEn": "Tetrachloromethane",
+    "formula": "CCl4",
+    "functionalGroups": [
+      "ハロゲン化合物"
+    ],
+    "skeletonCategory": "脂肪族",
+    "tags": [],
+    "structureSvg": "structures/tetrachloromethane.svg",
+    "note": ""
+  },
+  {
+    "id": "chloroethane",
+    "nameJa": "クロロエタン",
+    "nameEn": "Chloroethane",
+    "formula": "C2H5Cl",
+    "functionalGroups": [
+      "ハロゲン化合物"
+    ],
+    "skeletonCategory": "脂肪族",
+    "tags": [],
+    "structureSvg": "structures/chloroethane.svg",
+    "note": ""
+  },
+  {
+    "id": "12-dichloroethane",
+    "nameJa": "1,2-ジクロロエタン",
+    "nameEn": "1,2-Dichloroethane",
+    "formula": "C2H4Cl2",
+    "functionalGroups": [
+      "ハロゲン化合物"
+    ],
+    "skeletonCategory": "脂肪族",
+    "tags": [],
+    "structureSvg": "structures/12-dichloroethane.svg",
+    "note": ""
+  },
+  {
+    "id": "12-dibromoethane",
+    "nameJa": "1,2-ジブロモエタン",
+    "nameEn": "1,2-Dibromoethane",
+    "formula": "C2H4Br2",
+    "functionalGroups": [
+      "ハロゲン化合物"
+    ],
+    "skeletonCategory": "脂肪族",
+    "tags": [],
+    "structureSvg": "structures/12-dibromoethane.svg",
+    "note": ""
+  },
+  {
+    "id": "1122-tetrabromoethane",
+    "nameJa": "1,1,2,2-テトラブロモエタン",
+    "nameEn": "1,1,2,2-Tetrabromoethane",
+    "formula": "C2H2Br4",
+    "functionalGroups": [
+      "ハロゲン化合物"
+    ],
+    "skeletonCategory": "脂肪族",
+    "tags": [],
+    "structureSvg": "structures/1122-tetrabromoethane.svg",
+    "note": ""
+  },
+  {
+    "id": "vinyl-chloride",
+    "nameJa": "塩化ビニル",
+    "nameEn": "Vinyl chloride",
+    "formula": "C2H3Cl",
+    "functionalGroups": [
+      "炭素間不飽和結合",
+      "ハロゲン化合物"
+    ],
+    "skeletonCategory": "脂肪族",
+    "tags": [],
+    "structureSvg": "structures/vinyl-chloride.svg",
+    "note": ""
+  },
+  {
+    "id": "vinyl-acetate",
+    "nameJa": "酢酸ビニル",
+    "nameEn": "Vinyl acetate",
+    "formula": "C4H6O2",
+    "functionalGroups": [
+      "エステル",
+      "炭素間不飽和結合"
+    ],
+    "skeletonCategory": "脂肪族",
+    "tags": [],
+    "structureSvg": "structures/vinyl-acetate.svg",
+    "note": ""
+  },
+  {
+    "id": "polyethylene",
+    "nameJa": "ポリエチレン",
+    "nameEn": "Polyethylene",
+    "formula": "(C2H4)n",
+    "functionalGroups": [],
+    "skeletonCategory": "脂肪族",
+    "tags": [
+      "高分子"
+    ],
+    "structureSvg": "structures/polyethylene.svg",
+    "note": "繰り返し単位"
+  },
+  {
+    "id": "polyacetylene",
+    "nameJa": "ポリアセチレン",
+    "nameEn": "Polyacetylene",
+    "formula": "(C2H2)n",
+    "functionalGroups": [
+      "炭素間不飽和結合"
+    ],
+    "skeletonCategory": "脂肪族",
+    "tags": [
+      "高分子"
+    ],
+    "structureSvg": "structures/polyacetylene.svg",
+    "note": "繰り返し単位、立体配置を指定しない"
+  },
+  {
+    "id": "acrylonitrile",
+    "nameJa": "アクリロニトリル",
+    "nameEn": "Acrylonitrile",
+    "formula": "C3H3N",
+    "functionalGroups": [
+      "炭素間不飽和結合",
+      "ニトリル"
+    ],
+    "skeletonCategory": "脂肪族",
+    "tags": [],
+    "structureSvg": "structures/acrylonitrile.svg",
+    "note": ""
   }
 ]

@@ -17,7 +17,7 @@
   },
   "fontSHA256": "76d04c18ea243f426b7de1f3ad208e927008f961dc5945e5aad352d0dfde8ee8",
   "checks": [
-    "80 master IDs and formulas",
+    "121 master IDs and formulas",
     "group valence",
     "distinct label bounds",
     "bond/glyph clearance including subscripts",
@@ -1296,6 +1296,542 @@
       ],
       "bonds": 10,
       "bondLines": 13
+    },
+    {
+      "id": "methane",
+      "formula": "CH4",
+      "labels": [
+        "H",
+        "C",
+        "H",
+        "H",
+        "H"
+      ],
+      "bonds": 4,
+      "bondLines": 4
+    },
+    {
+      "id": "ethane",
+      "formula": "C2H6",
+      "labels": [
+        "H",
+        "C",
+        "C",
+        "H",
+        "H",
+        "H",
+        "H",
+        "H"
+      ],
+      "bonds": 7,
+      "bondLines": 7
+    },
+    {
+      "id": "propane",
+      "formula": "C3H8",
+      "labels": [
+        "H3C",
+        "CH2",
+        "CH3"
+      ],
+      "bonds": 2,
+      "bondLines": 2
+    },
+    {
+      "id": "butane",
+      "formula": "C4H10",
+      "labels": [
+        "H3C",
+        "CH2",
+        "CH2",
+        "CH3"
+      ],
+      "bonds": 3,
+      "bondLines": 3
+    },
+    {
+      "id": "pentane",
+      "formula": "C5H12",
+      "labels": [
+        "H3C",
+        "CH2",
+        "CH2",
+        "CH2",
+        "CH3"
+      ],
+      "bonds": 4,
+      "bondLines": 4
+    },
+    {
+      "id": "hexane",
+      "formula": "C6H14",
+      "labels": [
+        "H3C",
+        "CH2",
+        "CH2",
+        "CH2",
+        "CH2",
+        "CH3"
+      ],
+      "bonds": 5,
+      "bondLines": 5
+    },
+    {
+      "id": "2-methylpropane",
+      "formula": "C4H10",
+      "labels": [
+        "H3C",
+        "CH",
+        "CH3",
+        "CH3"
+      ],
+      "bonds": 3,
+      "bondLines": 3
+    },
+    {
+      "id": "2-methylbutane",
+      "formula": "C5H12",
+      "labels": [
+        "H3C",
+        "CH",
+        "CH2",
+        "CH3",
+        "CH3"
+      ],
+      "bonds": 4,
+      "bondLines": 4
+    },
+    {
+      "id": "23-dimethylbutane",
+      "formula": "C6H14",
+      "labels": [
+        "H3C",
+        "CH",
+        "CH",
+        "CH3",
+        "CH3",
+        "CH3"
+      ],
+      "bonds": 5,
+      "bondLines": 5
+    },
+    {
+      "id": "cyclopropane",
+      "formula": "C3H6",
+      "labels": [
+        "CH2",
+        "CH2",
+        "CH2"
+      ],
+      "bonds": 3,
+      "bondLines": 3
+    },
+    {
+      "id": "cyclobutane",
+      "formula": "C4H8",
+      "labels": [
+        "CH2",
+        "CH2",
+        "CH2",
+        "CH2"
+      ],
+      "bonds": 4,
+      "bondLines": 4
+    },
+    {
+      "id": "cyclopentane",
+      "formula": "C5H10",
+      "labels": [
+        "CH2",
+        "CH2",
+        "CH2",
+        "CH2",
+        "CH2"
+      ],
+      "bonds": 5,
+      "bondLines": 5
+    },
+    {
+      "id": "cyclohexane",
+      "formula": "C6H12",
+      "labels": [
+        "CH2",
+        "CH2",
+        "CH2",
+        "CH2",
+        "CH2",
+        "CH2"
+      ],
+      "bonds": 6,
+      "bondLines": 6
+    },
+    {
+      "id": "ethylene",
+      "formula": "C2H4",
+      "labels": [
+        "H",
+        "C",
+        "C",
+        "H",
+        "H",
+        "H"
+      ],
+      "bonds": 5,
+      "bondLines": 6
+    },
+    {
+      "id": "propene",
+      "formula": "C3H6",
+      "labels": [
+        "H2C",
+        "CH",
+        "CH3"
+      ],
+      "bonds": 2,
+      "bondLines": 3
+    },
+    {
+      "id": "1-butene",
+      "formula": "C4H8",
+      "labels": [
+        "H2C",
+        "CH",
+        "CH2",
+        "CH3"
+      ],
+      "bonds": 3,
+      "bondLines": 4
+    },
+    {
+      "id": "cis-2-butene",
+      "formula": "C4H8",
+      "labels": [
+        "C",
+        "C",
+        "H3C",
+        "H",
+        "CH3",
+        "H"
+      ],
+      "bonds": 5,
+      "bondLines": 6
+    },
+    {
+      "id": "trans-2-butene",
+      "formula": "C4H8",
+      "labels": [
+        "C",
+        "C",
+        "H3C",
+        "H",
+        "CH3",
+        "H"
+      ],
+      "bonds": 5,
+      "bondLines": 6
+    },
+    {
+      "id": "2-methylpropene",
+      "formula": "C4H8",
+      "labels": [
+        "H2C",
+        "C",
+        "CH3",
+        "CH3"
+      ],
+      "bonds": 3,
+      "bondLines": 4
+    },
+    {
+      "id": "2-pentene",
+      "formula": "C5H10",
+      "labels": [
+        "H3C",
+        "CH",
+        "CH",
+        "CH2",
+        "CH3"
+      ],
+      "bonds": 4,
+      "bondLines": 5
+    },
+    {
+      "id": "13-butadiene",
+      "formula": "C4H6",
+      "labels": [
+        "H2C",
+        "CH",
+        "CH",
+        "CH2"
+      ],
+      "bonds": 3,
+      "bondLines": 5
+    },
+    {
+      "id": "cyclopentene",
+      "formula": "C5H8",
+      "labels": [
+        "CH",
+        "CH",
+        "CH2",
+        "CH2",
+        "CH2"
+      ],
+      "bonds": 5,
+      "bondLines": 6
+    },
+    {
+      "id": "cyclohexene",
+      "formula": "C6H10",
+      "labels": [
+        "CH",
+        "CH",
+        "CH2",
+        "CH2",
+        "CH2",
+        "CH2"
+      ],
+      "bonds": 6,
+      "bondLines": 7
+    },
+    {
+      "id": "acetylene",
+      "formula": "C2H2",
+      "labels": [
+        "H",
+        "C",
+        "C",
+        "H"
+      ],
+      "bonds": 3,
+      "bondLines": 5
+    },
+    {
+      "id": "propyne",
+      "formula": "C3H4",
+      "labels": [
+        "H",
+        "C",
+        "C",
+        "CH3"
+      ],
+      "bonds": 3,
+      "bondLines": 5
+    },
+    {
+      "id": "1-butyne",
+      "formula": "C4H6",
+      "labels": [
+        "H",
+        "C",
+        "C",
+        "CH2",
+        "CH3"
+      ],
+      "bonds": 4,
+      "bondLines": 6
+    },
+    {
+      "id": "2-butyne",
+      "formula": "C4H6",
+      "labels": [
+        "H3C",
+        "C",
+        "C",
+        "CH3"
+      ],
+      "bonds": 3,
+      "bondLines": 5
+    },
+    {
+      "id": "3-methyl-1-butyne",
+      "formula": "C5H8",
+      "labels": [
+        "H",
+        "C",
+        "C",
+        "CH",
+        "CH3",
+        "CH3"
+      ],
+      "bonds": 5,
+      "bondLines": 7
+    },
+    {
+      "id": "chloromethane",
+      "formula": "CH3Cl",
+      "labels": [
+        "H",
+        "C",
+        "Cl",
+        "H",
+        "H"
+      ],
+      "bonds": 4,
+      "bondLines": 4
+    },
+    {
+      "id": "dichloromethane",
+      "formula": "CH2Cl2",
+      "labels": [
+        "Cl",
+        "C",
+        "Cl",
+        "H",
+        "H"
+      ],
+      "bonds": 4,
+      "bondLines": 4
+    },
+    {
+      "id": "trichloromethane",
+      "formula": "CHCl3",
+      "labels": [
+        "Cl",
+        "C",
+        "Cl",
+        "H",
+        "Cl"
+      ],
+      "bonds": 4,
+      "bondLines": 4
+    },
+    {
+      "id": "tetrachloromethane",
+      "formula": "CCl4",
+      "labels": [
+        "Cl",
+        "C",
+        "Cl",
+        "Cl",
+        "Cl"
+      ],
+      "bonds": 4,
+      "bondLines": 4
+    },
+    {
+      "id": "chloroethane",
+      "formula": "C2H5Cl",
+      "labels": [
+        "H",
+        "C",
+        "C",
+        "Cl",
+        "H",
+        "H",
+        "H",
+        "H"
+      ],
+      "bonds": 7,
+      "bondLines": 7
+    },
+    {
+      "id": "12-dichloroethane",
+      "formula": "C2H4Cl2",
+      "labels": [
+        "Cl",
+        "C",
+        "C",
+        "Cl",
+        "H",
+        "H",
+        "H",
+        "H"
+      ],
+      "bonds": 7,
+      "bondLines": 7
+    },
+    {
+      "id": "12-dibromoethane",
+      "formula": "C2H4Br2",
+      "labels": [
+        "Br",
+        "C",
+        "C",
+        "Br",
+        "H",
+        "H",
+        "H",
+        "H"
+      ],
+      "bonds": 7,
+      "bondLines": 7
+    },
+    {
+      "id": "1122-tetrabromoethane",
+      "formula": "C2H2Br4",
+      "labels": [
+        "Br",
+        "C",
+        "C",
+        "Br",
+        "Br",
+        "H",
+        "Br",
+        "H"
+      ],
+      "bonds": 7,
+      "bondLines": 7
+    },
+    {
+      "id": "vinyl-chloride",
+      "formula": "C2H3Cl",
+      "labels": [
+        "H",
+        "C",
+        "C",
+        "Cl",
+        "H",
+        "H"
+      ],
+      "bonds": 5,
+      "bondLines": 6
+    },
+    {
+      "id": "vinyl-acetate",
+      "formula": "C4H6O2",
+      "labels": [
+        "H3C",
+        "C",
+        "O",
+        "CH",
+        "CH2",
+        "O"
+      ],
+      "bonds": 5,
+      "bondLines": 7
+    },
+    {
+      "id": "polyethylene",
+      "formula": "(C2H4)n",
+      "labels": [
+        "CH2",
+        "CH2"
+      ],
+      "bonds": 1,
+      "bondLines": 9
+    },
+    {
+      "id": "polyacetylene",
+      "formula": "(C2H2)n",
+      "labels": [
+        "CH",
+        "CH"
+      ],
+      "bonds": 1,
+      "bondLines": 10
+    },
+    {
+      "id": "acrylonitrile",
+      "formula": "C3H3N",
+      "labels": [
+        "H2C",
+        "CH",
+        "C",
+        "N"
+      ],
+      "bonds": 3,
+      "bondLines": 6
     }
   ]
 }

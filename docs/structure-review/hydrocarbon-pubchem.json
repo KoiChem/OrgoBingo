@@ -1,0 +1,240 @@
+{
+  "retrieved": "2026-11-02",
+  "source": "PubChem PUG REST: MolecularFormula, CanonicalSMILES (ConnectivitySMILES)",
+  "entries": [
+    {
+      "id": "methane",
+      "cid": 297,
+      "formula": "CH4",
+      "smiles": "C"
+    },
+    {
+      "id": "ethane",
+      "cid": 6324,
+      "formula": "C2H6",
+      "smiles": "CC"
+    },
+    {
+      "id": "propane",
+      "cid": 6334,
+      "formula": "C3H8",
+      "smiles": "CCC"
+    },
+    {
+      "id": "butane",
+      "cid": 7843,
+      "formula": "C4H10",
+      "smiles": "CCCC"
+    },
+    {
+      "id": "pentane",
+      "cid": 8003,
+      "formula": "C5H12",
+      "smiles": "CCCCC"
+    },
+    {
+      "id": "hexane",
+      "cid": 8058,
+      "formula": "C6H14",
+      "smiles": "CCCCCC"
+    },
+    {
+      "id": "2-methylpropane",
+      "cid": 6360,
+      "formula": "C4H10",
+      "smiles": "CC(C)C"
+    },
+    {
+      "id": "2-methylbutane",
+      "cid": 6556,
+      "formula": "C5H12",
+      "smiles": "CCC(C)C"
+    },
+    {
+      "id": "23-dimethylbutane",
+      "cid": 6589,
+      "formula": "C6H14",
+      "smiles": "CC(C)C(C)C"
+    },
+    {
+      "id": "cyclopropane",
+      "cid": 6351,
+      "formula": "C3H6",
+      "smiles": "C1CC1"
+    },
+    {
+      "id": "cyclobutane",
+      "cid": 9250,
+      "formula": "C4H8",
+      "smiles": "C1CCC1"
+    },
+    {
+      "id": "cyclopentane",
+      "cid": 9253,
+      "formula": "C5H10",
+      "smiles": "C1CCCC1"
+    },
+    {
+      "id": "cyclohexane",
+      "cid": 8078,
+      "formula": "C6H12",
+      "smiles": "C1CCCCC1"
+    },
+    {
+      "id": "ethylene",
+      "cid": 6325,
+      "formula": "C2H4",
+      "smiles": "C=C"
+    },
+    {
+      "id": "propene",
+      "cid": 8252,
+      "formula": "C3H6",
+      "smiles": "CC=C"
+    },
+    {
+      "id": "1-butene",
+      "cid": 7844,
+      "formula": "C4H8",
+      "smiles": "CCC=C"
+    },
+    {
+      "id": "cis-2-butene",
+      "cid": 5287573,
+      "formula": "C4H8",
+      "smiles": "CC=CC"
+    },
+    {
+      "id": "trans-2-butene",
+      "cid": 62695,
+      "formula": "C4H8",
+      "smiles": "CC=CC"
+    },
+    {
+      "id": "2-methylpropene",
+      "cid": 8255,
+      "formula": "C4H8",
+      "smiles": "CC(=C)C"
+    },
+    {
+      "id": "2-pentene",
+      "cid": 12585,
+      "formula": "C5H10",
+      "smiles": "CCC=CC"
+    },
+    {
+      "id": "13-butadiene",
+      "cid": 7845,
+      "formula": "C4H6",
+      "smiles": "C=CC=C"
+    },
+    {
+      "id": "cyclopentene",
+      "cid": 8882,
+      "formula": "C5H8",
+      "smiles": "C1CC=CC1"
+    },
+    {
+      "id": "cyclohexene",
+      "cid": 8079,
+      "formula": "C6H10",
+      "smiles": "C1CCC=CC1"
+    },
+    {
+      "id": "acetylene",
+      "cid": 6326,
+      "formula": "C2H2",
+      "smiles": "C#C"
+    },
+    {
+      "id": "propyne",
+      "cid": 6335,
+      "formula": "C3H4",
+      "smiles": "CC#C"
+    },
+    {
+      "id": "1-butyne",
+      "cid": 7846,
+      "formula": "C4H6",
+      "smiles": "CCC#C"
+    },
+    {
+      "id": "2-butyne",
+      "cid": 10419,
+      "formula": "C4H6",
+      "smiles": "CC#CC"
+    },
+    {
+      "id": "3-methyl-1-butyne",
+      "cid": 69019,
+      "formula": "C5H8",
+      "smiles": "CC(C)C#C"
+    },
+    {
+      "id": "chloromethane",
+      "cid": 6327,
+      "formula": "CH3Cl",
+      "smiles": "CCl"
+    },
+    {
+      "id": "dichloromethane",
+      "cid": 6344,
+      "formula": "CH2Cl2",
+      "smiles": "C(Cl)Cl"
+    },
+    {
+      "id": "trichloromethane",
+      "cid": 6212,
+      "formula": "CHCl3",
+      "smiles": "C(Cl)(Cl)Cl"
+    },
+    {
+      "id": "tetrachloromethane",
+      "cid": 5943,
+      "formula": "CCl4",
+      "smiles": "C(Cl)(Cl)(Cl)Cl"
+    },
+    {
+      "id": "chloroethane",
+      "cid": 6337,
+      "formula": "C2H5Cl",
+      "smiles": "CCCl"
+    },
+    {
+      "id": "12-dichloroethane",
+      "cid": 11,
+      "formula": "C2H4Cl2",
+      "smiles": "C(CCl)Cl"
+    },
+    {
+      "id": "12-dibromoethane",
+      "cid": 7839,
+      "formula": "C2H4Br2",
+      "smiles": "C(CBr)Br"
+    },
+    {
+      "id": "1122-tetrabromoethane",
+      "cid": 6588,
+      "formula": "C2H2Br4",
+      "smiles": "C(C(Br)Br)(Br)Br"
+    },
+    {
+      "id": "vinyl-chloride",
+      "cid": 6338,
+      "formula": "C2H3Cl",
+      "smiles": "C=CCl"
+    },
+    {
+      "id": "vinyl-acetate",
+      "cid": 7904,
+      "formula": "C4H6O2",
+      "smiles": "CC(=O)OC=C"
+    },
+    {
+      "id": "acrylonitrile",
+      "cid": 7855,
+      "formula": "C3H3N",
+      "smiles": "C=CC#N"
+    }
+  ]
+}
