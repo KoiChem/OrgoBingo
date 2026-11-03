@@ -6,7 +6,7 @@ async page => {
  for(const mode of ['name','structure']){
   await page.locator('#'+mode+'-mode').click();
   await page.locator('#display').click();await page.waitForFunction(()=>round?.shuffling===true);
-  let s=await state();if(!s.candidate||s.opacity!=='0.2'||!s.transform.includes('0.95'))throw Error('candidate '+JSON.stringify(s));
+  let s=await state();if(!s.candidate||s.opacity!=='0.2'||!s.transform.includes('0.75'))throw Error('candidate '+JSON.stringify(s));
   await page.screenshot({path:'docs/structure-review/shuffle-'+mode+'.png'});
   await page.waitForFunction(()=>round&&!round.shuffling&&!busy);
   s=await state();if(s.opacity!=='1'||s.transform!=='none'||s.color!=='rgb(0, 0, 0)')throw Error('final '+JSON.stringify(s));
@@ -17,5 +17,5 @@ async page => {
  await page.evaluate(()=>reset());await page.waitForTimeout(350);
  if((await state()).candidate)throw Error('reset lost phase');
  if(errors.length)throw Error(errors.join('\n'));
- return {modes:2,candidateOpacity:.2,candidateScale:.95,finalBlack:true,reset:true,modeSwitch:true,errors};
+ return {modes:2,candidateOpacity:.2,candidateScale:.75,finalBlack:true,reset:true,modeSwitch:true,errors};
 }
