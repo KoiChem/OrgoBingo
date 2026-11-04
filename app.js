@@ -5,7 +5,7 @@ let onOff={}; try {onOff=JSON.parse(localStorage.getItem(key))||{};} catch {};
 const filterState={set:{query:'',functionalGroups:[],skeletonCategories:[],tags:[],sort:'original'},master:{query:'',functionalGroups:[],skeletonCategories:[],tags:[],sort:'original'},add:{query:'',functionalGroups:[],skeletonCategories:[],tags:[],sort:'original'}};
 let masterEditing=null;
 const filterOpen={set:{},master:{},add:{}};
-const structureUrl=c=>c.structureSvg+(c.structureSvg.includes('?')?'&':'?')+'v=20261102-6';
+const structureUrl=c=>c.structureSvg+(c.structureSvg.includes('?')?'&':'?')+'v=20261104-halogen';
 const active=(s,id)=>onOff[s]?.[id]!==false;
 function saveOnOff(){localStorage.setItem(key,JSON.stringify(onOff));}
 function setActive(s,id,v){(onOff[s] ||= {})[id]=v;saveOnOff();}

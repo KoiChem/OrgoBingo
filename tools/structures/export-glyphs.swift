@@ -31,5 +31,8 @@ for char in "CHOINSalBrn1234567890()" {
     let b = path.boundingBoxOfPath
     result[String(char)] = ["path": d, "advance": advance.width, "bounds": [b.minX, -b.maxY, b.maxX, -b.minY]]
 }
+// Distinctive halogen labels: bars for iodine I and a curved foot for chlorine l.
+result["I"] = ["path": "M0.8000 -33.0234L12.5000 -33.0234L12.5000 -29.5000L8.9062 -29.5000L8.9062 -3.5000L12.5000 -3.5000L12.5000 0.0000L0.8000 0.0000L0.8000 -3.5000L4.4297 -3.5000L4.4297 -29.5000L0.8000 -29.5000Z", "advance": 13.3359375, "bounds": [0.8, -33.0234375, 12.5, 0.0]]
+result["l"] = ["path": "M3.2344 -34.7812L7.4531 -34.7812L7.4531 -5.5000Q7.4531 -3.1000 9.5000 -3.1000L10.0000 -3.1000L10.0000 0.0000L8.7000 0.0000Q3.2344 0.0000 3.2344 -5.5000Z", "advance": 10.6640625, "bounds": [3.234375, -34.78125, 10.0, 0.0]]
 let data = try JSONSerialization.data(withJSONObject: ["font": CTFontCopyFullName(font), "version": CTFontCopyName(font, kCTFontVersionNameKey) ?? "unknown" as CFString, "size": 48, "glyphs": result], options: [.prettyPrinted, .sortedKeys])
 try data.write(to: root.appendingPathComponent("glyphs.json"))
