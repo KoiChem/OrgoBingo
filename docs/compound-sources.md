@@ -95,3 +95,14 @@ PubChemの分子式と重原子の結合・結合次数を図の結合グラフ�
 | acrylonitrile | [CID 7855](https://pubchem.ncbi.nlm.nih.gov/compound/7855) |
 
 繰り返し単位は [PubChem: Polyethylene](https://pubchem.ncbi.nlm.nih.gov/compound/polyethylene) と [ACS: Polyacetylene](https://pubs.acs.org/doi/10.1021/jp011611w) を参照した。
+
+## 性質・特徴（2026-11-04）
+
+添付の脂肪族化合物32種の記述を使用。文字数は添付資料に合わせ、全角1字・半角0.5字として最大30字。以下は資料の記述を物性・条件に合わせて調整した。
+
+- ジメチルエーテルと酢酸メチルの「水に難溶」は削除。後者の水への溶解度は20℃で約25 g/100 mL。[NIOSH](https://www.cdc.gov/niosh/npg/npgd0391.html)、[PubChem](https://pubchem.ncbi.nlm.nih.gov/compound/8254)
+- グリセリンの「無毒」は削除。[NIOSH](https://www.cdc.gov/niosh/npg/npgd0302.html)
+- 食酢に含まれる酢酸は「主成分」ではなく「酸味成分」と記載。
+- フマル酸の「加熱しても脱水せず昇華のみ」および無水マレイン酸の「フマル酸からは生じない」は条件を限定しない断定を避けた。フマル酸は昇華するが、蒸留条件で無水マレイン酸を生じる記述もある。[PubChem](https://pubchem.ncbi.nlm.nih.gov/compound/444972)、[National Library of Medicine収蔵書籍](https://digirepo.nlm.nih.gov/ext/dw/04710900R/PDF/04710900R.pdf)
+- 無水酢酸の「酸性なし」は削除。水と反応して酢酸となる。[NIOSH](https://www.cdc.gov/niosh/npg/npgd0003.html)
+- ヨードホルムの「CH3CO-などをもつ化合物」は酢酸や酢酸エチルまで対象と誤解されるため、陽性例のアセトンを用いた表現に変更。[大学の有機化学実験資料](https://faculty.kfupm.edu.sa/CHEM/hmuallem/courses/Chem303/Classification_Tests_Handout.pdf)

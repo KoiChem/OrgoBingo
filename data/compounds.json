@@ -12,7 +12,8 @@
       "1価アルコール"
     ],
     "structureSvg": "structures/methanol.svg",
-    "note": ""
+    "note": "",
+    "properties": "無色・有毒の液体。燃料に利用。酸化でホルムアルデヒド生成。"
   },
   {
     "id": "ethanol",
@@ -28,7 +29,8 @@
       "第一級アルコール"
     ],
     "structureSvg": "structures/ethanol.svg",
-    "note": ""
+    "note": "",
+    "properties": "消毒剤・酒類に利用。Naと反応し水素発生。分子間で水素結合。"
   },
   {
     "id": "1-propanol",
@@ -44,7 +46,8 @@
       "第一級アルコール"
     ],
     "structureSvg": "structures/1-propanol.svg",
-    "note": ""
+    "note": "",
+    "properties": "炭素原子3個の第1級アルコール。酸化でプロピオンアルデヒドに。"
   },
   {
     "id": "2-propanol",
@@ -60,7 +63,8 @@
       "第二級アルコール"
     ],
     "structureSvg": "structures/2-propanol.svg",
-    "note": ""
+    "note": "",
+    "properties": "第2級アルコール。酸化でアセトン生成。ヨードホルム反応陽性。"
   },
   {
     "id": "2-butanol",
@@ -76,7 +80,8 @@
       "第二級アルコール"
     ],
     "structureSvg": "structures/2-butanol.svg",
-    "note": ""
+    "note": "",
+    "properties": "第2級アルコール。不斉炭素原子あり。ヨードホルム反応陽性。"
   },
   {
     "id": "ethylene-glycol",
@@ -92,7 +97,8 @@
       "多価アルコール"
     ],
     "structureSvg": "structures/ethylene-glycol.svg",
-    "note": ""
+    "note": "",
+    "properties": "粘性のある有毒の2価アルコール。不凍液・ポリエステル原料。"
   },
   {
     "id": "glycerol",
@@ -108,7 +114,8 @@
       "多価アルコール"
     ],
     "structureSvg": "structures/glycerol.svg",
-    "note": ""
+    "note": "",
+    "properties": "無色・粘性のある3価アルコール。油脂の加水分解で生成。"
   },
   {
     "id": "dimethyl-ether",
@@ -121,7 +128,8 @@
     "skeletonCategory": "脂肪族",
     "tags": [],
     "structureSvg": "structures/dimethyl-ether.svg",
-    "note": ""
+    "note": "",
+    "properties": "エタノールの構造異性体。Naと反応せず、常温で気体。"
   },
   {
     "id": "diethyl-ether",
@@ -134,7 +142,8 @@
     "skeletonCategory": "脂肪族",
     "tags": [],
     "structureSvg": "structures/diethyl-ether.svg",
-    "note": ""
+    "note": "",
+    "properties": "エタノールの分子間脱水で生成。揮発性・引火性。麻酔作用あり。"
   },
   {
     "id": "acetone",
@@ -147,7 +156,8 @@
     "skeletonCategory": "脂肪族",
     "tags": [],
     "structureSvg": "structures/acetone.svg",
-    "note": ""
+    "note": "",
+    "properties": "芳香・引火性の液体。水と任意に混和。ヨードホルム反応陽性。"
   },
   {
     "id": "methyl-ethyl-ketone",
@@ -160,7 +170,8 @@
     "skeletonCategory": "脂肪族",
     "tags": [],
     "structureSvg": "structures/methyl-ethyl-ketone.svg",
-    "note": ""
+    "note": "",
+    "properties": "炭素原子4個。2-ブタノールの酸化で生成。ヨードホルム陽性。"
   },
   {
     "id": "formaldehyde",
@@ -173,7 +184,8 @@
     "skeletonCategory": "脂肪族",
     "tags": [],
     "structureSvg": "structures/formaldehyde.svg",
-    "note": ""
+    "note": "",
+    "properties": "刺激臭・有毒の気体。約37％水溶液がホルマリン。還元性あり。"
   },
   {
     "id": "acetaldehyde",
@@ -186,7 +198,8 @@
     "skeletonCategory": "脂肪族",
     "tags": [],
     "structureSvg": "structures/acetaldehyde.svg",
-    "note": ""
+    "note": "",
+    "properties": "エタノールの酸化で生成。還元性あり。酸化で酢酸に。"
   },
   {
     "id": "propionaldehyde",
@@ -199,7 +212,8 @@
     "skeletonCategory": "脂肪族",
     "tags": [],
     "structureSvg": "structures/propionaldehyde.svg",
-    "note": ""
+    "note": "",
+    "properties": "炭素原子3個。1-プロパノールの酸化で生成。銀鏡反応陽性。"
   },
   {
     "id": "formic-acid",
@@ -212,7 +226,8 @@
     "skeletonCategory": "脂肪族",
     "tags": [],
     "structureSvg": "structures/formic-acid.svg",
-    "note": ""
+    "note": "",
+    "properties": "無色・刺激臭の液体。ホルミル基をもち還元性あり。"
   },
   {
     "id": "acetic-acid",
@@ -225,7 +240,8 @@
     "skeletonCategory": "脂肪族",
     "tags": [],
     "structureSvg": "structures/acetic-acid.svg",
-    "note": ""
+    "note": "",
+    "properties": "食酢の酸味成分。アセトアルデヒドの酸化で生成。純品は氷酢酸。"
   },
   {
     "id": "propionic-acid",
@@ -238,7 +254,8 @@
     "skeletonCategory": "脂肪族",
     "tags": [],
     "structureSvg": "structures/propionic-acid.svg",
-    "note": ""
+    "note": "",
+    "properties": "炭素原子3個の低級脂肪酸。プロピオンアルデヒドの酸化で生成。"
   },
   {
     "id": "lactic-acid",
@@ -256,7 +273,8 @@
       "第二級アルコール"
     ],
     "structureSvg": "structures/lactic-acid.svg",
-    "note": ""
+    "note": "",
+    "properties": "乳製品中のヒドロキシ酸。不斉炭素原子あり。鏡像異性体が存在。"
   },
   {
     "id": "fumaric-acid",
@@ -273,7 +291,8 @@
       "trans"
     ],
     "structureSvg": "structures/fumaric-acid.svg",
-    "note": ""
+    "note": "",
+    "properties": "トランス形不飽和ジカルボン酸。加熱で昇華しやすい。"
   },
   {
     "id": "maleic-acid",
@@ -290,7 +309,8 @@
       "cis"
     ],
     "structureSvg": "structures/maleic-acid.svg",
-    "note": ""
+    "note": "",
+    "properties": "シス形不飽和ジカルボン酸。加熱・脱水で無水マレイン酸に。"
   },
   {
     "id": "methyl-formate",
@@ -303,7 +323,8 @@
     "skeletonCategory": "脂肪族",
     "tags": [],
     "structureSvg": "structures/methyl-formate.svg",
-    "note": ""
+    "note": "",
+    "properties": "ギ酸とメタノールのエステル。酢酸の構造異性体。還元性あり。"
   },
   {
     "id": "methyl-acetate",
@@ -316,7 +337,8 @@
     "skeletonCategory": "脂肪族",
     "tags": [],
     "structureSvg": "structures/methyl-acetate.svg",
-    "note": ""
+    "note": "",
+    "properties": "炭素原子3個。酢酸とメタノールのエステル。果実のような香り。"
   },
   {
     "id": "ethyl-acetate",
@@ -329,7 +351,8 @@
     "skeletonCategory": "脂肪族",
     "tags": [],
     "structureSvg": "structures/ethyl-acetate.svg",
-    "note": ""
+    "note": "",
+    "properties": "酢酸とエタノールのエステル。果実臭・揮発性。水より軽い。"
   },
   {
     "id": "acetic-anhydride",
@@ -342,7 +365,8 @@
     "skeletonCategory": "脂肪族",
     "tags": [],
     "structureSvg": "structures/acetic-anhydride.svg",
-    "note": ""
+    "note": "",
+    "properties": "酢酸の脱水で生成する液体。水と反応し酢酸に。"
   },
   {
     "id": "iodoform",
@@ -357,7 +381,8 @@
       "ハロホルム"
     ],
     "structureSvg": "structures/iodoform.svg",
-    "note": ""
+    "note": "",
+    "properties": "アセトンなどとI2・NaOHの反応で生成。特有臭の黄色沈殿。"
   },
   {
     "id": "palmitic-acid",
@@ -373,7 +398,8 @@
       "飽和脂肪酸"
     ],
     "structureSvg": "structures/palmitic-acid.svg",
-    "note": ""
+    "note": "",
+    "properties": "C15H31COOH。油脂を構成する高級飽和脂肪酸。無臭の固体。"
   },
   {
     "id": "stearic-acid",
@@ -389,7 +415,8 @@
       "飽和脂肪酸"
     ],
     "structureSvg": "structures/stearic-acid.svg",
-    "note": ""
+    "note": "",
+    "properties": "C17H35COOH。油脂を構成する高級飽和脂肪酸。水に難溶。"
   },
   {
     "id": "oxalic-acid",
@@ -404,7 +431,8 @@
       "ジカルボン酸"
     ],
     "structureSvg": "structures/oxalic-acid.svg",
-    "note": ""
+    "note": "",
+    "properties": "最も簡単なジカルボン酸。二水和物は中和滴定の標準試薬。"
   },
   {
     "id": "2-methyl-2-propanol",
@@ -420,7 +448,8 @@
       "第三級アルコール"
     ],
     "structureSvg": "structures/2-methyl-2-propanol.svg",
-    "note": ""
+    "note": "",
+    "properties": "炭素原子4個の第3級アルコール。酸化されにくい。"
   },
   {
     "id": "1-butanol",
@@ -436,7 +465,8 @@
       "第一級アルコール"
     ],
     "structureSvg": "structures/1-butanol.svg",
-    "note": ""
+    "note": "",
+    "properties": "炭素原子4個の第1級アルコール。異性体中で沸点最大。"
   },
   {
     "id": "butyric-acid",
@@ -449,7 +479,8 @@
     "skeletonCategory": "脂肪族",
     "tags": [],
     "structureSvg": "structures/butyric-acid.svg",
-    "note": ""
+    "note": "",
+    "properties": "炭素原子4個の低級脂肪酸。1-ブタノールの酸化で生成。刺激臭。"
   },
   {
     "id": "maleic-anhydride",
@@ -463,7 +494,8 @@
     "skeletonCategory": "脂肪族",
     "tags": [],
     "structureSvg": "structures/maleic-anhydride.svg",
-    "note": ""
+    "note": "",
+    "properties": "マレイン酸の加熱で生成する酸無水物。水と反応しマレイン酸に。"
   },
   {
     "id": "benzene",
@@ -474,7 +506,8 @@
     "skeletonCategory": "芳香族",
     "tags": [],
     "structureSvg": "structures/benzene.svg",
-    "note": ""
+    "note": "",
+    "properties": ""
   },
   {
     "id": "toluene",
@@ -485,7 +518,8 @@
     "skeletonCategory": "芳香族",
     "tags": [],
     "structureSvg": "structures/toluene.svg",
-    "note": ""
+    "note": "",
+    "properties": ""
   },
   {
     "id": "ethylbenzene",
@@ -496,7 +530,8 @@
     "skeletonCategory": "芳香族",
     "tags": [],
     "structureSvg": "structures/ethylbenzene.svg",
-    "note": ""
+    "note": "",
+    "properties": ""
   },
   {
     "id": "styrene",
@@ -509,7 +544,8 @@
     "skeletonCategory": "芳香族",
     "tags": [],
     "structureSvg": "structures/styrene.svg",
-    "note": ""
+    "note": "",
+    "properties": ""
   },
   {
     "id": "o-xylene",
@@ -520,7 +556,8 @@
     "skeletonCategory": "芳香族",
     "tags": [],
     "structureSvg": "structures/o-xylene.svg",
-    "note": ""
+    "note": "",
+    "properties": ""
   },
   {
     "id": "m-xylene",
@@ -531,7 +568,8 @@
     "skeletonCategory": "芳香族",
     "tags": [],
     "structureSvg": "structures/m-xylene.svg",
-    "note": ""
+    "note": "",
+    "properties": ""
   },
   {
     "id": "p-xylene",
@@ -542,7 +580,8 @@
     "skeletonCategory": "芳香族",
     "tags": [],
     "structureSvg": "structures/p-xylene.svg",
-    "note": ""
+    "note": "",
+    "properties": ""
   },
   {
     "id": "naphthalene",
@@ -553,7 +592,8 @@
     "skeletonCategory": "芳香族",
     "tags": [],
     "structureSvg": "structures/naphthalene.svg",
-    "note": ""
+    "note": "",
+    "properties": ""
   },
   {
     "id": "cumene",
@@ -564,7 +604,8 @@
     "skeletonCategory": "芳香族",
     "tags": [],
     "structureSvg": "structures/cumene.svg",
-    "note": ""
+    "note": "",
+    "properties": ""
   },
   {
     "id": "cumene-hydroperoxide",
@@ -577,7 +618,8 @@
     "skeletonCategory": "芳香族",
     "tags": [],
     "structureSvg": "structures/cumene-hydroperoxide.svg",
-    "note": ""
+    "note": "",
+    "properties": ""
   },
   {
     "id": "chlorobenzene",
@@ -590,7 +632,8 @@
     "skeletonCategory": "芳香族",
     "tags": [],
     "structureSvg": "structures/chlorobenzene.svg",
-    "note": ""
+    "note": "",
+    "properties": ""
   },
   {
     "id": "o-dichlorobenzene",
@@ -603,7 +646,8 @@
     "skeletonCategory": "芳香族",
     "tags": [],
     "structureSvg": "structures/o-dichlorobenzene.svg",
-    "note": ""
+    "note": "",
+    "properties": ""
   },
   {
     "id": "m-dichlorobenzene",
@@ -616,7 +660,8 @@
     "skeletonCategory": "芳香族",
     "tags": [],
     "structureSvg": "structures/m-dichlorobenzene.svg",
-    "note": ""
+    "note": "",
+    "properties": ""
   },
   {
     "id": "p-dichlorobenzene",
@@ -629,7 +674,8 @@
     "skeletonCategory": "芳香族",
     "tags": [],
     "structureSvg": "structures/p-dichlorobenzene.svg",
-    "note": ""
+    "note": "",
+    "properties": ""
   },
   {
     "id": "benzenesulfonic-acid",
@@ -642,7 +688,8 @@
     "skeletonCategory": "芳香族",
     "tags": [],
     "structureSvg": "structures/benzenesulfonic-acid.svg",
-    "note": ""
+    "note": "",
+    "properties": ""
   },
   {
     "id": "sodium-benzenesulfonate",
@@ -655,7 +702,8 @@
     "skeletonCategory": "芳香族",
     "tags": [],
     "structureSvg": "structures/sodium-benzenesulfonate.svg",
-    "note": ""
+    "note": "",
+    "properties": ""
   },
   {
     "id": "nitrobenzene",
@@ -668,7 +716,8 @@
     "skeletonCategory": "芳香族",
     "tags": [],
     "structureSvg": "structures/nitrobenzene.svg",
-    "note": ""
+    "note": "",
+    "properties": ""
   },
   {
     "id": "o-nitrotoluene",
@@ -681,7 +730,8 @@
     "skeletonCategory": "芳香族",
     "tags": [],
     "structureSvg": "structures/o-nitrotoluene.svg",
-    "note": ""
+    "note": "",
+    "properties": ""
   },
   {
     "id": "p-nitrotoluene",
@@ -694,7 +744,8 @@
     "skeletonCategory": "芳香族",
     "tags": [],
     "structureSvg": "structures/p-nitrotoluene.svg",
-    "note": ""
+    "note": "",
+    "properties": ""
   },
   {
     "id": "phenol",
@@ -707,7 +758,8 @@
     "skeletonCategory": "芳香族",
     "tags": [],
     "structureSvg": "structures/phenol.svg",
-    "note": ""
+    "note": "",
+    "properties": ""
   },
   {
     "id": "o-cresol",
@@ -720,7 +772,8 @@
     "skeletonCategory": "芳香族",
     "tags": [],
     "structureSvg": "structures/o-cresol.svg",
-    "note": ""
+    "note": "",
+    "properties": ""
   },
   {
     "id": "m-cresol",
@@ -733,7 +786,8 @@
     "skeletonCategory": "芳香族",
     "tags": [],
     "structureSvg": "structures/m-cresol.svg",
-    "note": ""
+    "note": "",
+    "properties": ""
   },
   {
     "id": "p-cresol",
@@ -746,7 +800,8 @@
     "skeletonCategory": "芳香族",
     "tags": [],
     "structureSvg": "structures/p-cresol.svg",
-    "note": ""
+    "note": "",
+    "properties": ""
   },
   {
     "id": "1-naphthol",
@@ -759,7 +814,8 @@
     "skeletonCategory": "芳香族",
     "tags": [],
     "structureSvg": "structures/1-naphthol.svg",
-    "note": ""
+    "note": "",
+    "properties": ""
   },
   {
     "id": "2-naphthol",
@@ -772,7 +828,8 @@
     "skeletonCategory": "芳香族",
     "tags": [],
     "structureSvg": "structures/2-naphthol.svg",
-    "note": ""
+    "note": "",
+    "properties": ""
   },
   {
     "id": "sodium-phenoxide",
@@ -785,7 +842,8 @@
     "skeletonCategory": "芳香族",
     "tags": [],
     "structureSvg": "structures/sodium-phenoxide.svg",
-    "note": ""
+    "note": "",
+    "properties": ""
   },
   {
     "id": "246-tribromophenol",
@@ -799,7 +857,8 @@
     "skeletonCategory": "芳香族",
     "tags": [],
     "structureSvg": "structures/246-tribromophenol.svg",
-    "note": ""
+    "note": "",
+    "properties": ""
   },
   {
     "id": "picric-acid",
@@ -813,7 +872,8 @@
     "skeletonCategory": "芳香族",
     "tags": [],
     "structureSvg": "structures/picric-acid.svg",
-    "note": ""
+    "note": "",
+    "properties": ""
   },
   {
     "id": "phenyl-acetate",
@@ -826,7 +886,8 @@
     "skeletonCategory": "芳香族",
     "tags": [],
     "structureSvg": "structures/phenyl-acetate.svg",
-    "note": ""
+    "note": "",
+    "properties": ""
   },
   {
     "id": "benzyl-alcohol",
@@ -842,7 +903,8 @@
       "第一級アルコール"
     ],
     "structureSvg": "structures/benzyl-alcohol.svg",
-    "note": ""
+    "note": "",
+    "properties": ""
   },
   {
     "id": "benzaldehyde",
@@ -855,7 +917,8 @@
     "skeletonCategory": "芳香族",
     "tags": [],
     "structureSvg": "structures/benzaldehyde.svg",
-    "note": ""
+    "note": "",
+    "properties": ""
   },
   {
     "id": "benzoic-acid",
@@ -868,7 +931,8 @@
     "skeletonCategory": "芳香族",
     "tags": [],
     "structureSvg": "structures/benzoic-acid.svg",
-    "note": ""
+    "note": "",
+    "properties": ""
   },
   {
     "id": "sodium-benzoate",
@@ -881,7 +945,8 @@
     "skeletonCategory": "芳香族",
     "tags": [],
     "structureSvg": "structures/sodium-benzoate.svg",
-    "note": ""
+    "note": "",
+    "properties": ""
   },
   {
     "id": "phthalic-acid",
@@ -896,7 +961,8 @@
       "ジカルボン酸"
     ],
     "structureSvg": "structures/phthalic-acid.svg",
-    "note": ""
+    "note": "",
+    "properties": ""
   },
   {
     "id": "isophthalic-acid",
@@ -911,7 +977,8 @@
       "ジカルボン酸"
     ],
     "structureSvg": "structures/isophthalic-acid.svg",
-    "note": ""
+    "note": "",
+    "properties": ""
   },
   {
     "id": "terephthalic-acid",
@@ -926,7 +993,8 @@
       "ジカルボン酸"
     ],
     "structureSvg": "structures/terephthalic-acid.svg",
-    "note": ""
+    "note": "",
+    "properties": ""
   },
   {
     "id": "phthalic-anhydride",
@@ -939,7 +1007,8 @@
     "skeletonCategory": "芳香族",
     "tags": [],
     "structureSvg": "structures/phthalic-anhydride.svg",
-    "note": ""
+    "note": "",
+    "properties": ""
   },
   {
     "id": "salicylic-acid",
@@ -953,7 +1022,8 @@
     "skeletonCategory": "芳香族",
     "tags": [],
     "structureSvg": "structures/salicylic-acid.svg",
-    "note": ""
+    "note": "",
+    "properties": ""
   },
   {
     "id": "sodium-salicylate",
@@ -967,7 +1037,8 @@
     "skeletonCategory": "芳香族",
     "tags": [],
     "structureSvg": "structures/sodium-salicylate.svg",
-    "note": ""
+    "note": "",
+    "properties": ""
   },
   {
     "id": "methyl-salicylate",
@@ -981,7 +1052,8 @@
     "skeletonCategory": "芳香族",
     "tags": [],
     "structureSvg": "structures/methyl-salicylate.svg",
-    "note": ""
+    "note": "",
+    "properties": ""
   },
   {
     "id": "aspirin",
@@ -995,7 +1067,8 @@
     "skeletonCategory": "芳香族",
     "tags": [],
     "structureSvg": "structures/aspirin.svg",
-    "note": ""
+    "note": "",
+    "properties": ""
   },
   {
     "id": "aniline",
@@ -1008,7 +1081,8 @@
     "skeletonCategory": "芳香族",
     "tags": [],
     "structureSvg": "structures/aniline.svg",
-    "note": ""
+    "note": "",
+    "properties": ""
   },
   {
     "id": "anilinium-chloride",
@@ -1021,7 +1095,8 @@
     "skeletonCategory": "芳香族",
     "tags": [],
     "structureSvg": "structures/anilinium-chloride.svg",
-    "note": ""
+    "note": "",
+    "properties": ""
   },
   {
     "id": "acetanilide",
@@ -1034,7 +1109,8 @@
     "skeletonCategory": "芳香族",
     "tags": [],
     "structureSvg": "structures/acetanilide.svg",
-    "note": ""
+    "note": "",
+    "properties": ""
   },
   {
     "id": "benzenediazonium-chloride",
@@ -1047,7 +1123,8 @@
     "skeletonCategory": "芳香族",
     "tags": [],
     "structureSvg": "structures/benzenediazonium-chloride.svg",
-    "note": ""
+    "note": "",
+    "properties": ""
   },
   {
     "id": "p-phenylazophenol",
@@ -1061,7 +1138,8 @@
     "skeletonCategory": "芳香族",
     "tags": [],
     "structureSvg": "structures/p-phenylazophenol.svg",
-    "note": ""
+    "note": "",
+    "properties": ""
   },
   {
     "id": "sodium-ethoxide",
@@ -1074,7 +1152,8 @@
     "skeletonCategory": "脂肪族",
     "tags": [],
     "structureSvg": "structures/sodium-ethoxide.svg",
-    "note": ""
+    "note": "",
+    "properties": ""
   },
   {
     "id": "246-trinitrotoluene",
@@ -1087,7 +1166,8 @@
     "skeletonCategory": "芳香族",
     "tags": [],
     "structureSvg": "structures/246-trinitrotoluene.svg",
-    "note": "TNT"
+    "note": "TNT",
+    "properties": ""
   },
   {
     "id": "methane",
@@ -1098,7 +1178,8 @@
     "skeletonCategory": "脂肪族",
     "tags": [],
     "structureSvg": "structures/methane.svg",
-    "note": ""
+    "note": "",
+    "properties": ""
   },
   {
     "id": "ethane",
@@ -1109,7 +1190,8 @@
     "skeletonCategory": "脂肪族",
     "tags": [],
     "structureSvg": "structures/ethane.svg",
-    "note": ""
+    "note": "",
+    "properties": ""
   },
   {
     "id": "propane",
@@ -1120,7 +1202,8 @@
     "skeletonCategory": "脂肪族",
     "tags": [],
     "structureSvg": "structures/propane.svg",
-    "note": ""
+    "note": "",
+    "properties": ""
   },
   {
     "id": "butane",
@@ -1131,7 +1214,8 @@
     "skeletonCategory": "脂肪族",
     "tags": [],
     "structureSvg": "structures/butane.svg",
-    "note": ""
+    "note": "",
+    "properties": ""
   },
   {
     "id": "pentane",
@@ -1142,7 +1226,8 @@
     "skeletonCategory": "脂肪族",
     "tags": [],
     "structureSvg": "structures/pentane.svg",
-    "note": ""
+    "note": "",
+    "properties": ""
   },
   {
     "id": "hexane",
@@ -1153,7 +1238,8 @@
     "skeletonCategory": "脂肪族",
     "tags": [],
     "structureSvg": "structures/hexane.svg",
-    "note": ""
+    "note": "",
+    "properties": ""
   },
   {
     "id": "2-methylpropane",
@@ -1164,7 +1250,8 @@
     "skeletonCategory": "脂肪族",
     "tags": [],
     "structureSvg": "structures/2-methylpropane.svg",
-    "note": ""
+    "note": "",
+    "properties": ""
   },
   {
     "id": "2-methylbutane",
@@ -1175,7 +1262,8 @@
     "skeletonCategory": "脂肪族",
     "tags": [],
     "structureSvg": "structures/2-methylbutane.svg",
-    "note": ""
+    "note": "",
+    "properties": ""
   },
   {
     "id": "23-dimethylbutane",
@@ -1186,7 +1274,8 @@
     "skeletonCategory": "脂肪族",
     "tags": [],
     "structureSvg": "structures/23-dimethylbutane.svg",
-    "note": ""
+    "note": "",
+    "properties": ""
   },
   {
     "id": "cyclopropane",
@@ -1197,7 +1286,8 @@
     "skeletonCategory": "脂肪族",
     "tags": [],
     "structureSvg": "structures/cyclopropane.svg",
-    "note": ""
+    "note": "",
+    "properties": ""
   },
   {
     "id": "cyclobutane",
@@ -1208,7 +1298,8 @@
     "skeletonCategory": "脂肪族",
     "tags": [],
     "structureSvg": "structures/cyclobutane.svg",
-    "note": ""
+    "note": "",
+    "properties": ""
   },
   {
     "id": "cyclopentane",
@@ -1219,7 +1310,8 @@
     "skeletonCategory": "脂肪族",
     "tags": [],
     "structureSvg": "structures/cyclopentane.svg",
-    "note": ""
+    "note": "",
+    "properties": ""
   },
   {
     "id": "cyclohexane",
@@ -1230,7 +1322,8 @@
     "skeletonCategory": "脂肪族",
     "tags": [],
     "structureSvg": "structures/cyclohexane.svg",
-    "note": ""
+    "note": "",
+    "properties": ""
   },
   {
     "id": "ethylene",
@@ -1243,7 +1336,8 @@
     "skeletonCategory": "脂肪族",
     "tags": [],
     "structureSvg": "structures/ethylene.svg",
-    "note": ""
+    "note": "",
+    "properties": ""
   },
   {
     "id": "propene",
@@ -1256,7 +1350,8 @@
     "skeletonCategory": "脂肪族",
     "tags": [],
     "structureSvg": "structures/propene.svg",
-    "note": ""
+    "note": "",
+    "properties": ""
   },
   {
     "id": "1-butene",
@@ -1269,7 +1364,8 @@
     "skeletonCategory": "脂肪族",
     "tags": [],
     "structureSvg": "structures/1-butene.svg",
-    "note": ""
+    "note": "",
+    "properties": ""
   },
   {
     "id": "cis-2-butene",
@@ -1284,7 +1380,8 @@
       "cis"
     ],
     "structureSvg": "structures/cis-2-butene.svg",
-    "note": ""
+    "note": "",
+    "properties": ""
   },
   {
     "id": "trans-2-butene",
@@ -1299,7 +1396,8 @@
       "trans"
     ],
     "structureSvg": "structures/trans-2-butene.svg",
-    "note": ""
+    "note": "",
+    "properties": ""
   },
   {
     "id": "2-methylpropene",
@@ -1312,7 +1410,8 @@
     "skeletonCategory": "脂肪族",
     "tags": [],
     "structureSvg": "structures/2-methylpropene.svg",
-    "note": ""
+    "note": "",
+    "properties": ""
   },
   {
     "id": "2-pentene",
@@ -1327,7 +1426,8 @@
       "cis"
     ],
     "structureSvg": "structures/2-pentene.svg",
-    "note": ""
+    "note": "",
+    "properties": ""
   },
   {
     "id": "13-butadiene",
@@ -1340,7 +1440,8 @@
     "skeletonCategory": "脂肪族",
     "tags": [],
     "structureSvg": "structures/13-butadiene.svg",
-    "note": ""
+    "note": "",
+    "properties": ""
   },
   {
     "id": "cyclopentene",
@@ -1353,7 +1454,8 @@
     "skeletonCategory": "脂肪族",
     "tags": [],
     "structureSvg": "structures/cyclopentene.svg",
-    "note": ""
+    "note": "",
+    "properties": ""
   },
   {
     "id": "cyclohexene",
@@ -1366,7 +1468,8 @@
     "skeletonCategory": "脂肪族",
     "tags": [],
     "structureSvg": "structures/cyclohexene.svg",
-    "note": ""
+    "note": "",
+    "properties": ""
   },
   {
     "id": "acetylene",
@@ -1379,7 +1482,8 @@
     "skeletonCategory": "脂肪族",
     "tags": [],
     "structureSvg": "structures/acetylene.svg",
-    "note": ""
+    "note": "",
+    "properties": ""
   },
   {
     "id": "propyne",
@@ -1392,7 +1496,8 @@
     "skeletonCategory": "脂肪族",
     "tags": [],
     "structureSvg": "structures/propyne.svg",
-    "note": ""
+    "note": "",
+    "properties": ""
   },
   {
     "id": "1-butyne",
@@ -1405,7 +1510,8 @@
     "skeletonCategory": "脂肪族",
     "tags": [],
     "structureSvg": "structures/1-butyne.svg",
-    "note": ""
+    "note": "",
+    "properties": ""
   },
   {
     "id": "2-butyne",
@@ -1418,7 +1524,8 @@
     "skeletonCategory": "脂肪族",
     "tags": [],
     "structureSvg": "structures/2-butyne.svg",
-    "note": ""
+    "note": "",
+    "properties": ""
   },
   {
     "id": "3-methyl-1-butyne",
@@ -1431,7 +1538,8 @@
     "skeletonCategory": "脂肪族",
     "tags": [],
     "structureSvg": "structures/3-methyl-1-butyne.svg",
-    "note": ""
+    "note": "",
+    "properties": ""
   },
   {
     "id": "chloromethane",
@@ -1444,7 +1552,8 @@
     "skeletonCategory": "脂肪族",
     "tags": [],
     "structureSvg": "structures/chloromethane.svg",
-    "note": ""
+    "note": "",
+    "properties": ""
   },
   {
     "id": "dichloromethane",
@@ -1457,7 +1566,8 @@
     "skeletonCategory": "脂肪族",
     "tags": [],
     "structureSvg": "structures/dichloromethane.svg",
-    "note": ""
+    "note": "",
+    "properties": ""
   },
   {
     "id": "trichloromethane",
@@ -1472,7 +1582,8 @@
       "ハロホルム"
     ],
     "structureSvg": "structures/trichloromethane.svg",
-    "note": "クロロホルム"
+    "note": "クロロホルム",
+    "properties": ""
   },
   {
     "id": "tetrachloromethane",
@@ -1485,7 +1596,8 @@
     "skeletonCategory": "脂肪族",
     "tags": [],
     "structureSvg": "structures/tetrachloromethane.svg",
-    "note": ""
+    "note": "",
+    "properties": ""
   },
   {
     "id": "chloroethane",
@@ -1498,7 +1610,8 @@
     "skeletonCategory": "脂肪族",
     "tags": [],
     "structureSvg": "structures/chloroethane.svg",
-    "note": ""
+    "note": "",
+    "properties": ""
   },
   {
     "id": "12-dichloroethane",
@@ -1511,7 +1624,8 @@
     "skeletonCategory": "脂肪族",
     "tags": [],
     "structureSvg": "structures/12-dichloroethane.svg",
-    "note": ""
+    "note": "",
+    "properties": ""
   },
   {
     "id": "12-dibromoethane",
@@ -1524,7 +1638,8 @@
     "skeletonCategory": "脂肪族",
     "tags": [],
     "structureSvg": "structures/12-dibromoethane.svg",
-    "note": ""
+    "note": "",
+    "properties": ""
   },
   {
     "id": "1122-tetrabromoethane",
@@ -1537,7 +1652,8 @@
     "skeletonCategory": "脂肪族",
     "tags": [],
     "structureSvg": "structures/1122-tetrabromoethane.svg",
-    "note": ""
+    "note": "",
+    "properties": ""
   },
   {
     "id": "vinyl-chloride",
@@ -1551,7 +1667,8 @@
     "skeletonCategory": "脂肪族",
     "tags": [],
     "structureSvg": "structures/vinyl-chloride.svg",
-    "note": ""
+    "note": "",
+    "properties": ""
   },
   {
     "id": "vinyl-acetate",
@@ -1565,7 +1682,8 @@
     "skeletonCategory": "脂肪族",
     "tags": [],
     "structureSvg": "structures/vinyl-acetate.svg",
-    "note": ""
+    "note": "",
+    "properties": ""
   },
   {
     "id": "polyethylene",
@@ -1578,7 +1696,8 @@
       "高分子"
     ],
     "structureSvg": "structures/polyethylene.svg",
-    "note": "繰り返し単位"
+    "note": "繰り返し単位",
+    "properties": ""
   },
   {
     "id": "polyacetylene",
@@ -1593,7 +1712,8 @@
       "高分子"
     ],
     "structureSvg": "structures/polyacetylene.svg",
-    "note": "繰り返し単位、立体配置を指定しない"
+    "note": "繰り返し単位、立体配置を指定しない",
+    "properties": ""
   },
   {
     "id": "acrylonitrile",
@@ -1607,6 +1727,7 @@
     "skeletonCategory": "脂肪族",
     "tags": [],
     "structureSvg": "structures/acrylonitrile.svg",
-    "note": ""
+    "note": "",
+    "properties": ""
   }
 ]

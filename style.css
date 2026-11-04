@@ -43,3 +43,6 @@ dialog.settings{width:98vw;height:96dvh;max-height:96dvh;padding:18px}#settings-
 #choices .set-choice-name{min-width:0;overflow-wrap:anywhere}
 #choices .set-choice-mark{flex:none;visibility:hidden;font-weight:bold;color:#145c9f}
 #choices button[aria-pressed=true] .set-choice-mark{visibility:visible}
+
+#value.properties-value{display:block;width:calc(100% - 40px);white-space:pre-wrap;overflow-wrap:anywhere;line-height:1.25}
+#history li{overflow-wrap:anywhere;max-width:100%}

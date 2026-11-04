@@ -10,7 +10,7 @@
   function filterCompounds(items, filters) {
     const query = (filters.query || '').trim().toLocaleLowerCase();
     return items.filter(c => {
-      const fields = [c.id, c.nameJa, c.nameEn, c.formula, c.note, ...c.functionalGroups, c.skeletonCategory, ...c.tags];
+      const fields = [c.id, c.nameJa, c.nameEn, c.formula, c.note, c.properties || '', ...c.functionalGroups, c.skeletonCategory, ...c.tags];
       return (!query || fields.some(x => x.toLocaleLowerCase().includes(query))) &&
         ['functionalGroups','skeletonCategories','tags'].every(axis => {
           const selected = filters[axis] || [];
