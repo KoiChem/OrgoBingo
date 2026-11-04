@@ -1,5 +1,6 @@
 (function(root) {
- function validProperties(value) {return typeof value==='string' && !/[\r\n]/.test(value) && [...value].reduce((n,ch)=>n+(/[\x00-\x7f\uff61-\uff9f]/u.test(ch)?.5:1),0)<=30;}
+ function propertyLength(value) {return [...value].reduce((n,ch)=>n+(/[\x00-\x7f\uff61-\uff9f]/u.test(ch)?.5:1),0);}
+ function validProperties(value) {return typeof value==='string' && !/[\r\n]/.test(value) && propertyLength(value)<=30;}
  function validate(compounds, sets, categories, baseline) {
   const fail = () => {throw new Error('データ形式が正しくありません。');};
   if (!Array.isArray(compounds) || !Array.isArray(sets) || !categories || !Array.isArray(baseline)) fail();
@@ -21,5 +22,5 @@
    setIds.add(s.id);
   }
  }
- const api={validate,validProperties}; if(typeof module!=='undefined') module.exports=api; else root.OrgoValidation=api;
+ const api={validate,validProperties,propertyLength}; if(typeof module!=='undefined') module.exports=api; else root.OrgoValidation=api;
 })(globalThis);
