@@ -507,7 +507,7 @@
     "tags": [],
     "structureSvg": "structures/benzene.svg",
     "note": "",
-    "properties": ""
+    "properties": "無色・特有臭の液体。アセチレンの三分子重合で生成。"
   },
   {
     "id": "toluene",
@@ -519,7 +519,7 @@
     "tags": [],
     "structureSvg": "structures/toluene.svg",
     "note": "",
-    "properties": ""
+    "properties": "ベンゼンのH1個をメチル基で置換。酸化で安息香酸に。"
   },
   {
     "id": "ethylbenzene",
@@ -531,7 +531,7 @@
     "tags": [],
     "structureSvg": "structures/ethylbenzene.svg",
     "note": "",
-    "properties": ""
+    "properties": "キシレンの構造異性体。酸化で安息香酸、脱水素でスチレン。"
   },
   {
     "id": "styrene",
@@ -545,7 +545,7 @@
     "tags": [],
     "structureSvg": "structures/styrene.svg",
     "note": "",
-    "properties": ""
+    "properties": "ビニル基をもつ芳香族。付加重合でポリスチレンになる。"
   },
   {
     "id": "o-xylene",
@@ -557,7 +557,7 @@
     "tags": [],
     "structureSvg": "structures/o-xylene.svg",
     "note": "",
-    "properties": ""
+    "properties": "メチル基2個が隣り合う位置。酸化で無水フタル酸の原料に。"
   },
   {
     "id": "m-xylene",
@@ -569,7 +569,7 @@
     "tags": [],
     "structureSvg": "structures/m-xylene.svg",
     "note": "",
-    "properties": ""
+    "properties": "メチル基2個が1つおきの位置。酸化でイソフタル酸を生成。"
   },
   {
     "id": "p-xylene",
@@ -581,7 +581,7 @@
     "tags": [],
     "structureSvg": "structures/p-xylene.svg",
     "note": "",
-    "properties": ""
+    "properties": "メチル基2個が向かい合う位置。酸化でテレフタル酸を生成。"
   },
   {
     "id": "naphthalene",
@@ -593,7 +593,7 @@
     "tags": [],
     "structureSvg": "structures/naphthalene.svg",
     "note": "",
-    "properties": ""
+    "properties": "昇華性の白色固体。ベンゼン環2個が縮合。防虫剤に利用。"
   },
   {
     "id": "cumene",
@@ -605,7 +605,7 @@
     "tags": [],
     "structureSvg": "structures/cumene.svg",
     "note": "",
-    "properties": ""
+    "properties": "ベンゼンとプロペンから合成。クメン法の原料。"
   },
   {
     "id": "cumene-hydroperoxide",
@@ -619,7 +619,7 @@
     "tags": [],
     "structureSvg": "structures/cumene-hydroperoxide.svg",
     "note": "",
-    "properties": ""
+    "properties": "クメンの酸素酸化で生成。分解でフェノールとアセトンに。"
   },
   {
     "id": "chlorobenzene",
@@ -633,7 +633,7 @@
     "tags": [],
     "structureSvg": "structures/chlorobenzene.svg",
     "note": "",
-    "properties": ""
+    "properties": "ベンゼンをFe触媒で塩素化して生成。無色の液体。"
   },
   {
     "id": "o-dichlorobenzene",
@@ -647,7 +647,7 @@
     "tags": [],
     "structureSvg": "structures/o-dichlorobenzene.svg",
     "note": "",
-    "properties": ""
+    "properties": "ベンゼンの塩素二置換体。2個のClが環の隣り合う位置に結合。"
   },
   {
     "id": "m-dichlorobenzene",
@@ -661,7 +661,7 @@
     "tags": [],
     "structureSvg": "structures/m-dichlorobenzene.svg",
     "note": "",
-    "properties": ""
+    "properties": "ベンゼンの塩素二置換体。2個のClが環の1つおきの位置に結合。"
   },
   {
     "id": "p-dichlorobenzene",
@@ -675,7 +675,7 @@
     "tags": [],
     "structureSvg": "structures/p-dichlorobenzene.svg",
     "note": "",
-    "properties": ""
+    "properties": "ベンゼンの塩素二置換体。Clが向かい合う位置。昇華性で防虫剤。"
   },
   {
     "id": "benzenesulfonic-acid",
@@ -689,7 +689,7 @@
     "tags": [],
     "structureSvg": "structures/benzenesulfonic-acid.svg",
     "note": "",
-    "properties": ""
+    "properties": "ベンゼンのスルホン化で生成。水に溶け強酸性を示す。"
   },
   {
     "id": "sodium-benzenesulfonate",
@@ -703,7 +703,7 @@
     "tags": [],
     "structureSvg": "structures/sodium-benzenesulfonate.svg",
     "note": "",
-    "properties": ""
+    "properties": "スルホン酸の中和で生成。アルカリ融解でフェノール原料に。"
   },
   {
     "id": "nitrobenzene",
@@ -717,7 +717,7 @@
     "tags": [],
     "structureSvg": "structures/nitrobenzene.svg",
     "note": "",
-    "properties": ""
+    "properties": "混酸でベンゼンをニトロ化。水より重い淡黄色の液体。"
   },
   {
     "id": "o-nitrotoluene",
@@ -731,7 +731,7 @@
     "tags": [],
     "structureSvg": "structures/o-nitrotoluene.svg",
     "note": "",
-    "properties": ""
+    "properties": "トルエンのニトロ化で生成。ニトロ基がメチル基の隣の位置。"
   },
   {
     "id": "p-nitrotoluene",
@@ -745,7 +745,7 @@
     "tags": [],
     "structureSvg": "structures/p-nitrotoluene.svg",
     "note": "",
-    "properties": ""
+    "properties": "トルエンのニトロ化で生成。ニトロ基がメチル基の向かい側。"
   },
   {
     "id": "phenol",
@@ -759,7 +759,7 @@
     "tags": [],
     "structureSvg": "structures/phenol.svg",
     "note": "",
-    "properties": ""
+    "properties": "弱酸性で皮膚を侵す。FeCl3で青紫色。臭素水で白色沈殿。"
   },
   {
     "id": "o-cresol",
@@ -773,7 +773,7 @@
     "tags": [],
     "structureSvg": "structures/o-cresol.svg",
     "note": "",
-    "properties": ""
+    "properties": "-OHと-CH3が隣り合う位置。消毒液の原料。FeCl3で呈色。"
   },
   {
     "id": "m-cresol",
@@ -787,7 +787,7 @@
     "tags": [],
     "structureSvg": "structures/m-cresol.svg",
     "note": "",
-    "properties": ""
+    "properties": "-OHと-CH3が1つおきの位置。消毒液の原料。FeCl3で呈色。"
   },
   {
     "id": "p-cresol",
@@ -801,7 +801,7 @@
     "tags": [],
     "structureSvg": "structures/p-cresol.svg",
     "note": "",
-    "properties": ""
+    "properties": "-OHと-CH3が向かい合う位置。消毒液の原料。FeCl3で呈色。"
   },
   {
     "id": "1-naphthol",
@@ -815,7 +815,7 @@
     "tags": [],
     "structureSvg": "structures/1-naphthol.svg",
     "note": "",
-    "properties": ""
+    "properties": "ナフタレンの1位に-OH。フェノール類で染料の原料。"
   },
   {
     "id": "2-naphthol",
@@ -829,7 +829,7 @@
     "tags": [],
     "structureSvg": "structures/2-naphthol.svg",
     "note": "",
-    "properties": ""
+    "properties": "ナフタレンの2位に-OH。フェノール類で染料の原料。"
   },
   {
     "id": "sodium-phenoxide",
@@ -843,7 +843,7 @@
     "tags": [],
     "structureSvg": "structures/sodium-phenoxide.svg",
     "note": "",
-    "properties": ""
+    "properties": "フェノールとNaOHの塩。CO2を通すとフェノールが遊離。"
   },
   {
     "id": "246-tribromophenol",
@@ -858,7 +858,7 @@
     "tags": [],
     "structureSvg": "structures/246-tribromophenol.svg",
     "note": "",
-    "properties": ""
+    "properties": "フェノールに臭素水を加えると生じる白色沈殿。"
   },
   {
     "id": "picric-acid",
@@ -873,7 +873,7 @@
     "tags": [],
     "structureSvg": "structures/picric-acid.svg",
     "note": "",
-    "properties": ""
+    "properties": "フェノールのニトロ化で生成。黄色結晶。強酸性で火薬に。"
   },
   {
     "id": "phenyl-acetate",
@@ -887,7 +887,7 @@
     "tags": [],
     "structureSvg": "structures/phenyl-acetate.svg",
     "note": "",
-    "properties": ""
+    "properties": "フェノールのアセチル化で生成するエステル。"
   },
   {
     "id": "benzyl-alcohol",
@@ -904,7 +904,7 @@
     ],
     "structureSvg": "structures/benzyl-alcohol.svg",
     "note": "",
-    "properties": ""
+    "properties": "側鎖に-OHをもつアルコール。FeCl3で呈色しない。"
   },
   {
     "id": "benzaldehyde",
@@ -918,7 +918,7 @@
     "tags": [],
     "structureSvg": "structures/benzaldehyde.svg",
     "note": "",
-    "properties": ""
+    "properties": "芳香をもつ液体。銀鏡反応陽性。酸化で安息香酸に。"
   },
   {
     "id": "benzoic-acid",
@@ -932,7 +932,7 @@
     "tags": [],
     "structureSvg": "structures/benzoic-acid.svg",
     "note": "",
-    "properties": ""
+    "properties": "白色固体。トルエンの酸化で生成。防腐剤の原料。"
   },
   {
     "id": "sodium-benzoate",
@@ -946,7 +946,7 @@
     "tags": [],
     "structureSvg": "structures/sodium-benzoate.svg",
     "note": "",
-    "properties": ""
+    "properties": "安息香酸の塩で水に溶ける。塩酸で安息香酸が遊離。"
   },
   {
     "id": "phthalic-acid",
@@ -962,7 +962,7 @@
     ],
     "structureSvg": "structures/phthalic-acid.svg",
     "note": "",
-    "properties": ""
+    "properties": "-COOH2個が隣り合う位置。加熱で脱水し無水フタル酸に。"
   },
   {
     "id": "isophthalic-acid",
@@ -978,7 +978,7 @@
     ],
     "structureSvg": "structures/isophthalic-acid.svg",
     "note": "",
-    "properties": ""
+    "properties": "-COOH2個が1つおきの位置のジカルボン酸。合成樹脂の原料。"
   },
   {
     "id": "terephthalic-acid",
@@ -994,7 +994,7 @@
     ],
     "structureSvg": "structures/terephthalic-acid.svg",
     "note": "",
-    "properties": ""
+    "properties": "-COOH2個が向かい合う位置。縮合重合でPETの原料に。"
   },
   {
     "id": "phthalic-anhydride",
@@ -1008,7 +1008,7 @@
     "tags": [],
     "structureSvg": "structures/phthalic-anhydride.svg",
     "note": "",
-    "properties": ""
+    "properties": "フタル酸の脱水で生成する酸無水物。染料・樹脂の原料。"
   },
   {
     "id": "salicylic-acid",
@@ -1023,7 +1023,7 @@
     "tags": [],
     "structureSvg": "structures/salicylic-acid.svg",
     "note": "",
-    "properties": ""
+    "properties": "白色の針状結晶。カルボン酸とフェノールの両方の性質を示す。"
   },
   {
     "id": "sodium-salicylate",
@@ -1038,7 +1038,7 @@
     "tags": [],
     "structureSvg": "structures/sodium-salicylate.svg",
     "note": "",
-    "properties": ""
+    "properties": "ナトリウムフェノキシドとCO2から生成。酸でサリチル酸に。"
   },
   {
     "id": "methyl-salicylate",
@@ -1053,7 +1053,7 @@
     "tags": [],
     "structureSvg": "structures/methyl-salicylate.svg",
     "note": "",
-    "properties": ""
+    "properties": "サリチル酸とメタノールのエステル。消炎鎮痛の外用薬。"
   },
   {
     "id": "aspirin",
@@ -1068,7 +1068,7 @@
     "tags": [],
     "structureSvg": "structures/aspirin.svg",
     "note": "",
-    "properties": ""
+    "properties": "アスピリン。解熱鎮痛剤。FeCl3で呈色しない。"
   },
   {
     "id": "aniline",
@@ -1082,7 +1082,7 @@
     "tags": [],
     "structureSvg": "structures/aniline.svg",
     "note": "",
-    "properties": ""
+    "properties": "無色油状の弱塩基。さらし粉で赤紫色。酸化されやすい。"
   },
   {
     "id": "anilinium-chloride",
@@ -1096,7 +1096,7 @@
     "tags": [],
     "structureSvg": "structures/anilinium-chloride.svg",
     "note": "",
-    "properties": ""
+    "properties": "アニリンと塩酸の塩で水に溶ける。NaOHでアニリン遊離。"
   },
   {
     "id": "acetanilide",
@@ -1110,7 +1110,7 @@
     "tags": [],
     "structureSvg": "structures/acetanilide.svg",
     "note": "",
-    "properties": ""
+    "properties": "アニリンのアセチル化で生成。アミド結合をもつ。"
   },
   {
     "id": "benzenediazonium-chloride",
@@ -1124,7 +1124,7 @@
     "tags": [],
     "structureSvg": "structures/benzenediazonium-chloride.svg",
     "note": "",
-    "properties": ""
+    "properties": "アニリンのジアゾ化で生成。温めるとフェノールとN2に。"
   },
   {
     "id": "p-phenylazophenol",
@@ -1139,7 +1139,7 @@
     "tags": [],
     "structureSvg": "structures/p-phenylazophenol.svg",
     "note": "",
-    "properties": ""
+    "properties": "ジアゾカップリングで生成する橙赤色のアゾ化合物。"
   },
   {
     "id": "sodium-ethoxide",
@@ -1153,7 +1153,7 @@
     "tags": [],
     "structureSvg": "structures/sodium-ethoxide.svg",
     "note": "",
-    "properties": ""
+    "properties": "エタノールとNaの反応で水素とともに生成する塩。"
   },
   {
     "id": "246-trinitrotoluene",
@@ -1167,7 +1167,7 @@
     "tags": [],
     "structureSvg": "structures/246-trinitrotoluene.svg",
     "note": "TNT",
-    "properties": ""
+    "properties": "トルエンのニトロ化で生成。淡黄色の結晶。爆薬に利用。"
   },
   {
     "id": "methane",
@@ -1179,7 +1179,7 @@
     "tags": [],
     "structureSvg": "structures/methane.svg",
     "note": "",
-    "properties": ""
+    "properties": "最も単純なアルカン。天然ガスの主成分。正四面体形。"
   },
   {
     "id": "ethane",
@@ -1191,7 +1191,7 @@
     "tags": [],
     "structureSvg": "structures/ethane.svg",
     "note": "",
-    "properties": ""
+    "properties": "C2H6のアルカン。C-C結合を軸に自由に回転できる。"
   },
   {
     "id": "propane",
@@ -1203,7 +1203,7 @@
     "tags": [],
     "structureSvg": "structures/propane.svg",
     "note": "",
-    "properties": ""
+    "properties": "C3H8のアルカン。液化石油ガス(LPG)の主成分。"
   },
   {
     "id": "butane",
@@ -1215,7 +1215,7 @@
     "tags": [],
     "structureSvg": "structures/butane.svg",
     "note": "",
-    "properties": ""
+    "properties": "C4H10の直鎖アルカン。2-メチルプロパンと構造異性体。"
   },
   {
     "id": "pentane",
@@ -1227,7 +1227,7 @@
     "tags": [],
     "structureSvg": "structures/pentane.svg",
     "note": "",
-    "properties": ""
+    "properties": "C5H12の直鎖アルカン。構造異性体が3種類ある。"
   },
   {
     "id": "hexane",
@@ -1239,7 +1239,7 @@
     "tags": [],
     "structureSvg": "structures/hexane.svg",
     "note": "",
-    "properties": ""
+    "properties": "C6H14の液体アルカン。水に溶けず有機溶媒に利用。"
   },
   {
     "id": "2-methylpropane",
@@ -1251,7 +1251,7 @@
     "tags": [],
     "structureSvg": "structures/2-methylpropane.svg",
     "note": "",
-    "properties": ""
+    "properties": "枝分かれをもつC4H10。ブタンの構造異性体。"
   },
   {
     "id": "2-methylbutane",
@@ -1263,7 +1263,7 @@
     "tags": [],
     "structureSvg": "structures/2-methylbutane.svg",
     "note": "",
-    "properties": ""
+    "properties": "枝分かれをもつC5H12。ペンタンの構造異性体。"
   },
   {
     "id": "23-dimethylbutane",
@@ -1275,7 +1275,7 @@
     "tags": [],
     "structureSvg": "structures/23-dimethylbutane.svg",
     "note": "",
-    "properties": ""
+    "properties": "C6H14の異性体。主鎖C4の2・3位にメチル基。"
   },
   {
     "id": "cyclopropane",
@@ -1287,7 +1287,7 @@
     "tags": [],
     "structureSvg": "structures/cyclopropane.svg",
     "note": "",
-    "properties": ""
+    "properties": "最小のシクロアルカン。プロペンと構造異性体。"
   },
   {
     "id": "cyclobutane",
@@ -1299,7 +1299,7 @@
     "tags": [],
     "structureSvg": "structures/cyclobutane.svg",
     "note": "",
-    "properties": ""
+    "properties": "C4H8のシクロアルカン。ブテンと構造異性体の関係。"
   },
   {
     "id": "cyclopentane",
@@ -1311,7 +1311,7 @@
     "tags": [],
     "structureSvg": "structures/cyclopentane.svg",
     "note": "",
-    "properties": ""
+    "properties": "C5H10のシクロアルカン。安定でアルカンに性質が似る。"
   },
   {
     "id": "cyclohexane",
@@ -1323,7 +1323,7 @@
     "tags": [],
     "structureSvg": "structures/cyclohexane.svg",
     "note": "",
-    "properties": ""
+    "properties": "安定で有機溶媒に利用。ベンゼンへの水素付加で生成。"
   },
   {
     "id": "ethylene",
@@ -1337,7 +1337,7 @@
     "tags": [],
     "structureSvg": "structures/ethylene.svg",
     "note": "",
-    "properties": ""
+    "properties": "甘いにおいの無色気体。平面構造。付加重合でポリエチレン。"
   },
   {
     "id": "propene",
@@ -1351,7 +1351,7 @@
     "tags": [],
     "structureSvg": "structures/propene.svg",
     "note": "",
-    "properties": ""
+    "properties": "C3H6のアルケン。付加重合でポリプロピレンに。"
   },
   {
     "id": "1-butene",
@@ -1365,7 +1365,7 @@
     "tags": [],
     "structureSvg": "structures/1-butene.svg",
     "note": "",
-    "properties": ""
+    "properties": "末端に二重結合をもつC4H8。シス-トランス異性体なし。"
   },
   {
     "id": "cis-2-butene",
@@ -1381,7 +1381,7 @@
     ],
     "structureSvg": "structures/cis-2-butene.svg",
     "note": "",
-    "properties": ""
+    "properties": "2-ブテンのシス形。"
   },
   {
     "id": "trans-2-butene",
@@ -1397,7 +1397,7 @@
     ],
     "structureSvg": "structures/trans-2-butene.svg",
     "note": "",
-    "properties": ""
+    "properties": "2-ブテンのトランス形。"
   },
   {
     "id": "2-methylpropene",
@@ -1411,7 +1411,7 @@
     "tags": [],
     "structureSvg": "structures/2-methylpropene.svg",
     "note": "",
-    "properties": ""
+    "properties": "枝分かれをもつC4H8。シス-トランス異性体なし。"
   },
   {
     "id": "2-pentene",
@@ -1427,7 +1427,7 @@
     ],
     "structureSvg": "structures/2-pentene.svg",
     "note": "",
-    "properties": ""
+    "properties": "C5H10のアルケン。2-ペンテンのシス形異性体。"
   },
   {
     "id": "13-butadiene",
@@ -1441,7 +1441,7 @@
     "tags": [],
     "structureSvg": "structures/13-butadiene.svg",
     "note": "",
-    "properties": ""
+    "properties": "二重結合を2個もつ。付加重合で合成ゴムの原料。"
   },
   {
     "id": "cyclopentene",
@@ -1455,7 +1455,7 @@
     "tags": [],
     "structureSvg": "structures/cyclopentene.svg",
     "note": "",
-    "properties": ""
+    "properties": "C5H8のシクロアルケン。付加反応を起こしやすい。"
   },
   {
     "id": "cyclohexene",
@@ -1469,7 +1469,7 @@
     "tags": [],
     "structureSvg": "structures/cyclohexene.svg",
     "note": "",
-    "properties": ""
+    "properties": "臭素と付加し1,2-ジブロモシクロヘキサンになる。"
   },
   {
     "id": "acetylene",
@@ -1483,7 +1483,7 @@
     "tags": [],
     "structureSvg": "structures/acetylene.svg",
     "note": "",
-    "properties": ""
+    "properties": "CaC2と水で発生。直線形分子。酸素アセチレン炎で溶接。"
   },
   {
     "id": "propyne",
@@ -1497,7 +1497,7 @@
     "tags": [],
     "structureSvg": "structures/propyne.svg",
     "note": "",
-    "properties": ""
+    "properties": "C3H4のアルキン。三重結合をもち付加反応しやすい。"
   },
   {
     "id": "1-butyne",
@@ -1511,7 +1511,7 @@
     "tags": [],
     "structureSvg": "structures/1-butyne.svg",
     "note": "",
-    "properties": ""
+    "properties": "末端に三重結合をもつC4H6。2-ブチンと構造異性体。"
   },
   {
     "id": "2-butyne",
@@ -1525,7 +1525,7 @@
     "tags": [],
     "structureSvg": "structures/2-butyne.svg",
     "note": "",
-    "properties": ""
+    "properties": "中央に三重結合をもつC4H6。炭素4個が一直線上。"
   },
   {
     "id": "3-methyl-1-butyne",
@@ -1539,7 +1539,7 @@
     "tags": [],
     "structureSvg": "structures/3-methyl-1-butyne.svg",
     "note": "",
-    "properties": ""
+    "properties": "枝分かれをもつC5H8のアルキン。末端に三重結合。"
   },
   {
     "id": "chloromethane",
@@ -1553,7 +1553,7 @@
     "tags": [],
     "structureSvg": "structures/chloromethane.svg",
     "note": "",
-    "properties": ""
+    "properties": "メタンと塩素の混合気体に光を当てる置換反応で生成。"
   },
   {
     "id": "dichloromethane",
@@ -1567,7 +1567,7 @@
     "tags": [],
     "structureSvg": "structures/dichloromethane.svg",
     "note": "",
-    "properties": ""
+    "properties": "クロロメタンの塩素置換で生成。有機溶媒に利用。"
   },
   {
     "id": "trichloromethane",
@@ -1583,7 +1583,7 @@
     ],
     "structureSvg": "structures/trichloromethane.svg",
     "note": "クロロホルム",
-    "properties": ""
+    "properties": "別名クロロホルム。無色の液体。かつて麻酔に利用。"
   },
   {
     "id": "tetrachloromethane",
@@ -1597,7 +1597,7 @@
     "tags": [],
     "structureSvg": "structures/tetrachloromethane.svg",
     "note": "",
-    "properties": ""
+    "properties": "別名四塩化炭素。メタンの塩素置換の最終生成物。"
   },
   {
     "id": "chloroethane",
@@ -1611,7 +1611,7 @@
     "tags": [],
     "structureSvg": "structures/chloroethane.svg",
     "note": "",
-    "properties": ""
+    "properties": "エチレンへの塩化水素付加で生成。冷却スプレーに利用。"
   },
   {
     "id": "12-dichloroethane",
@@ -1625,7 +1625,7 @@
     "tags": [],
     "structureSvg": "structures/12-dichloroethane.svg",
     "note": "",
-    "properties": ""
+    "properties": "エチレンへの塩素付加で生成。塩化ビニルの原料。"
   },
   {
     "id": "12-dibromoethane",
@@ -1639,7 +1639,7 @@
     "tags": [],
     "structureSvg": "structures/12-dibromoethane.svg",
     "note": "",
-    "properties": ""
+    "properties": "エチレンへの臭素付加で生成。無色の液体。"
   },
   {
     "id": "1122-tetrabromoethane",
@@ -1653,7 +1653,7 @@
     "tags": [],
     "structureSvg": "structures/1122-tetrabromoethane.svg",
     "note": "",
-    "properties": ""
+    "properties": "アセチレンに臭素2分子が付加して生成。"
   },
   {
     "id": "vinyl-chloride",
@@ -1668,7 +1668,7 @@
     "tags": [],
     "structureSvg": "structures/vinyl-chloride.svg",
     "note": "",
-    "properties": ""
+    "properties": "アセチレンへのHCl付加で生成。ポリ塩化ビニルの原料。"
   },
   {
     "id": "vinyl-acetate",
@@ -1683,7 +1683,7 @@
     "tags": [],
     "structureSvg": "structures/vinyl-acetate.svg",
     "note": "",
-    "properties": ""
+    "properties": "アセチレンへの酢酸付加で生成。付加重合で樹脂原料に。"
   },
   {
     "id": "polyethylene",
@@ -1697,7 +1697,7 @@
     ],
     "structureSvg": "structures/polyethylene.svg",
     "note": "繰り返し単位",
-    "properties": ""
+    "properties": "エチレンの付加重合で生成。袋・容器に使う合成樹脂。"
   },
   {
     "id": "polyacetylene",
@@ -1713,7 +1713,7 @@
     ],
     "structureSvg": "structures/polyacetylene.svg",
     "note": "繰り返し単位、立体配置を指定しない",
-    "properties": ""
+    "properties": "アセチレンの付加重合体。白川英樹が開発した導電性高分子。"
   },
   {
     "id": "acrylonitrile",
@@ -1728,6 +1728,6 @@
     "tags": [],
     "structureSvg": "structures/acrylonitrile.svg",
     "note": "",
-    "properties": ""
+    "properties": "アセチレンにHCN付加で生成。アクリル繊維の原料。"
   }
 ]
