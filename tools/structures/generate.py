@@ -117,9 +117,9 @@ def bond_segments(d):
     result=[]
     for a,b,order in d.bonds:
         p,q=d.nodes[a],d.nodes[b];dx=q['x']-p['x'];dy=q['y']-p['y'];length=math.hypot(dx,dy);ux,uy=dx/length,dy/length
-        def endpoint(n,vx,vy):
+        def endpoint(n,vx,vy,offset=0):
             if not n['text']:return n['x'],n['y']
-            box=n['box'] if abs(vy)<.01 or d.ringBonds or d.cyclic else n['atomBox'];cx,cy=n['x'],n['y']
+            box=n['box'] if abs(vy)<.01 or d.ringBonds or d.cyclic else n['atomBox'];cx,cy=n['x']-uy*offset,n['y']+ux*offset
             ts=[]
             if vx>0:ts.append((box[2]-cx)/vx)
             elif vx<0:ts.append((box[0]-cx)/vx)
@@ -128,12 +128,17 @@ def bond_segments(d):
             t=min(ts)+STYLE['labelGap'];return cx+vx*t,cy+vy*t
         x1,y1=endpoint(p,ux,uy);x2,y2=endpoint(q,-ux,-uy)
         assert (x2-x1)*ux+(y2-y1)*uy>12,(p['text'],q['text'])
-        if (a,b) in d.ringBonds and order==2:
+        if (a,b) in d.ringBonds and order==2 and not d.cyclic:
             cx,cy=d.ringBonds[(a,b)];side=1 if (-uy*(cx-(x1+x2)/2)+ux*(cy-(y1+y2)/2))>0 else -1
             result.append((x1,y1,x2,y2));off=side*length*.12;trim=length*.12
             result.append((x1+ux*trim-uy*off,y1+uy*trim+ux*off,x2-ux*trim-uy*off,y2-uy*trim+ux*off))
         else:
-            for offset in ([0] if order==1 else ([-STYLE['doubleGap']/2,STYLE['doubleGap']/2] if order==2 else [-STYLE['doubleGap'],0,STYLE['doubleGap']])):result.append((x1-uy*offset,y1+ux*offset,x2-uy*offset,y2+ux*offset))
+            for offset in ([0] if order==1 else ([-STYLE['doubleGap']/2,STYLE['doubleGap']/2] if order==2 else [-STYLE['doubleGap'],0,STYLE['doubleGap']])):
+                if d.cyclic and order==2:
+                    # Clip each parallel independently; neither gets an extra inner trim.
+                    sx,sy=endpoint(p,ux,uy,offset);ex,ey=endpoint(q,-ux,-uy,offset)
+                    result.append((sx,sy,ex,ey))
+                else:result.append((x1-uy*offset,y1+ux*offset,x2-uy*offset,y2+ux*offset))
     if d.repeatPorts:
         # The open bonds cross the brackets and connect to the next repeat unit.
         left=d.nodes[d.repeatPorts[0][0]];right=d.nodes[d.repeatPorts[1][0]]

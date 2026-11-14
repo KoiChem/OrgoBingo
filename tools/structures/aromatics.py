@@ -57,11 +57,14 @@ def add_aromatics(drawings, Drawing):
             a,b=ids[i],ids[(i+1)%6];d.bond(a,b,2 if i%2==0 else 1);d.ringBonds[(a,b)]=(cx,cy)
         return ids
     def attach(d,ns,pos,text):
-        p=d.nodes[ns[pos]];x,y=p['x'],p['y']
-        if x < -1e-6:
+        p=d.nodes[ns[pos]];x,y=p['x'],p['y'];cx,cy=d.ringCenters[ns[pos]]
+        if x-cx < -1e-6:
             text={'CH3':'H3C','NH2':'H2N','OH':'HO','NO2':'O2N'}.get(text,text)
         anchor={'H3C':2,'H2N':2,'HO':1,'O2N':2}.get(text,0)
-        n=d.add(text,x*2.3,y*2.3,anchor);d.bond(ns[pos],n);return n
+        # Vertex-to-atom-center distance is 1.1 times this ring's edge.
+        neighbor=next(b if a==ns[pos] else a for a,b in d.ringBonds if ns[pos] in (a,b))
+        q=d.nodes[neighbor];edge=math.hypot(q['x']-x,q['y']-y);radius=math.hypot(x-cx,y-cy)
+        n=d.add(text,x+1.1*edge*(x-cx)/radius,y+1.1*edge*(y-cy)/radius,anchor);d.bond(ns[pos],n);return n
     def acid(d,ns,pos,end='OH'):
         c=attach(d,ns,pos,'C');p=d.nodes[c];x,y=p['x'],p['y'];up=y<0
         o=d.add('O',x,y+(-88 if up else 88));d.bond(c,o,2)
@@ -90,9 +93,7 @@ def add_aromatics(drawings, Drawing):
             ns=naphthalene(d)
             if id!='naphthalene':
                 # alpha (1) is adjacent to a fused carbon; beta (2) is next along perimeter.
-                p=ns[1 if id=='1-naphthol' else 2];n=d.nodes[p]
-                dx,dy=n['x']-90,n['y']+26;length=math.hypot(dx,dy)
-                o=d.add('OH',n['x']+130*dx/length,n['y']+130*dy/length);d.bond(p,o)
+                attach(d,ns,1 if id=='1-naphthol' else 2,'OH')
         else:
             ortho=id.startswith('o-') or id in ['phthalic-acid','phthalic-anhydride','salicylic-acid','sodium-salicylate','methyl-salicylate','aspirin']
             meta=id.startswith('m-') or id=='isophthalic-acid'
@@ -137,7 +138,7 @@ def add_aromatics(drawings, Drawing):
                 acid(d,ns,0);acid(d,ns,{'phthalic-acid':1,'isophthalic-acid':2,'terephthalic-acid':3}[id])
             elif id=='phthalic-anhydride':
                 # Adjacent ring carbons fused to a five-membered cyclic anhydride.
-                a=attach(d,ns,0,'C');b=attach(d,ns,1,'C');o=d.add('O',310,0)
+                a=attach(d,ns,0,'C');b=attach(d,ns,1,'C');o=d.add('O',d.nodes[a]['x']+130,0)
                 d.bond(a,o);d.bond(b,o)
                 for carbon,sign in [(a,-1),(b,1)]:
                     p=d.nodes[carbon];ox=d.add('O',p['x'],p['y']+sign*88);d.bond(carbon,ox,2)
@@ -151,6 +152,6 @@ def add_aromatics(drawings, Drawing):
                 n=attach(d,ns,0,'NH');p=d.nodes[n];x,y=p['x'],p['y'];c=d.add('C',x+123,y);d.bond(n,c);m=d.add('CH3',x+233,y);d.bond(c,m);o=d.add('O',x+123,y+88);d.bond(c,o,2)
             elif id=='benzenediazonium-chloride':attach(d,ns,0,'N2Cl')
             elif id=='p-phenylazophenol':
-                n=attach(d,ns,0,'N');p=d.nodes[n];x,y=p['x'],p['y'];n2=d.add('N',x+90,y+70);d.bond(n,n2,2);rs=ring(d,x+280,y+70);d.bond(n2,rs[3]);oh=d.add('OH',x+487,y+70);d.bond(rs[0],oh)
+                n=attach(d,ns,0,'N');p=d.nodes[n];x,y=p['x'],p['y'];n2=d.add('N',x+90,y+70);d.bond(n,n2,2);rs=ring(d,x+279,y+70);d.bond(n2,rs[3]);attach(d,rs,0,'OH')
             else:raise ValueError(id)
         drawings[id]=d

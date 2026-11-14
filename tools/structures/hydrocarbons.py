@@ -66,7 +66,10 @@ def add_hydrocarbons(drawings,Drawing):
         d=Drawing();d.cyclic=True;radius=145;ns=[]
         for i in range(size):
             angle=-math.pi/2+i*2*math.pi/size
-            ns.append(d.add('CH' if unsaturated and i in (0,1) else 'CH2',radius*math.cos(angle),radius*math.sin(angle)))
+            x,y=radius*math.cos(angle),radius*math.sin(angle)
+            text='CH' if unsaturated and i in (0,1) else 'CH2'
+            if x < -1e-6:text='HC' if text=='CH' else 'H2C'
+            ns.append(d.add(text,x,y,len(text)-1 if x < -1e-6 else 0))
         for i in range(size):
             a,b=ns[i],ns[(i+1)%size];order=2 if unsaturated and i==0 else 1
             d.bond(a,b,order)
