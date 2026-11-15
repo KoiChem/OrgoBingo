@@ -17,7 +17,7 @@
   },
   "fontSHA256": "76d04c18ea243f426b7de1f3ad208e927008f961dc5945e5aad352d0dfde8ee8",
   "checks": [
-    "121 master IDs and formulas",
+    "122 master IDs and formulas",
     "group valence",
     "distinct label bounds",
     "bond/glyph clearance including subscripts",
@@ -408,6 +408,25 @@
       ],
       "bonds": 4,
       "bondLines": 5
+    },
+    {
+      "id": "linoleic-acid",
+      "formula": "C18H32O2",
+      "labels": [
+        "CH3",
+        "(CH2)4",
+        "CH",
+        "CH",
+        "CH2",
+        "CH",
+        "CH",
+        "(CH2)7",
+        "C",
+        "OH",
+        "O"
+      ],
+      "bonds": 10,
+      "bondLines": 13
     },
     {
       "id": "oxalic-acid",

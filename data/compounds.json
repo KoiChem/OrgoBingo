@@ -419,6 +419,25 @@
     "properties": "C17H35COOH。油脂を構成する高級飽和脂肪酸。水に難溶。"
   },
   {
+    "id": "linoleic-acid",
+    "nameJa": "リノール酸",
+    "nameEn": "Linoleic acid",
+    "formula": "C18H32O2",
+    "functionalGroups": [
+      "カルボン酸",
+      "炭素間不飽和結合"
+    ],
+    "skeletonCategory": "脂肪族",
+    "tags": [
+      "高級脂肪酸",
+      "不飽和脂肪酸",
+      "cis"
+    ],
+    "structureSvg": "structures/linoleic-acid.svg",
+    "note": "",
+    "properties": "高級不飽和脂肪酸。2個の炭素間二重結合はともにcis形。"
+  },
+  {
     "id": "oxalic-acid",
     "nameJa": "シュウ酸",
     "nameEn": "Oxalic acid",

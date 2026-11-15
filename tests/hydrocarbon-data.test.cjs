@@ -18,7 +18,7 @@ test('all requested substances have the correct formula and occur once',()=>{
   assert.equal(matches.length,1,name);assert.equal(matches[0].formula,formula,name);
   assert(fs.existsSync(matches[0].structureSvg),name);
  }
- assert.equal(compounds.length,121);
+ assert.equal(compounds.length,122);
 });
 test('C1 and C2 molecules display each hydrogen as a bonded atom',()=>{
  const layouts=require('../tools/structures/layouts.json');

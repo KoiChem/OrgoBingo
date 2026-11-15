@@ -5,7 +5,7 @@ const categories = require('../data/categories.json');
 const compounds = require('../data/compounds.json');
 test('filter combines OR within axes and AND across axes and keyword', () => {
  const result = core.filterCompounds(compounds, {query:'acid', functionalGroups:['カルボン酸','エーテル'], skeletonCategories:['脂肪族'],tags:['第二級アルコール','cis']});
- assert.deepEqual(result.map(c => c.id),['lactic-acid','maleic-acid']);
+ assert.deepEqual(result.map(c => c.id),['lactic-acid','maleic-acid','linoleic-acid']);
 });
 test('sorting preserves source, stable ties and category order', () => {
  const src=[compounds[18],compounds[17],compounds[19]]; const copy=[...src];

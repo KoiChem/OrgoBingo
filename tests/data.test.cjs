@@ -5,7 +5,7 @@ const compounds = require('../data/compounds.json');
 const sets = require('../data/bingo-sets.json');
 const categories = require('../data/categories.json');
 test('initial master, structures, vocabularies and sets are consistent', () => {
-  assert.equal(compounds.length, 121);
+  assert.equal(compounds.length, 122);
   const ids = new Set(compounds.map(c => c.id));
   assert.equal(ids.size, compounds.length);
   for (const c of compounds) {
@@ -39,7 +39,7 @@ test('C1 and C2 structures show every hydrogen as a bonded atom', () => {
 });
 
 test('requested aromatic master and sodium salts are included', () => {
-  assert.equal(compounds.length,121);
+  assert.equal(compounds.length,122);
   assert.equal(compounds.filter(c=>c.skeletonCategory==='芳香族').length,47);
   const layouts=require('../tools/structures/layouts.json');
   for(const [id,label] of [['sodium-ethoxide','ONa'],['sodium-phenoxide','ONa'],['sodium-benzenesulfonate','SO3Na'],['sodium-benzoate','ONa'],['sodium-salicylate','ONa']]) {
@@ -98,3 +98,16 @@ test('TNT has methyl and three nitro groups at 2,4,6',()=>{
  const attachments=d.bonds.filter(([a,b])=>a<6&&b>=6).map(([a,b])=>[a,d.labels[b].text]);
  assert.deepEqual(attachments,[[0,'CH3'],[1,'NO2'],[3,'NO2'],[5,'O2N']]);
 });
+
+ test('linoleic acid is in the oxygenated set with two cis double bonds',()=>{
+ const c=compounds.find(c=>c.id==='linoleic-acid');
+ assert.equal(c.formula,'C18H32O2');
+ assert(sets.find(s=>s.id==='oxygenated-aliphatic').compoundIds.includes(c.id));
+ const d=require('../tools/structures/layouts.json')[c.id];
+ for(const [a,b,left,right] of [[2,3,1,4],[5,6,4,7]]) {
+   assert(d.bonds.some(([x,y,o])=>x===a&&y===b&&o===2));
+   const p=d.labels[a],q=d.labels[b];
+   const side=n=>(q.x-p.x)*(n.y-p.y)-(q.y-p.y)*(n.x-p.x);
+   assert(side(d.labels[left])*side(d.labels[right])>0);
+ }
+ });

@@ -33,7 +33,7 @@ def molecular_formula(counts):
     return ''.join(e+(str(counts[e]) if counts[e]!=1 else '') for e in ['C','H']+sorted(set(counts)-{'C','H'}) if counts.get(e))
 
 class Drawing:
-    def __init__(self):self.nodes=[];self.bonds=[];self.ringBonds={};self.ringCenters={};self.repeatPorts=[];self.cyclic=False
+    def __init__(self):self.nodes=[];self.bonds=[];self.ringBonds={};self.ringCenters={};self.repeatPorts=[];self.cyclic=False;self.fullLabelBounds=False
     def add(self,s,x,y=0,a=0):self.nodes.append(label(s,x,y,a));return len(self.nodes)-1
     def carbon(self,x,y):
         self.nodes.append({'text':'','x':x,'y':y,'anchor':0,'chars':[],'box':[x,y,x,y],'atomBox':[x,y,x,y]});return len(self.nodes)-1
@@ -70,6 +70,19 @@ def build():
     chain('methyl-ethyl-ketone',['CH3','C','CH2','CH3'],[(1,'O',True,2)])
     for id,ls in [('formaldehyde',['H','C','H']),('propionaldehyde',['CH3','CH2','C','H'])]:chain(id,ls,[(len(ls)-2,'O',True,2)])
     for id,ls in [('propionic-acid',['CH3','CH2','C','OH']),('butyric-acid',['CH3','CH2','CH2','C','OH']),('palmitic-acid',['CH3','(CH2)14','C','OH']),('stearic-acid',['CH3','(CH2)16','C','OH'])]:chain(id,ls,[(len(ls)-2,'O',True,2)])
+    # Linoleic acid: CH3(CH2)4-CH=CH-CH2-CH=CH-(CH2)7-COOH.
+    # Both carbon-chain substituents lie below each double bond (9Z,12Z).
+    d=Drawing()
+    for text,x,y in [('CH3',-420,150),('(CH2)4',-230,150),
+                     ('CH',0,0),('CH',150,0),('CH2',260,150),
+                     ('CH',370,0),('CH',520,0),('(CH2)7',750,150),
+                     ('C',990,150),('OH',1090,150),('O',990,62)]:
+        d.add(text,x,y)
+    for a,b,order in [(0,1,1),(1,2,1),(2,3,2),(3,4,1),(4,5,1),
+                      (5,6,2),(6,7,1),(7,8,1),(8,9,1),(8,10,2)]:
+        d.bond(a,b,order)
+    d.fullLabelBounds=True  # Clip diagonal bonds against complete condensed labels.
+    drawings['linoleic-acid']=d
     chain('lactic-acid',['CH3','CH','C','OH'],[(1,'OH',False,1),(2,'O',True,2)])
     for id,ls in [('methyl-acetate',['CH3','C','O','CH3']),('ethyl-acetate',['CH3','C','O','CH2','CH3'])]:chain(id,ls,[(1,'O',True,2)])
     chain('acetic-anhydride',['CH3','C','O','C','CH3'],[(1,'O',True,2),(3,'O',True,2)])
@@ -119,7 +132,7 @@ def bond_segments(d):
         p,q=d.nodes[a],d.nodes[b];dx=q['x']-p['x'];dy=q['y']-p['y'];length=math.hypot(dx,dy);ux,uy=dx/length,dy/length
         def endpoint(n,vx,vy,offset=0):
             if not n['text']:return n['x'],n['y']
-            box=n['box'] if abs(vy)<.01 or d.ringBonds or d.cyclic else n['atomBox'];cx,cy=n['x']-uy*offset,n['y']+ux*offset
+            box=n['box'] if abs(vy)<.01 or d.ringBonds or d.cyclic or d.fullLabelBounds else n['atomBox'];cx,cy=n['x']-uy*offset,n['y']+ux*offset
             ts=[]
             if vx>0:ts.append((box[2]-cx)/vx)
             elif vx<0:ts.append((box[0]-cx)/vx)
