@@ -81,7 +81,7 @@
     ],
     "structureSvg": "structures/2-butanol.svg",
     "note": "",
-    "properties": "炭素原子４個の第2級アルコール。ヨードホルム反応陽性。"
+    "properties": "炭素原子4個の第2級アルコール。ヨードホルム反応陽性。"
   },
   {
     "id": "ethylene-glycol",
@@ -171,7 +171,7 @@
     "tags": [],
     "structureSvg": "structures/methyl-ethyl-ketone.svg",
     "note": "",
-    "properties": "炭素原子4個。2-ブタノールの酸化で生成。ヨードホルム陽性。"
+    "properties": "炭素原子4個。2-ブタノールの酸化で生成。ヨードホルム反応陽性。"
   },
   {
     "id": "formaldehyde",
@@ -366,7 +366,7 @@
     "tags": [],
     "structureSvg": "structures/acetic-anhydride.svg",
     "note": "",
-    "properties": "酢酸の脱水で生成する液体。水と反応し酢酸に。"
+    "properties": "酢酸に脱水剤（十酸化四リンなど）を加えて脱水すると得られる液体。水と反応し酢酸に。"
   },
   {
     "id": "iodoform",
@@ -1246,7 +1246,7 @@
     "tags": [],
     "structureSvg": "structures/pentane.svg",
     "note": "",
-    "properties": "C5H12の直鎖アルカン。構造異性体が3種類ある。"
+    "properties": "C5H12の直鎖アルカン。C5H12には構造異性体が3種類ある。"
   },
   {
     "id": "hexane",
