@@ -50,8 +50,8 @@ COMPOUNDS=[
 ]
 
 def add_aromatics(drawings, Drawing):
-    def ring(d,cx=0,cy=0,angle=0):
-        ids=[d.carbon(cx+90*math.cos(angle+i*math.pi/3),cy+90*math.sin(angle+i*math.pi/3)) for i in range(6)]
+    def ring(d,cx=0,cy=0,angle=0,radius=90):
+        ids=[d.carbon(cx+radius*math.cos(angle+i*math.pi/3),cy+radius*math.sin(angle+i*math.pi/3)) for i in range(6)]
         for n in ids:d.ringCenters[n]=(cx,cy)
         for i in range(6):
             a,b=ids[i],ids[(i+1)%6];d.bond(a,b,2 if i%2==0 else 1);d.ringBonds[(a,b)]=(cx,cy)
@@ -99,13 +99,13 @@ def add_aromatics(drawings, Drawing):
             meta=id.startswith('m-') or id=='isophthalic-acid'
             multi=id in ['picric-acid','246-tribromophenol','246-trinitrotoluene']
             mono=not (ortho or meta or multi or id.startswith('p-') or id in ['benzene','terephthalic-acid']) or id=='p-phenylazophenol'
-            ns=ring(d,angle=-math.pi/6 if ortho or meta or mono else (-math.pi/2 if multi else 0))
+            ns=ring(d,angle=-math.pi/6 if ortho or meta or mono else (-math.pi/2 if multi else 0),radius=58.5 if id=='phthalic-anhydride' else 90)
             if id=='benzene':pass
             elif id=='toluene':attach(d,ns,0,'CH3')
             elif id=='ethylbenzene':
                 a=attach(d,ns,0,'CH2');p=d.nodes[a];b=d.add('CH3',p['x']+123,p['y']);d.bond(a,b)
             elif id=='styrene':
-                a=attach(d,ns,0,'CH');p=d.nodes[a];b=d.add('CH2',p['x']+123,p['y']);d.bond(a,b,2)
+                a=attach(d,ns,0,'CH');p=d.nodes[a];b=d.add('CH2',p['x']+123,p['y']);d.bond(a,b,2);d.compact_double_bond(a,b)
             elif id.endswith('-xylene'):
                 attach(d,ns,0,'CH3');attach(d,ns,{'o':1,'m':2,'p':3}[id[0]],'CH3')
             elif id in ['cumene','cumene-hydroperoxide']:
@@ -138,10 +138,10 @@ def add_aromatics(drawings, Drawing):
                 acid(d,ns,0);acid(d,ns,{'phthalic-acid':1,'isophthalic-acid':2,'terephthalic-acid':3}[id])
             elif id=='phthalic-anhydride':
                 # Adjacent ring carbons fused to a five-membered cyclic anhydride.
-                a=attach(d,ns,0,'C');b=attach(d,ns,1,'C');o=d.add('O',d.nodes[a]['x']+130,0)
+                a=attach(d,ns,0,'C');b=attach(d,ns,1,'C');o=d.add('O',d.nodes[a]['x']+84.5,0)
                 d.bond(a,o);d.bond(b,o)
                 for carbon,sign in [(a,-1),(b,1)]:
-                    p=d.nodes[carbon];ox=d.add('O',p['x'],p['y']+sign*88);d.bond(carbon,ox,2)
+                    p=d.nodes[carbon];ox=d.add('O',p['x'],p['y']+sign*78);d.bond(carbon,ox,2)
             elif id in ['salicylic-acid','sodium-salicylate','methyl-salicylate','aspirin']:
                 c,e=acid(d,ns,1 if id=='aspirin' else 0,'ONa' if id=='sodium-salicylate' else ('O' if id=='methyl-salicylate' else 'OH'))
                 if id=='methyl-salicylate':

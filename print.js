@@ -1,6 +1,6 @@
 (function(root){
 'use strict';
-const VERSION='20261114-ring-layout';
+const VERSION='20261119-compact-bonds';
 function pages(items,capacity){
  if(capacity!==16&&capacity!==28)throw new Error('印刷件数が不正です。');
  const result=[];for(let i=0;i<items.length;i+=capacity)result.push(items.slice(i,i+capacity));return result;

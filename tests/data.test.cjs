@@ -99,15 +99,16 @@ test('TNT has methyl and three nitro groups at 2,4,6',()=>{
  assert.deepEqual(attachments,[[0,'CH3'],[1,'NO2'],[3,'NO2'],[5,'O2N']]);
 });
 
- test('linoleic acid is in the oxygenated set with two cis double bonds',()=>{
+test('linoleic acid retains both double bonds in its condensed chain',()=>{
  const c=compounds.find(c=>c.id==='linoleic-acid');
  assert.equal(c.formula,'C18H32O2');
  assert(sets.find(s=>s.id==='oxygenated-aliphatic').compoundIds.includes(c.id));
  const d=require('../tools/structures/layouts.json')[c.id];
- for(const [a,b,left,right] of [[2,3,1,4],[5,6,4,7]]) {
-   assert(d.bonds.some(([x,y,o])=>x===a&&y===b&&o===2));
-   const p=d.labels[a],q=d.labels[b];
-   const side=n=>(q.x-p.x)*(n.y-p.y)-(q.y-p.y)*(n.x-p.x);
-   assert(side(d.labels[left])*side(d.labels[right])>0);
- }
- });
+ assert.deepEqual(d.bonds.filter(([a,b,order])=>order===2),[[2,3,2],[5,6,2],[8,10,2]]);
+ assert(d.labels.slice(0,10).every(n=>n.y===0));
+ const svg=fs.readFileSync(c.structureSvg,'utf8');
+ const lengths=[...svg.matchAll(/<line x1="([^"]+)" y1="([^"]+)" x2="([^"]+)" y2="([^"]+)"/g)]
+   .map(([,x,y,X,Y])=>Math.hypot(X-x,Y-y));
+ assert.deepEqual(lengths.slice(0,4),[18,18,18,18]);
+ assert(lengths.slice(4).every(length=>length>=36));
+});

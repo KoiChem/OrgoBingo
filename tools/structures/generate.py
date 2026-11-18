@@ -33,7 +33,7 @@ def molecular_formula(counts):
     return ''.join(e+(str(counts[e]) if counts[e]!=1 else '') for e in ['C','H']+sorted(set(counts)-{'C','H'}) if counts.get(e))
 
 class Drawing:
-    def __init__(self):self.nodes=[];self.bonds=[];self.ringBonds={};self.ringCenters={};self.repeatPorts=[];self.cyclic=False;self.fullLabelBounds=False
+    def __init__(self):self.nodes=[];self.bonds=[];self.ringBonds={};self.ringCenters={};self.repeatPorts=[];self.cyclic=False;self.condensedBonds=set()
     def add(self,s,x,y=0,a=0):self.nodes.append(label(s,x,y,a));return len(self.nodes)-1
     def carbon(self,x,y):
         self.nodes.append({'text':'','x':x,'y':y,'anchor':0,'chars':[],'box':[x,y,x,y],'atomBox':[x,y,x,y]});return len(self.nodes)-1
@@ -50,6 +50,10 @@ class Drawing:
                 self.bond(ids[-1],n)
             ids.append(n)
         return ids
+    def compact_double_bond(self,a,b):
+        left,right=self.nodes[a],self.nodes[b]
+        x=left['box'][2]+32+right['x']-right['box'][0]
+        self.nodes[b]=label(right['text'],x,right['y'],right['anchor'])
     def branch(self,n,s,up=True,order=1):
         p=self.nodes[n];b=self.add(s,p['x'],p['y']+(-1 if up else 1)*STYLE['branchStep']);self.bond(n,b,order);return b
 
@@ -70,18 +74,19 @@ def build():
     chain('methyl-ethyl-ketone',['CH3','C','CH2','CH3'],[(1,'O',True,2)])
     for id,ls in [('formaldehyde',['H','C','H']),('propionaldehyde',['CH3','CH2','C','H'])]:chain(id,ls,[(len(ls)-2,'O',True,2)])
     for id,ls in [('propionic-acid',['CH3','CH2','C','OH']),('butyric-acid',['CH3','CH2','CH2','C','OH']),('palmitic-acid',['CH3','(CH2)14','C','OH']),('stearic-acid',['CH3','(CH2)16','C','OH'])]:chain(id,ls,[(len(ls)-2,'O',True,2)])
-    # Linoleic acid: CH3(CH2)4-CH=CH-CH2-CH=CH-(CH2)7-COOH.
-    # Both carbon-chain substituents lie below each double bond (9Z,12Z).
+    # Condense the hydrocarbon chain; keep the carboxyl group expanded.
     d=Drawing()
-    for text,x,y in [('CH3',-420,150),('(CH2)4',-230,150),
-                     ('CH',0,0),('CH',150,0),('CH2',260,150),
-                     ('CH',370,0),('CH',520,0),('(CH2)7',750,150),
-                     ('C',990,150),('OH',1090,150),('O',990,62)]:
-        d.add(text,x,y)
-    for a,b,order in [(0,1,1),(1,2,1),(2,3,2),(3,4,1),(4,5,1),
-                      (5,6,2),(6,7,1),(7,8,1),(8,9,1),(8,10,2)]:
-        d.bond(a,b,order)
-    d.fullLabelBounds=True  # Clip diagonal bonds against complete condensed labels.
+    labels=['CH3','(CH2)4','CH','CH','CH2','CH','CH','(CH2)7','C','OH']
+    for i,text in enumerate(labels):
+        n=d.add(text,0)
+        if i==0:continue
+        order=2 if i in (3,6) else 1
+        gap=32 if order==2 else 50 if i>=8 else 2
+        x=d.nodes[i-1]['box'][2]+gap-d.nodes[i]['box'][0]
+        d.nodes[n]=label(text,x,0)
+        d.bond(i-1,n,order)
+        if gap==2:d.condensedBonds.add((i-1,n))
+    d.branch(8,'O',True,2)
     drawings['linoleic-acid']=d
     chain('lactic-acid',['CH3','CH','C','OH'],[(1,'OH',False,1),(2,'O',True,2)])
     for id,ls in [('methyl-acetate',['CH3','C','O','CH3']),('ethyl-acetate',['CH3','C','O','CH2','CH3'])]:chain(id,ls,[(1,'O',True,2)])
@@ -99,15 +104,15 @@ def build():
     chain('iodoform',['I','C','I'],[(1,'I',True,1),(1,'H',False,1)])
     # Five-membered cyclic anhydride: O-C(=O)-C(H)=C(H)-C(=O).
     d=Drawing()
-    oxygen=d.add('O',0,-95)
-    left=d.add('C',-100,-25);right=d.add('C',100,-25)
-    alkene_left=d.add('C',-65,90);alkene_right=d.add('C',65,90)
+    oxygen=d.add('O',0,-63.65)
+    left=d.add('C',-67,-16.75);right=d.add('C',67,-16.75)
+    alkene_left=d.add('C',-43.55,60.3);alkene_right=d.add('C',43.55,60.3)
     d.bond(oxygen,left);d.bond(oxygen,right)
     d.bond(left,alkene_left);d.bond(right,alkene_right);d.bond(alkene_left,alkene_right,2)
     for carbon,side in [(left,-1),(right,1)]:
-        out=d.add('O',side*190,-80);d.bond(carbon,out,2)
+        out=d.add('O',side*127.3,-53.6);d.bond(carbon,out,2)
     for carbon,side in [(alkene_left,-1),(alkene_right,1)]:
-        hydrogen=d.add('H',side*125,165);d.bond(carbon,hydrogen)
+        hydrogen=d.add('H',side*90,118.8);d.bond(carbon,hydrogen)
     drawings['maleic-anhydride']=d
     for id,cis in [('maleic-acid',True),('fumaric-acid',False)]:
         d=Drawing();left=d.add('C',0);right=d.add('C',95);d.bond(left,right,2)
@@ -129,10 +134,11 @@ def build():
 def bond_segments(d):
     result=[]
     for a,b,order in d.bonds:
+        if (a,b) in d.condensedBonds:continue
         p,q=d.nodes[a],d.nodes[b];dx=q['x']-p['x'];dy=q['y']-p['y'];length=math.hypot(dx,dy);ux,uy=dx/length,dy/length
         def endpoint(n,vx,vy,offset=0):
             if not n['text']:return n['x'],n['y']
-            box=n['box'] if abs(vy)<.01 or d.ringBonds or d.cyclic or d.fullLabelBounds else n['atomBox'];cx,cy=n['x']-uy*offset,n['y']+ux*offset
+            box=n['box'] if abs(vy)<.01 or d.ringBonds or d.cyclic else n['atomBox'];cx,cy=n['x']-uy*offset,n['y']+ux*offset
             ts=[]
             if vx>0:ts.append((box[2]-cx)/vx)
             elif vx<0:ts.append((box[0]-cx)/vx)

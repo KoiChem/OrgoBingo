@@ -63,10 +63,11 @@ def add_hydrocarbons(drawings,Drawing):
     chain('23-dimethylbutane',['H3C','CH','CH','CH3'],branches=[(1,'CH3',True),(2,'CH3',True)])
     # Aliphatic cyclic structures use explicit CH/CH2 labels and regular polygons.
     for id,size,unsaturated in [('cyclopropane',3,False),('cyclobutane',4,False),('cyclopentane',5,False),('cyclohexane',6,False),('cyclopentene',5,True),('cyclohexene',6,True)]:
-        d=Drawing();d.cyclic=True;radius=145;ns=[]
+        d=Drawing();d.cyclic=True;radius=52/math.sin(math.pi/size);ns=[]
         for i in range(size):
             angle=-math.pi/2+i*2*math.pi/size
             x,y=radius*math.cos(angle),radius*math.sin(angle)
+            if size==3:x,y=[(0,-84),(40,0),(-40,0)][i]
             text='CH' if unsaturated and i in (0,1) else 'CH2'
             if x < -1e-6:text='HC' if text=='CH' else 'H2C'
             ns.append(d.add(text,x,y,len(text)-1 if x < -1e-6 else 0))
@@ -110,7 +111,7 @@ def add_hydrocarbons(drawings,Drawing):
     chain('vinyl-chloride',['H','C','C','Cl'],orders={1:2},branches=[(1,'H',True),(2,'H',True)])
     # Vinyl acetate: CH3-C(=O)-O-CH=CH2; acyl and vinyl oxygens are not interchanged.
     chain('vinyl-acetate',['H3C','C','O','CH','CH2'],orders={3:2},branches=[(1,'O',True)])
-    d=drawings['vinyl-acetate'];a,b,_=d.bonds[-1];d.bonds[-1]=(a,b,2)
+    d=drawings['vinyl-acetate'];d.compact_double_bond(3,4);a,b,_=d.bonds[-1];d.bonds[-1]=(a,b,2)
     for id,labels,order in [('polyethylene',['CH2','CH2'],1),('polyacetylene',['CH','CH'],2)]:
         d,ns=chain(id,labels,orders={0:order});d.repeatPorts=[(ns[0],-1),(ns[1],1)]
     chain('acrylonitrile',['H2C','CH','C','N'],orders={0:2,2:3})

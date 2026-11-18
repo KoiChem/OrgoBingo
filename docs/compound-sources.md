@@ -107,4 +107,4 @@ PubChemの分子式と重原子の結合・結合次数を図の結合グラフ�
 - 無水酢酸の「酸性なし」は削除。水と反応して酢酸となる。[NIOSH](https://www.cdc.gov/niosh/npg/npgd0003.html)
 - ヨードホルムの「CH3CO-などをもつ化合物」は酢酸や酢酸エチルまで対象と誤解されるため、陽性例のアセトンを用いた表現に変更。[大学の有機化学実験資料](https://faculty.kfupm.edu.sa/CHEM/hmuallem/courses/Chem303/Classification_Tests_Handout.pdf)
 
-2026-11-16追記：リノール酸（`linoleic-acid`）を追加。[PubChem CID 5280450](https://pubchem.ncbi.nlm.nih.gov/compound/5280450)で分子式 C18H32O2 と9Z,12Zの配置を確認。構造式では両方の二重結合をcis配置で示す。
+2026-11-16追記：リノール酸（`linoleic-acid`）を追加。[PubChem CID 5280450](https://pubchem.ncbi.nlm.nih.gov/compound/5280450)で分子式 C18H32O2 と9Z,12Zの配置を確認。2026-11-19に炭化水素部分を縮合表記に変更。図中の短い等号で二重結合を示し、立体配置の注記は省略する。
