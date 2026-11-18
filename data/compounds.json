@@ -310,7 +310,7 @@
     ],
     "structureSvg": "structures/maleic-acid.svg",
     "note": "",
-    "properties": "シス形不飽和ジカルボン酸。加熱・脱水で無水マレイン酸に。"
+    "properties": "シス形不飽和ジカルボン酸。加熱によって容易に酸無水物に。"
   },
   {
     "id": "methyl-formate",
@@ -981,7 +981,7 @@
     ],
     "structureSvg": "structures/phthalic-acid.svg",
     "note": "",
-    "properties": "-COOH2個が隣り合う位置。加熱で脱水し無水フタル酸に。"
+    "properties": "芳香族ジカルボン酸。-COOH2個が隣り合う位置に存在。"
   },
   {
     "id": "isophthalic-acid",
