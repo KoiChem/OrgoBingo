@@ -5,6 +5,10 @@ const compounds = require('../data/compounds.json');
 const sets = require('../data/bingo-sets.json');
 const categories = require('../data/categories.json');
 const copy = x => structuredClone(x);
+test('invalid properties identify the compound and the violated limit', () => {
+  const c=copy(compounds); c[0].properties='あ'.repeat(31);
+  assert.throws(()=>validate(c,sets,categories,compounds), /メタノール.*性質・特徴.*30字/);
+});
 test('valid baseline and empty set are accepted', () => {
   assert.doesNotThrow(() => validate(compounds, sets, categories, compounds));
   assert.doesNotThrow(() => validate(compounds, [{id:'empty',name:'空',compoundIds:[]}], categories, compounds));

@@ -171,7 +171,7 @@
     "tags": [],
     "structureSvg": "structures/methyl-ethyl-ketone.svg",
     "note": "",
-    "properties": "炭素原子4個。2-ブタノールの酸化で生成。ヨードホルム反応陽性。"
+    "properties": "2-ブタノールの酸化で生成。ヨードホルム反応陽性。"
   },
   {
     "id": "formaldehyde",
@@ -366,7 +366,7 @@
     "tags": [],
     "structureSvg": "structures/acetic-anhydride.svg",
     "note": "",
-    "properties": "酢酸に脱水剤（十酸化四リンなど）を加えて脱水すると得られる液体。水と反応し酢酸に。"
+    "properties": "脱水剤で酢酸を脱水して得る液体。水と反応し酢酸に。"
   },
   {
     "id": "iodoform",

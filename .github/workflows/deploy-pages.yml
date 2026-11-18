@@ -24,6 +24,14 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Validate data and application
+        run: node --test tests/*.test.cjs
+
       - name: Configure Pages
         uses: actions/configure-pages@v5
 

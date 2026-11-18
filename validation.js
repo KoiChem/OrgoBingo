@@ -12,7 +12,7 @@
    if(!c || typeof c.id!=='string' || ids.has(c.id) || !base.has(c.id) || c.structureSvg!==base.get(c.id).structureSvg) fail();
    ids.add(c.id);
    for(const key of ['nameJa','nameEn','formula','note']) if(typeof c[key]!=='string') fail();
-   if(c.properties!==undefined && !validProperties(c.properties)) fail();
+   if(c.properties!==undefined && !validProperties(c.properties)) throw new Error(`${c.nameJa || c.id}：性質・特徴は30字以内（半角は0.5字）、改行なしの文字列にしてください。`);
    if(!c.nameJa.trim() || !categories.skeletonCategories.includes(c.skeletonCategory)) fail();
    for(const key of ['functionalGroups','tags']) if(!Array.isArray(c[key]) || new Set(c[key]).size!==c[key].length || !c[key].every(x=>categories[key].includes(x))) fail();
   }
